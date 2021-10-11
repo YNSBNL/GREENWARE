@@ -1,0 +1,103 @@
+.Continuer {
+    background-color: #ffffff;
+    border: black;
+    color: black;
+    padding: 15px 1px;
+    width: 150px ;
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+    margin: 10px 10px;
+    cursor: pointer;
+    left: 50%;
+    right: 50%;
+    display:block; 
+    margin-left: 550px;
+    margin-right: 650px;
+}
+.MDP {
+    background-color: #ffffff;
+    border: black;
+    color: black;
+    padding: 15px 1px;
+    width: 75px ;
+    text-align: center;
+    text-decoration: none;
+    font-size: 9px;
+    margin: 15px 15px;
+    cursor: pointer;
+    left: 50%;
+    right: 50%;
+    display:block; 
+    margin-left: 600px;
+    margin-right: 650px;
+}  
+
+
+
+    
+img{
+    width: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+h3
+{
+    color: floralwhite;
+    font-size:  2em;
+    font-family: "sans-serif";
+
+}
+body 
+{
+    background-color:  seagreen;
+
+}
+
+.premier
+{
+    margin-left: 400px;
+    margin-right: 400px;
+}
+
+/* Style the links inside the navigation bar */
+.topnav 
+{
+      overflow: hidden;
+      background-color: #e9e9e9;
+  }
+/* Style the links inside the navigation bar */
+  .topnav a {
+      float: left;
+      display: block;
+      color: black;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color:black;
+    color: black;
+}
+
+/* Style the "active" element to highlight the current page */
+.topnav a.active {
+    background-color: #ffffff;
+    color:black;
+}
+
+/* Style the search box inside the navigation bar */
+.topnav input[type=text] {
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+}
