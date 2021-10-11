@@ -21,24 +21,6 @@
 		}
 
 
-		.aide {
-			background-color: #ffffff;
-   	 		border: black;
-    		color: black;
-    		padding: 15px 32px;
-    		text-align: center;
-    		text-decoration: none;
-    		font-size: 16px;
-    		margin: 4px 2px;
-    		cursor: pointer;
-    		left: 5%;
-    		right : 95%;
-    		margin-left:50px;
-    		margin-right:1200px;
-    		margin-bottom: 1200px;
-    		margin-top : 100px;
-			
-		}
 
 
 		img{
@@ -67,8 +49,51 @@
 			margin-left: 400px;
 			margin-right: 400px;
 		}
+/* Style the links inside the navigation bar */
+		.topnav 
+		{
+  			overflow: hidden;
+  			background-color: #e9e9e9;
+  		}
+/* Style the links inside the navigation bar */
+  		.topnav a {
+  			float: left;
+  			display: block;
+  			color: black;
+  			text-align: center;
+  			padding: 14px 16px;
+  			text-decoration: none;
+  			font-size: 17px;
+		}
 
+		/* Change the color of links on hover */
+		.topnav a:hover {
+			background-color: #ddd;
+			color: black;
+		}
 
+		/* Style the "active" element to highlight the current page */
+		.topnav a.active {
+			background-color: #2196F3;
+			color: white;
+		}
+
+		/* Style the search box inside the navigation bar */
+		.topnav input[type=text] {
+			float: right;
+			padding: 6px;
+			border: none;
+			margin-top: 8px;
+			margin-right: 16px;
+			font-size: 17px;
+		}
+
+		
+
+		hr.solid {
+  			border-top: 50px solid #bbb;
+  			border-left: 0px;
+  			border-right:0px;
 		
 		</style>
 		
@@ -76,8 +101,13 @@
 	</head>
 
 	<body>
-		<a href="file:///C:/Users/Jean%20Michel/Desktop/aide.html" class="aide"> Aide ? 
-		</a>
+		
+		<div class="topnav">
+			<a class="active" href="#home">Accueil</a>
+			<a class="active" href="#aide">Aide</a>
+  			
+ 			 <input type="text" placeholder="Rechercher...">
+		</div>
 		<p> <img src="logo_isep.jpg" alt="photo du logo" />
 		<br>
 		
@@ -109,7 +139,13 @@
 			<br>
 		l'écologie au coeur de l'innovation</p>
 		<a href="#"> Nous contacter !</a></p>
-		
-		
+		<br>
+		<br>
+		<br>
+		<br>
+	
+	
+		<hr class="solid">
+	
 	</body>
 </html>
