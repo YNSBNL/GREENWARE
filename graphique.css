@@ -1,22 +1,37 @@
-
-.button3 {
+.Continuer {
     background-color: #ffffff;
     border: black;
     color: black;
     padding: 15px 1px;
-    width: 100px ;
+    width: 150px ;
     text-align: center;
     text-decoration: none;
-    font-size: 10px;
-    margin: 1px 1px;
+    font-size: 25px;
+    margin: 10px 10px;
     cursor: pointer;
     left: 50%;
     right: 50%;
     display:block; 
-    margin-left: 650px;
+    margin-left: 550px;
     margin-right: 650px;
 }
-    
+.MDP {
+    background-color: #ffffff;
+    border: black;
+    color: black;
+    padding: 15px 1px;
+    width: 75px ;
+    text-align: center;
+    text-decoration: none;
+    font-size: 9px;
+    margin: 15px 15px;
+    cursor: pointer;
+    left: 50%;
+    right: 50%;
+    display:block; 
+    margin-left: 600px;
+    margin-right: 650px;
+}  
 
 
 
@@ -67,14 +82,14 @@ body
 
 /* Change the color of links on hover */
 .topnav a:hover {
-    background-color: #ddd;
+    background-color:black;
     color: black;
 }
 
 /* Style the "active" element to highlight the current page */
 .topnav a.active {
-    background-color: #2196F3;
-    color: white;
+    background-color: #ffffff;
+    color:black;
 }
 
 /* Style the search box inside the navigation bar */
