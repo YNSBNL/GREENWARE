@@ -1,41 +1,59 @@
 .Continuer {
-    background-color: #ffffff;
+    background-color: white;
     border: black;
-    color: black;
+    color:seagreen;
     padding: 15px 1px;
     width: 150px ;
     text-align: center;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 2.0em;
     margin: 10px 10px;
     cursor: pointer;
     left: 50%;
     right: 50%;
     display:block; 
-    margin-left: 568px;
+    margin-left: 540px;
+    border-radius: 5px;
+}
+fieldset{
+    border-color: white;
+    border-radius: 9px; 
 
 }
 .champ{
-margin-left: 45px;
+    margin-right: 47px;
+    text-align: center;
+    color: white;
+    font-size: 1em;
+}
+.champ1{
+    margin-right: 94px;
+    text-align: center;
+    color: white;
+    font-size: 1em;
+}
+legend{
+    text-align: center;
+    color: white;
+    font-size: 1.5em;
 }
 .MDP {
-    background-color: #ffffff;
+    background-color:white;
     border: black;
-    color: black;
+    color:seagreen;
     padding: 15px 1px;
     width: 75px ;
     text-align: center;
     text-decoration: none;
-    font-size: 6px;
+    font-size: 0.7em;
     margin: 15px 15px;
     cursor: pointer;
     left: 50%;
     right: 50%;
     display:block; 
-    margin-left: 610px;
-
+    margin-left: 580px;
+    border-radius: 5px;
 }  
-
 
 
 
@@ -148,3 +166,5 @@ hr.solid {
     border-top: 50px solid #bbb;
     
 }
+
+
