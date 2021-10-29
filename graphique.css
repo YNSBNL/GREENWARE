@@ -1,65 +1,128 @@
-.Continuer {
+/* Page de Connexion CSS*/
+
+/* Barre de Recherche */
+
+/* Style the links inside the navigation bar */
+.topnav 
+{
+      overflow: hidden;
+      background-color: white;
+  }
+/* Style the links inside the navigation bar */
+  .topnav a {
+      float: left;
+      display: block;
+      color: black;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color:black;
+    color: black;
+}
+
+/* Style the "active" element to highlight the current page */
+.topnav a.active {
     background-color: white;
-    border: black;
-    color:seagreen;
-    padding: 15px 1px;
-    width: 150px ;
-    text-align: center;
-    text-decoration: none;
-    font-size: 2.0em;
-    margin: 10px 10px;
-    cursor: pointer;
-    left: 50%;
-    right: 50%;
-    display:block; 
-    margin-left: 540px;
-    border-radius: 5px;
+    color:black;
 }
-fieldset{
-    border-color: white;
-    border-radius: 9px; 
+
+/* Style the search box inside the navigation bar */
+.topnav input[type=text] {
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+}
+/* Fin de la Barre de Recherche */
+
+/* Logo Techsens (page de connexion) */
+
+.img1{
+    margin-left: 80.3%;
+    width: 250px;
+} 
+/* Fin du Logo Techsens (page de connexion) */
+
+/* Formulaire de connexion */
+
+.block-formulaire
+{
+    width: 80%;
+    height: 500px;
+    margin:auto;
+}
+.formulaire{
+    width: 60%;
+    height: 400px;
+    background : white;
+    margin:auto;
+    border-radius: 10px;
 
 }
+.titre-du-formulaire{
+    cursor: pointer;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    position:relative;
+    top: 40px;
+    color: seagreen;
+}
+.block-container{
+    width: 100%;
+    margin:auto;
+    text-align: center;
+}
+
 .champ{
-    margin-right: 47px;
-    text-align: center;
-    color: white;
-    font-size: 1em;
+    width: 380px;
+    height: 40px;
+    margin: 15px;
+    font-size: 18px;
+    border: none;
+    border-bottom: 2px solid seagreen;
+    outline: none;
+    color:black;
+    position:relative;
+    top:50px;
 }
-.champ1{
-    margin-right: 94px;
-    text-align: center;
-    color: white;
-    font-size: 1em;
-}
-legend{
-    text-align: center;
-    color: white;
-    font-size: 1.5em;
-}
-.MDP {
-    background-color:white;
-    border: black;
-    color:seagreen;
-    padding: 15px 1px;
-    width: 75px ;
-    text-align: center;
-    text-decoration: none;
-    font-size: 0.7em;
-    margin: 15px 15px;
-    cursor: pointer;
-    left: 50%;
-    right: 50%;
-    display:block; 
-    margin-left: 580px;
+
+.button1{
+    width: 380px;
+    height: 40px;
+    background: seagreen;
     border-radius: 5px;
-}  
+    color:white;
+    font-size: 20px;
+    margin: 15px;
+    position: relative;
+    top: 60px;
+    margin-left: 100px;
+}
+.button1:hover{
+    background: rgba(0, 0,0, 0.5);
+}
 
+.lien-container{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    position:relative;
+    top:80px;
+    font-size: 17px;
+}
+.lien{
+    color: seagreen;
+}
 
-
-
-
-
+/* Fin du Formulaire de Connexion */
 
 
 
@@ -124,47 +187,15 @@ body
     margin-right: 400px;
 }
 
-/* Style the links inside the navigation bar */
-.topnav 
-{
-      overflow: hidden;
-      background-color: #e9e9e9;
-  }
-/* Style the links inside the navigation bar */
-  .topnav a {
-      float: left;
-      display: block;
-      color: black;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-      font-size: 17px;
-}
 
-/* Change the color of links on hover */
-.topnav a:hover {
-    background-color:black;
-    color: black;
-}
 
-/* Style the "active" element to highlight the current page */
-.topnav a.active {
-    background-color: #ffffff;
-    color:black;
-}
-
-/* Style the search box inside the navigation bar */
-.topnav input[type=text] {
+.aidee {
     float: right;
     padding: 6px;
     border: none;
+    width: 600px;
     margin-top: 8px;
     margin-right: 16px;
     font-size: 17px;
-}
-hr.solid {
-    border-top: 50px solid #bbb;
-    
-}
 
-
+}
