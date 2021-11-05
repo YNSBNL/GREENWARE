@@ -121,6 +121,11 @@
 .lien{
     color: darkseagreen;
 }
+body 
+{
+    background-color:  darkseagreen;
+
+}
 
 /* Fin du Formulaire de Connexion */
 
@@ -158,16 +163,6 @@
 }
 
 
-
-
-img{
-    width: 500px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-
-}
-
 h3
 {
     color: floralwhite;
@@ -188,8 +183,8 @@ body
 }
 
 
-
-.aidee {
+/* Début de la page d'Aide */
+.aide {
     float: right;
     padding: 6px;
     border: none;
@@ -197,5 +192,9 @@ body
     margin-top: 8px;
     margin-right: 16px;
     font-size: 17px;
-
 }
+body 
+{
+    background-color:  darkseagreen;
+}
+/* Fin de la page d'Aide */
