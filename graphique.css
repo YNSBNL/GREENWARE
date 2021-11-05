@@ -70,12 +70,12 @@
     cursor: pointer;
     text-align: center;
     font-size: 24px;
-    font-weight: 600;
+    font-weight: 600px;
     position:relative;
     top: 40px;
     color: darkseagreen;
 }
-.block-container{
+.block-champ{
     width: 100%;
     margin:auto;
     text-align: center;
@@ -110,7 +110,7 @@
     background: rgba(0, 0,0, 0.5);
 }
 
-.lien-container{
+.lien-champ{
     width: 100%;
     margin: auto;
     text-align: center;
@@ -184,15 +184,31 @@ body
 
 
 /* Début de la page d'Aide */
-.aide {
-    float: right;
-    padding: 6px;
+
+
+/* Logo Techsens page de connexion */
+.img1{
+    margin-left: 80.24%;
+    width: 250px;
+} 
+.rut{
+    font-size: 2.2em;
+    background-color: yellow;
+    text-align: center;
+    width: 350px;
+    border-radius: 5px;
+}
+.ticket{
+    position: relative;
+    margin-left: 150px;
     border: none;
-    width: 600px;
+    width: 700px;
+    height: 250px;
     margin-top: 8px;
-    margin-right: 16px;
     font-size: 17px;
 }
+
+
 body 
 {
     background-color:  darkseagreen;
