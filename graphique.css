@@ -73,7 +73,7 @@
     font-weight: 600;
     position:relative;
     top: 40px;
-    color: seagreen;
+    color: darkseagreen;
 }
 .block-container{
     width: 100%;
@@ -87,7 +87,7 @@
     margin: 15px;
     font-size: 18px;
     border: none;
-    border-bottom: 2px solid seagreen;
+    border-bottom: 2px solid darkseagreen;
     outline: none;
     color:black;
     position:relative;
@@ -97,7 +97,7 @@
 .button1{
     width: 380px;
     height: 40px;
-    background: seagreen;
+    background: darkseagreen;
     border-radius: 5px;
     color:white;
     font-size: 20px;
@@ -119,7 +119,7 @@
     font-size: 17px;
 }
 .lien{
-    color: seagreen;
+    color: darkseagreen;
 }
 
 /* Fin du Formulaire de Connexion */
@@ -177,7 +177,7 @@ h3
 }
 body 
 {
-    background-color:  seagreen;
+    background-color:  darkseagreen;
 
 }
 
