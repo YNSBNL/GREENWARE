@@ -5,8 +5,8 @@
 /* Style the links inside the navigation bar */
 .topnav 
 {
-      overflow: hidden;
-      background-color: white;
+    overflow: hidden;
+    background-color: darkseagreen;
   }
 /* Style the links inside the navigation bar */
   .topnav a {
@@ -27,7 +27,7 @@
 
 /* Style the "active" element to highlight the current page */
 .topnav a.active {
-    background-color: white;
+    background-color:darkseagreen;
     color:black;
 }
 
@@ -44,10 +44,6 @@
 
 /* Logo Techsens (page de connexion) */
 
-.img1{
-    margin-left: 80.24%;
-    width: 250px;
-} 
 /* Fin du Logo Techsens (page de connexion) */
 
 /* Formulaire de connexion */
@@ -61,7 +57,7 @@
 .formulaire{
     width: 60%;
     height: 400px;
-    background : white;
+    background : darkseagreen;
     margin:auto;
     border-radius: 10px;
 
@@ -73,7 +69,7 @@
     font-weight: 600px;
     position:relative;
     top: 40px;
-    color: darkseagreen;
+    color: white;
 }
 .block-champ{
     width: 100%;
@@ -87,7 +83,7 @@
     margin: 15px;
     font-size: 18px;
     border: none;
-    border-bottom: 2px solid darkseagreen;
+    border-bottom: 2px solid white;
     outline: none;
     color:black;
     position:relative;
@@ -97,9 +93,9 @@
 .button1{
     width: 380px;
     height: 40px;
-    background: darkseagreen;
+    background: white;
     border-radius: 5px;
-    color:white;
+    color: darkseagreen;
     font-size: 20px;
     margin: 15px;
     position: relative;
@@ -119,11 +115,11 @@
     font-size: 17px;
 }
 .lien{
-    color: darkseagreen;
+    color: white;
 }
 body 
 {
-    background-color:  darkseagreen;
+    background-color:  white;
 
 }
 
@@ -172,7 +168,7 @@ h3
 }
 body 
 {
-    background-color:  darkseagreen;
+    background-color:  white;
 
 }
 
@@ -188,16 +184,19 @@ body
 
 /* Logo Techsens page de connexion */
 .img1{
-    margin-left: 80.24%;
-    width: 250px;
+    margin-left: 40%;
+    width: 90px;
+    align-items: center;
 } 
 .rut{
     font-size: 2.2em;
-    background-color: yellow;
+    background-color: darkseagreen;
     text-align: center;
     width: 350px;
     border-radius: 5px;
 }
+
+
 .ticket{
     position: relative;
     margin-left: 150px;
@@ -206,11 +205,28 @@ body
     height: 250px;
     margin-top: 8px;
     font-size: 17px;
+    background-color: darkseagreen;
+    color:ghostwhite;
+    border-radius: 7px;
+}
+.button2{
+    position: relative;
+    border: none;
+    border-radius: 5px;
+    width:300px;
+    height:50px;
+    font-size: 20px;
+    background-color: darkseagreen;
+    text-align: center;
+    margin-left:70%;
+}
+.button2:hover{
+    background: rgba(0, 0,0, 0.5);
 }
 
 
 body 
 {
-    background-color:  darkseagreen;
+    background-color: ghostwhite;
 }
 /* Fin de la page d'Aide */
