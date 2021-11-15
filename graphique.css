@@ -1,45 +1,67 @@
 /* Page de Connexion CSS*/
 
 /* Barre de Recherche */
+	/*Barre menu*/
+    ul {
+	    list-style-type: none;
+	    margin: 0;
+	    padding: 0;
+	    overflow: hidden;
+	    margin-right:  auto;
+		}
+		li {
+		    float: left;
+		    width:  16.6666667%;
 
-/* Style the links inside the navigation bar */
-.topnav 
-{
-    overflow: hidden;
-    background-color: darkseagreen;
-  }
-/* Style the links inside the navigation bar */
-  .topnav a {
-      float: left;
-      display: block;
-      color: black;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-      font-size: 17px;
-}
+		}
+		/*Barre menu*/
+		li a {
+		    display: block;
+		    color: white;
+		    text-align: center;
+		    padding: 14px 16px;
+		    text-decoration: none;
+		    background-color: #5c834a;
+		}
 
-/* Change the color of links on hover */
-.topnav a:hover {
-    background-color:black;
-    color: black;
-}
+		/* Change the link color to on hover */
+		li a:hover {
+		    background-color: #9edd81;
 
-/* Style the "active" element to highlight the current page */
-.topnav a.active {
-    background-color:darkseagreen;
-    color:black;
-}
+		}
 
-/* Style the search box inside the navigation bar */
-.topnav input[type=text] {
-    float: right;
-    padding: 6px;
-    border: none;
-    margin-top: 8px;
-    margin-right: 16px;
-    font-size: 17px;
-}
+		
+		/*Barre de menu déroulant*/
+		.sous{
+			display: none;
+			box-shadow:  0px 1px 2px #CCC;
+			background-color: #5c834a;
+			width: 100%;
+			z-index: 50;
+			
+
+		}
+		nav > ul li:hover .sous{
+			display: block;
+
+		}
+		/*Menu déroulant*/
+		.sous li{
+			float: none;
+			width: 100%;
+			text-align: center;
+
+		}
+		/*Taille des boîtes du menu déroulant*/
+		.sous a{
+			padding: 10px;
+			border-bottom: none;
+
+		}
+		/*Hover du menu déroulant*/
+		.sous a:hover{
+			border-bottom: none;
+		}
 /* Fin de la Barre de Recherche */
 
 /* Logo Techsens (page de connexion) */
