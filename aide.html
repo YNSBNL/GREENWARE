@@ -10,22 +10,31 @@
     </head>
 
     <body>
-		<div class="topnav">
-			<a class="active" href="#home">Accueil</a>
-			<a class="active" href="#aide">Aide</a>
-  			
- 			 <input type="text" placeholder="Rechercher...">
-		</div>
+	
+      <nav>
+        <ul>
+    
+          <li> <img src="techsens3.jpg" alt="photo du logo" class="img1"/> </li>
+          <li><a href="identification.html">Accueil</a></li>
+          <li class="déroulant"><a href="histoire.html">Notre histoire &ensp;</a>
+            <ul class="sous">
+              <li><a href="entreprise.html">Notre entreprise</a></li>
+              <li><a href="equipe.html">Notre équipe</a></li>
+            </ul>
+          <li><a href="contact.html">Nous contacter</a></li>
+          <li><a href="aide.html">Aide</a></li>
+          
+        </ul>
+      </nav>
 		<!-- Logo Techsens -->
 
-        <img src="techsens3.jpg" alt="LOGO" class="img1" />
-        <form method="post">
-            <p>
-            <label for="ticket" class="rut">Rédiger un Ticket</label>  </p>
+    <form method="post">
+          <p>
+          <label for="ticket" class="rut">Rédiger un Ticket</label>  </p>
             <p>
             <textarea name="Ticket" id="Ticket" placeholder="Rédiger un Ticket ici" class="ticket"></textarea>
             </p>
          </form>
 
-         <input type="submit" class="button2" value=" Envoyez le ticket">
+         <a href="aide.html" class="button2">Envoyer le ticket</a>
     </body>
