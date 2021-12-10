@@ -1,67 +1,57 @@
 /* Page de Connexion CSS*/
 
 /* Barre de Recherche */
-	/*Barre menu*/
-    ul {
-	    list-style-type: none;
-	    margin: 0;
-	    padding: 0;
-	    overflow: hidden;
-	    margin-right:  auto;
-		}
-		li {
-		    float: left;
-		    width:  16.6666667%;
-
-		}
-		/*Barre menu*/
-		li a {
-		    display: block;
-		    color: white;
-		    text-align: center;
-		    padding: 14px 16px;
-		    text-decoration: none;
-		    background-color: #5c834a;
-		}
-
-		/* Change the link color to on hover */
-		li a:hover {
-		    background-color: #9edd81;
-
-		}
-
-		
-		/*Barre de menu déroulant*/
-		.sous{
-			display: none;
-			box-shadow:  0px 1px 2px #CCC;
-			background-color: #5c834a;
-			width: 100%;
-			z-index: 50;
-			
-
-		}
-		nav > ul li:hover .sous{
-			display: block;
-
-		}
-		/*Menu déroulant*/
-		.sous li{
-			float: none;
-			width: 100%;
-			text-align: center;
-
-		}
-		/*Taille des boîtes du menu déroulant*/
-		.sous a{
-			padding: 10px;
-			border-bottom: none;
-
-		}
-		/*Hover du menu déroulant*/
-		.sous a:hover{
-			border-bottom: none;
-		}
+/*Barre menu*/
+ul {
+list-style-type: none;	
+margin: 0;
+padding: 0;
+overflow: hidden;
+margin-right:  auto;
+}
+li {
+    float: left;
+    width:  16.6666667%;
+}
+/*Barre menu*/
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color: #5c834a;
+}
+/* Change the link color to on hover */
+li a:hover {
+	background-color: #9edd81;
+}
+/*Barre de menu déroulant*/
+.sous{
+    display: none;
+	box-shadow:  0px 1px 2px #CCC;
+	background-color: #5c834a;
+	width: 100%;
+	z-index: 50;
+}
+nav > ul li:hover .sous{
+	display: block;
+}
+/*Menu déroulant*/
+.sous li{
+	float: none;
+	width: 100%;
+	text-align: center;
+}
+/*Taille des boîtes du menu déroulant*/
+.sous a{
+	padding: 10px;
+	border-bottom: none;
+}
+/*Hover du menu déroulant*/
+.sous a:hover{
+    border-bottom: none;
+}
 /* Fin de la Barre de Recherche */
 
 /* Logo Techsens (page de connexion) */
@@ -142,7 +132,6 @@
 body 
 {
     background-color:  white;
-
 }
 
 /* Fin du Formulaire de Connexion */
@@ -211,25 +200,27 @@ body
     align-items: center;
 } 
 .rut{
-    font-size: 2.2em;
-    background-color: darkseagreen;
+    width: 300px;
+    height: 55px;
+    font-size: 40px;
+    position:relative;
     text-align: center;
-    width: 350px;
-    border-radius: 5px;
+    margin-left: 37%;
+    color: darkseagreen;
 }
 
 
 .ticket{
     position: relative;
-    margin-left: 150px;
     border: none;
-    width: 700px;
-    height: 250px;
+    width: 840px;
+    height: 300px;
     margin-top: 8px;
     font-size: 17px;
     background-color: darkseagreen;
     color:ghostwhite;
     border-radius: 7px;
+    margin-left:19%;
 }
 .button2{
     position: relative;
@@ -241,6 +232,7 @@ body
     background-color: darkseagreen;
     text-align: center;
     margin-left:70%;
+    color: white;
 }
 .button2:hover{
     background: rgba(0, 0,0, 0.5);
@@ -249,6 +241,94 @@ body
 
 body 
 {
-    background-color: ghostwhite;
+    background-color: ghostwhite;}
+
+.img3{
+    position:absolute;
+    display:flex;
+    margin-top: 160px;
+    width: 270px;
+    height: 200px;
 }
+
+
 /* Fin de la page d'Aide */
+
+/* Page d'accueil */
+
+h1.Techsens{
+    color: darkseagreen;
+    font-size: 2.2em;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2.Histoire{
+    margin-left: 41%;
+    color: darkseagreen;
+    font-size: 2.2em;
+    
+}
+
+div.RH{
+    margin-left:auto;
+    margin-right: auto;
+    color:white;
+    background-color: darkseagreen;
+    text-align: justify;
+    border-radius: 5px;
+    width: 750px;
+    height: 200px;
+
+}
+
+.img5{
+    display: inline;
+    width: 200px;
+    height: 200px;
+}
+.img6{
+    display: inline;
+    width:200px;
+    height: 200px;
+}
+.img7{
+    display: inline;
+    width:200px;
+    height: 200px;
+}
+.text3{
+    margin-left: 10%;
+    text-align: center;
+    font-size: 17px;
+    color:darkseagreen;    
+}
+.text2{
+    text-align: center;
+    font-size: 17px;
+    color:darkseagreen;    
+}
+.text4{
+    margin-left: 10%;
+    text-align: center;
+    font-size: 17px;
+    color:darkseagreen;    
+}
+.slogan{
+    margin-left: 25%;
+    font-size: 30px;
+    color: darkseagreen;
+}
+div.Chiffres{
+    margin-left: 10%;
+}
+.Chiffre{
+    font-size: 22px;
+    color: darkseagreen;
+}
+.img10{
+    float:left;
+    width: 30px;
+    height: 30px;
+}
