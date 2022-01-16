@@ -53,7 +53,7 @@
 
     <img id="getImage" src="sensor1.gif" style="height: 300px;" alt="Bulb img"><br>
     <input type="button" onclick="imagefun()" value="Refresh " class="buttonRafraichir">
-    <button onclick="fu()" class="buttonRafraichir">Turn OFF</button>
+    <button onclick="fu()" class="buttonRafraichir">Eteindre</button>
   </th>
 </tr>
         
