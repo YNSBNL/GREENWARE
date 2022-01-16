@@ -1,25 +1,25 @@
-nav{
+nav {
     width: 100%;
     margin: 0 auto;
     padding: 0 auto;
     background-color: white;
-    position:  sticky;
+    position: sticky;
 }
 
-nav ul{
-    list-style-type: none;  
+nav ul {
+    list-style-type: none;
 }
 
 .mainheader ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow:  hidden;
+    overflow: hidden;
     background-color: #dde7d6;
     width: 100%;
 }
 
-header{
+header {
     width: 100%;
 }
 
@@ -41,12 +41,14 @@ li a {
     height: 60px;
     font-size: 1.3em;
     justify-content: space-around;
-} 
-.mainheader ul li{
+}
+
+.mainheader ul li {
     width: 13%;
     height: 60px;
     justify-content: space-between;
 }
+
 
 /* Change the link color to on hover */
 
@@ -69,17 +71,20 @@ nav>ul li:hover .sous {
     width: 100%;
     text-align: center;
 }
-.topheader{
+
+.topheader {
     height: 60px;
 }
-.active{
+
+.active {
     background-color: rgba(125, 158, 109, 0.8);
     display: center;
 }
+
+
 /*Taille des boîtes du menu déroulant*/
 
-
-.phrase{
+.phrase {
     position: relative;
     float: right;
     margin-top: 0px;
@@ -88,24 +93,14 @@ nav>ul li:hover .sous {
     font-size: 1em;
     font-style: italic;
     color: #075244;
-
- }
-
-/*Hover du menu déroulant*/
-
-img{
-    float: left;
-
 }
 
 
-/* Fin de la Barre de Recherche */
+/*Hover du menu déroulant*/
 
-
-/* Logo Techsens (page de connexion) */
-
-
-/* Fin du Logo Techsens (page de connexion) */
+img {
+    float: left;
+}
 
 
 /* Formulaire de connexion */
@@ -116,16 +111,17 @@ img{
     margin: auto;
     border: none;
 }
-.fieldset2{
-    border:none;
+
+.fieldset2 {
+    border: none;
 }
+
 .formulaire {
     width: 60%;
     height: 400px;
     background: darkseagreen;
     margin: auto;
     border-radius: 10px;
-    
 }
 
 .titre-du-formulaire {
@@ -196,34 +192,15 @@ body {
 .background {
     width: 90%;
     margin-top: 650px;
-    
 }
-.photofond{
+
+.photofond {
     margin-top: 20px;
     margin-left: 2%;
-
-
-
 }
+
+
 /* Fin du Formulaire de Connexion */
-
-.button {
-    background-color: #ffffff;
-    border: black;
-    color: black;
-    padding: 15px 32px;
-    width: 300px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    left: 50%;
-    right: 50%;
-    display: block;
-    margin-left: 450px;
-    margin-right: 650px;
-}
 
 h3 {
     color: floralwhite;
@@ -231,11 +208,11 @@ h3 {
     font-family: "sans-serif";
 }
 
-
 .premier {
     margin-left: 400px;
     margin-right: 400px;
 }
+
 
 /* Début de la page d'Aide */
 
@@ -311,32 +288,7 @@ h1.Techsens {
     margin-right: auto;
     margin-top: 400px;
     margin-left: 10%;
-
 }
-/*
-.Histoire1{
-    background-color: #8FBC7A;
-    width: 80%;
-    height: 450px;
-    margin-left: 10%;
-}
-h2.Histoire {
-    margin-top: 200px;
-    margin-left: 40%;
-    color: whitesmoke;
-    font-size: 2.2em;
-}
-div.RH {
-    margin-left: 10%;
-    margin-right: auto;
-    color: whitesmoke;
-    text-align: justify;
-    border-radius: 5px;
-    width: 80%;
-    height: 500px;
-    font-size: 1.4em;
-}
-*/
 
 .img5 {
     display: inline;
@@ -365,7 +317,6 @@ div.RH {
     font-size: 17px;
     color: #075244;
     width: 20%;
-
 }
 
 .text2 {
@@ -373,7 +324,6 @@ div.RH {
     font-size: 17px;
     color: #075244;
     width: 20%;
-
 }
 
 .text4 {
@@ -382,7 +332,6 @@ div.RH {
     font-size: 17px;
     color: #075244;
     width: 20%;
-
 }
 
 .slogan {
@@ -390,7 +339,6 @@ div.RH {
     font-size: 30px;
     color: #075244;
     font-style: italic;
-
 }
 
 div.Chiffres {
@@ -400,15 +348,12 @@ div.Chiffres {
 }
 
 .Chiffre {
-
     margin-top: 50px;
     margin-left: -5%;
     font-size: 36px;
     font-family: sans-serif;
     font-weight: 500;
     color: #075244;
-  
-
 }
 
 .img10 {
@@ -417,41 +362,17 @@ div.Chiffres {
     height: 30px;
     position: relative;
     margin-right: 2%;
-
 }
-.Chiffres ul{
-    list-style-type: none;  
+
+.Chiffres ul {
+    list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    margin-right:  auto;
+    margin-right: auto;
     width: 80%;
     margin-left: 10%;
 }
-
-
-/* Corentin Celton KHALIL */
-
-
-/* Corentin Celton KHALIL */
-
-
-/* Corentin Celton KHALIL */
-
-
-/* Corentin Celton KHALIL */
-
-
-/* Corentin Celton KHALIL */
-
-
-/* Corentin Celton KHALIL */
-
-
-/* Corentin Celton KHALIL */
-
-
-/* Corentin Celton KHALIL */
 
 .intro {
     text-align: center;
@@ -473,9 +394,11 @@ div.Chiffres {
     height: 300px;
 }
 
-.white34{
-    color:white;
+.white34 {
+    color: white;
 }
+
+
 /* Tableau corentin celtobn */
 
 .centert {
@@ -501,7 +424,6 @@ div.Chiffres {
     width: 400px;
     height: 300px;
 }
-
 
 
 /* Image des statistiques */
@@ -531,89 +453,6 @@ div.Chiffres {
     color: white;
     box-shadow: 0 8px 16px 0;
 }
-.buttonAllumer_Eteindre{
-    margin-left: auto;
-    margin-right: auto;
-    width: 400px;
-    height: 70px;
-    padding: 5px 3px;
-    background-color: #2E8B57;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    color: white;
-
-}
-.buttonAllumer_Eteindre:hover{
-    background-color: darkgreen;
-    color: white;
-    box-shadow: 0 8px 16px 0;
-}
-
-/* Fin CSS Corentin Celton */
-
-
-/* gare du nord  KHALIL */
-
-
-/* gare du nord  KHALIL */
-
-
-/* gare du nord  KHALIL */
-
-
-/* gare du nord  KHALIL */
-
-
-/* gare du nord  KHALIL */
-
-
-/* gare du nord  KHALIL */
-
-
-/* gare du nord  KHALIL */
-
-
-/* gare du nord  KHALIL */
-
-
-/* gare du nord  KHALIL */
-
-
-/* gare du nord  KHALIL */
-
-
-/* gare du nord  KHALIL */
-
-
-/* gare du nord  KHALIL */
-
-
-/* gare du nord  KHALIL */
-
-
-/* gare du nord  KHALIL */
-
-
-/* gare du nord  KHALIL */
-
-
-/* gare du nord  KHALIL */
-
-
-/* gare du nord  KHALIL */
-
-
-/* gare du nord  KHALIL */
-
-
-/* gare du nord  KHALIL */
-
-
-/* gare du nord  KHALIL */
-
-
-/* gare du nord  KHALIL */
 
 .rectangl1 {
     text-align: center;
@@ -661,33 +500,11 @@ div.Chiffres {
     margin: 0 500px;
 }
 
-
-/* QUIZZ  KHALIL SCOTTIE */
-
-
-/* QUIZZ  KHALIL SCOTTIE */
-
-
-/* QUIZZ  KHALIL SCOTTIE */
-
-
-/* QUIZZ  KHALIL SCOTTIE */
-
-
-/* QUIZZ  KHALIL SCOTTIE */
-
-
-/* QUIZZ  KHALIL SCOTTIE */
-
-
-/* gare du nord  KHALIL */
-
 .img30 {
     width: 150px;
     display: block;
     float: left;
     margin-top: -300px;
-
 }
 
 .button2 {
@@ -725,7 +542,7 @@ div.Chiffres {
 
 .texteleft {
     float: left;
-    width:10%;
+    width: 10%;
 }
 
 .pdp {
@@ -747,8 +564,8 @@ div.Chiffres {
     font-size: 1.15em;
     font-family: arial;
     text-decoration: underline;
-
 }
+
 
 /*footer*/
 
@@ -765,26 +582,26 @@ div.Chiffres {
     opacity: 0.9;
     margin-top: 2500px;
 }
-.photologo{
+
+.photologo {
     width: 30%;
     margin-right: 40%;
     margin-left: 40%;
     float: center;
 }
 
-.end{
+.end {
     margin-top: 100px;
-
 }
 
-.content{
+.content {
     margin-left: 25%;
     margin-right: 25%;
     width: 50%;
     margin-top: -20px;
 }
-.footer2 {
 
+.footer2 {
     position: absolute;
     left: 0;
     padding-top: 10px;
@@ -796,8 +613,8 @@ div.Chiffres {
     opacity: 0.9;
     margin-top: 200px;
 }
-.footer3 {
 
+.footer3 {
     position: absolute;
     left: 0;
     padding-top: 10px;
@@ -809,7 +626,8 @@ div.Chiffres {
     opacity: 0.9;
     margin-top: 300px;
 }
-.footer4{
+
+.footer4 {
     position: absolute;
     left: 0;
     padding-top: 10px;
@@ -821,7 +639,8 @@ div.Chiffres {
     opacity: 0.9;
     margin-top: 100px;
 }
-.footer5{
+
+.footer5 {
     top: 10%;
     position: absolute;
     left: 0;
@@ -834,7 +653,8 @@ div.Chiffres {
     opacity: 0.9;
     margin-top: 65%;
 }
-.footer6{
+
+.footer6 {
     top: 1%;
     position: absolute;
     left: 0;
@@ -848,31 +668,34 @@ div.Chiffres {
     margin-top: 53%;
 }
 
+
 /* CSS page Greenware */
-.gare{
+
+.gare {
     font-size: 2em;
     color: darkseagreen;
 }
-.lien-gares{
-    display: inline;
 
+.lien-gares {
+    display: inline;
 }
-.buttongare1{
+
+.buttongare1 {
     display: inline;
     width: 300px;
     height: 200px;
     border: 5px solid darkseagreen;
-    
 }
-.buttongare2{
+
+.buttongare2 {
     display: inline;
     width: 300px;
     height: 200px;
-    border:5px solid darkseagreen;
+    border: 5px solid darkseagreen;
     margin-left: 10%;
-    
 }
-.buttongare3{
+
+.buttongare3 {
     display: inline;
     width: 300px;
     height: 200px;
@@ -880,30 +703,45 @@ div.Chiffres {
     margin-left: 15%;
 }
 
-.buttongare1:hover{
-    -webkit-transform:scale(1.25); /* Safari et Chrome */
-    -moz-transform:scale(1.25); /* Firefox */
-    -ms-transform:scale(1.25); /* Internet Explorer 9 */
-    -o-transform:scale(1.25); /* Opera */
-    transform:scale(1.25);
+.buttongare1:hover {
+    -webkit-transform: scale(1.25);
+    /* Safari et Chrome */
+    -moz-transform: scale(1.25);
+    /* Firefox */
+    -ms-transform: scale(1.25);
+    /* Internet Explorer 9 */
+    -o-transform: scale(1.25);
+    /* Opera */
+    transform: scale(1.25);
 }
-.buttongare2:hover{
-    -webkit-transform:scale(1.25); /* Safari et Chrome */
-    -moz-transform:scale(1.25); /* Firefox */
-    -ms-transform:scale(1.25); /* Internet Explorer 9 */
-    -o-transform:scale(1.25); /* Opera */
-    transform:scale(1.25);
+
+.buttongare2:hover {
+    -webkit-transform: scale(1.25);
+    /* Safari et Chrome */
+    -moz-transform: scale(1.25);
+    /* Firefox */
+    -ms-transform: scale(1.25);
+    /* Internet Explorer 9 */
+    -o-transform: scale(1.25);
+    /* Opera */
+    transform: scale(1.25);
 }
-.buttongare3:hover{
-    -webkit-transform:scale(1.25); /* Safari et Chrome */
-    -moz-transform:scale(1.25); /* Firefox */
-    -ms-transform:scale(1.25); /* Internet Explorer 9 */
-    -o-transform:scale(1.25); /* Opera */
-    transform:scale(1.25);
+
+.buttongare3:hover {
+    -webkit-transform: scale(1.25);
+    /* Safari et Chrome */
+    -moz-transform: scale(1.25);
+    /* Firefox */
+    -ms-transform: scale(1.25);
+    /* Internet Explorer 9 */
+    -o-transform: scale(1.25);
+    /* Opera */
+    transform: scale(1.25);
 }
 
 
 /* home page */
+
 .button10 {
     width: 20%;
     height: 40px;
@@ -914,7 +752,6 @@ div.Chiffres {
     position: relative;
     top: 60px;
     margin-left: 40%;
-
 }
 
 .button10:hover {
@@ -924,42 +761,39 @@ div.Chiffres {
 
 /* page contact */
 
-.body4{
-    background-color:  ghostwhite;
+.body4 {
+    background-color: ghostwhite;
     font-size: 1em;
-    width:  100%;
-    
+    width: 100%;
 }
 
-.button5{
+.button5 {
     width: 150px;
-    padding: 5px 3px ;
+    padding: 5px 3px;
     background-color: #2E8B57;
     border: none;
     border-radius: 10px;
     cursor: pointer;
 }
+
 .button5:hover {
     background-color: white;
     color: white;
     box-shadow: 0 8px 16px 0;
+}
 
-} 
-
-
-.contacter4{
+.contacter4 {
     width: 400px;
     height: 100px;
     font-size: 2.5em;
-    font-family:  Bradley Hand, cursive;
+    font-family: Bradley Hand, cursive;
     margin-left: 25px;
     background-image: url("enveloppe.png");
     background-repeat: no-repeat;
     background-position: top right;
-    
 }
-.container4{
-    
+
+.container4 {
     background-color: rgba(143, 188, 122, .6);
     position: absolute;
     height: 625px;
@@ -970,10 +804,9 @@ div.Chiffres {
     margin-bottom: 100px;
     border-radius: 10px;
     opacity: 70%;
-    
 }
-.formulaire4{
-    
+
+.formulaire4 {
     float: right;
     text-align: justify;
     width: 30%;
@@ -982,74 +815,76 @@ div.Chiffres {
     margin-top: -120px;
 }
 
-.boxe {	
+.boxe {
     padding: 1em;
     width: 200px;
     height: 7px;
-    border: 1px solid;		
+    border: 1px solid;
 }
 
-.texteleft{
-    
-    float:  center;
-    width:  50%;
+.texteleft {
+    float: center;
+    width: 50%;
     font-size: 1.5em;
     text-align: justify;
     margin-left: 50px;
     margin-top: -40px;
 }
 
-.blabla{
+.blabla {
     float: center;
     width: 50%;
     font-size: 1.5em;
     text-align: justify;
     z-index: 100000;
 }
-.fleche{
+
+.fleche {
     float: right;
     margin-top: -110px;
     margin-right: 50px;
-
 }
-.button51{
+
+.button51 {
     width: 150px;
-    padding: 5px 3px ;
+    padding: 5px 3px;
     background-color: #5c834a;
     border: none;
     border-radius: 10px;
     cursor: pointer;
     font-family: Papyrus;
-    color:white ;
+    color: white;
     font-size: 15px;
 }
 
 
 /*3 images animées page d'accueil*/
 
-.paysage1{
-    position: relative;
-    width: 33.333%;
-    height: 600px;
-    float: left;   
-    margin-top: 0px;
-}
-.paysage2{
-    position: relative;
-    width: 33.333%;
-    height: 600px;
-    float: left;  
-    margin-top: 0px;  
-}
-.paysage3{
+.paysage1 {
     position: relative;
     width: 33.333%;
     height: 600px;
     float: left;
     margin-top: 0px;
+}
 
+.paysage2 {
+    position: relative;
+    width: 33.333%;
+    height: 600px;
+    float: left;
+    margin-top: 0px;
 }
-.titre1{
+
+.paysage3 {
+    position: relative;
+    width: 33.333%;
+    height: 600px;
+    float: left;
+    margin-top: 0px;
+}
+
+.titre1 {
     opacity: 0;
     position: relative;
     margin-top: 50px;
@@ -1057,7 +892,8 @@ div.Chiffres {
     float: left;
     font-size: 1.5em;
 }
-.titre2{
+
+.titre2 {
     opacity: 0;
     position: relative;
     margin-top: 50px;
@@ -1065,7 +901,8 @@ div.Chiffres {
     margin-left: -20%;
     font-size: 1.5em;
 }
-.titre3{
+
+.titre3 {
     opacity: 0;
     position: relative;
     margin-top: 50px;
@@ -1073,25 +910,8 @@ div.Chiffres {
     margin-left: -20%;
     font-size: 1.5em;
 }
-.paragraphe1{
-    opacity: 0;
-    position: relative;
-    margin-top: 100px;
-    float: left;
-    text-align: center;
-    margin-left: -27%;
-    width: 20%;
-}
-.paragraphe2{
-    opacity: 0;
-    position: relative;
-    margin-top: 100px;
-    float: left;
-    text-align: center;
-    margin-left: -27%;
-    width: 20%;
-}
-.paragraphe3{
+
+.paragraphe1 {
     opacity: 0;
     position: relative;
     margin-top: 100px;
@@ -1101,18 +921,37 @@ div.Chiffres {
     width: 20%;
 }
 
+.paragraphe2 {
+    opacity: 0;
+    position: relative;
+    margin-top: 100px;
+    float: left;
+    text-align: center;
+    margin-left: -27%;
+    width: 20%;
+}
+
+.paragraphe3 {
+    opacity: 0;
+    position: relative;
+    margin-top: 100px;
+    float: left;
+    text-align: center;
+    margin-left: -27%;
+    width: 20%;
+}
 
 
 /*notre histoire*/
 
-.building{
+.building {
     width: 54%;
     height: 504px;
     margin-left: 5%;
     margin-top: 100px;
-
 }
-.title1{
+
+.title1 {
     font-size: 36px;
     font-family: sans-serif;
     font-weight: 700;
@@ -1120,9 +959,9 @@ div.Chiffres {
     float: left;
     margin-left: 1%;
     margin-top: 120px;
-
 }
-.paragraffe1{
+
+.paragraffe1 {
     font-size: 20px;
     font-family: sans-serif;
     text-align: justify;
@@ -1132,16 +971,17 @@ div.Chiffres {
     float: right;
     margin-right: 8%;
     margin-top: 60px;
-
 }
-.greeenware{
+
+.greeenware {
     width: 54%;
     height: 504px;
     float: right;
     margin-right: 5%;
     margin-top: 50px;
 }
-.title2{
+
+.title2 {
     font-size: 36px;
     font-family: sans-serif;
     font-weight: 700;
@@ -1149,9 +989,9 @@ div.Chiffres {
     float: left;
     margin-left: 5%;
     margin-top: 50px;
-
 }
-.paragraffe2{
+
+.paragraffe2 {
     font-size: 20px;
     font-family: sans-serif;
     text-align: justify;
@@ -1161,16 +1001,16 @@ div.Chiffres {
     float: right;
     margin-right: 4%;
     margin-top: 60px;
-
 }
 
-.sensmoov{
+.sensmoov {
     width: 54%;
     height: 504px;
     margin-left: 5%;
     margin-top: 50px;
 }
-.title3{
+
+.title3 {
     font-size: 36px;
     font-family: sans-serif;
     font-weight: 700;
@@ -1178,9 +1018,9 @@ div.Chiffres {
     float: left;
     margin-left: 1%;
     margin-top: 60px;
-
 }
-.paragraffe3{
+
+.paragraffe3 {
     font-size: 20px;
     font-family: sans-serif;
     text-align: justify;
@@ -1190,30 +1030,30 @@ div.Chiffres {
     float: right;
     margin-right: 8%;
     margin-top: 60px;
-
 }
 
-.cgu{
+.cgu {
     text-align: justify;
     width: 80%;
     margin-left: 10%;
 }
-h1.HHH{
+
+h1.HHH {
     font-weight: 900;
     font-family: sans-serif;
     text-align: center;
-
 }
-h2.Hun{
+
+h2.Hun {
     font-weight: 700;
     font-family: sans-serif;
 }
 
+
 /* Page ABOUT */
 
-.img33{
+.img33 {
     width: 150px;
     height: 150px;
-    border: 2px solid darkseagreen; 
+    border: 2px solid darkseagreen;
 }
-
