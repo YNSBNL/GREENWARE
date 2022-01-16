@@ -1,0 +1,334 @@
+/* Page de Connexion CSS*/
+
+/* Barre de Recherche */
+/*Barre menu*/
+ul {
+list-style-type: none;	
+margin: 0;
+padding: 0;
+overflow: hidden;
+margin-right:  auto;
+}
+li {
+    float: left;
+    width:  16.6666667%;
+}
+/*Barre menu*/
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color: #5c834a;
+}
+/* Change the link color to on hover */
+li a:hover {
+	background-color: #9edd81;
+}
+/*Barre de menu déroulant*/
+.sous{
+    display: none;
+	box-shadow:  0px 1px 2px #CCC;
+	background-color: #5c834a;
+	width: 100%;
+	z-index: 50;
+}
+nav > ul li:hover .sous{
+	display: block;
+}
+/*Menu déroulant*/
+.sous li{
+	float: none;
+	width: 100%;
+	text-align: center;
+}
+/*Taille des boîtes du menu déroulant*/
+.sous a{
+	padding: 10px;
+	border-bottom: none;
+}
+/*Hover du menu déroulant*/
+.sous a:hover{
+    border-bottom: none;
+}
+/* Fin de la Barre de Recherche */
+
+/* Logo Techsens (page de connexion) */
+
+/* Fin du Logo Techsens (page de connexion) */
+
+/* Formulaire de connexion */
+
+.block-formulaire
+{
+    width: 80%;
+    height: 500px;
+    margin:auto;
+}
+.formulaire{
+    width: 60%;
+    height: 400px;
+    background : darkseagreen;
+    margin:auto;
+    border-radius: 10px;
+
+}
+.titre-du-formulaire{
+    cursor: pointer;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600px;
+    position:relative;
+    top: 40px;
+    color: white;
+}
+.block-champ{
+    width: 100%;
+    margin:auto;
+    text-align: center;
+}
+
+.champ{
+    width: 380px;
+    height: 40px;
+    margin: 15px;
+    font-size: 18px;
+    border: none;
+    border-bottom: 2px solid white;
+    outline: none;
+    color:black;
+    position:relative;
+    top:50px;
+}
+
+.button1{
+    width: 380px;
+    height: 40px;
+    background: white;
+    border-radius: 5px;
+    color: darkseagreen;
+    font-size: 20px;
+    margin: 15px;
+    position: relative;
+    top: 60px;
+    margin-left: 100px;
+}
+.button1:hover{
+    background: rgba(0, 0,0, 0.5);
+}
+
+.lien-champ{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    position:relative;
+    top:80px;
+    font-size: 17px;
+}
+.lien{
+    color: white;
+}
+body 
+{
+    background-color:  white;
+}
+
+/* Fin du Formulaire de Connexion */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.button {                            
+    background-color: #ffffff;
+        border: black;
+    color: black;
+    padding: 15px 32px;
+    width: 300px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    left: 50%;
+    right: 50%;
+    display:block; 
+    margin-left: 450px;
+    margin-right: 650px;
+}
+
+
+h3
+{
+    color: floralwhite;
+    font-size:  2em;
+    font-family: "sans-serif";
+
+}
+body 
+{
+    background-color:  white;
+
+}
+
+.premier
+{
+    margin-left: 400px;
+    margin-right: 400px;
+}
+
+
+/* Début de la page d'Aide */
+
+
+/* Logo Techsens page de connexion */
+.img1{
+    margin-left: 40%;
+    width: 90px;
+    align-items: center;
+} 
+.rut{
+    width: 300px;
+    height: 55px;
+    font-size: 40px;
+    position:relative;
+    text-align: center;
+    margin-left: 37%;
+    color: darkseagreen;
+}
+
+
+.ticket{
+    position: relative;
+    border: none;
+    width: 840px;
+    height: 300px;
+    margin-top: 8px;
+    font-size: 17px;
+    background-color: darkseagreen;
+    color:ghostwhite;
+    border-radius: 7px;
+    margin-left:19%;
+}
+.button2{
+    position: relative;
+    border: none;
+    border-radius: 5px;
+    width:300px;
+    height:50px;
+    font-size: 20px;
+    background-color: darkseagreen;
+    text-align: center;
+    margin-left:70%;
+    color: white;
+}
+.button2:hover{
+    background: rgba(0, 0,0, 0.5);
+}
+
+
+body 
+{
+    background-color: ghostwhite;}
+
+.img3{
+    position:absolute;
+    display:flex;
+    margin-top: 160px;
+    width: 270px;
+    height: 200px;
+}
+
+
+/* Fin de la page d'Aide */
+
+/* Page d'accueil */
+
+h1.Techsens{
+    color: darkseagreen;
+    font-size: 2.2em;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2.Histoire{
+    margin-left: 41%;
+    color: darkseagreen;
+    font-size: 2.2em;
+    
+}
+
+div.RH{
+    margin-left:auto;
+    margin-right: auto;
+    color:white;
+    background-color: darkseagreen;
+    text-align: justify;
+    border-radius: 5px;
+    width: 750px;
+    height: 200px;
+
+}
+
+.img5{
+    display: inline;
+    width: 200px;
+    height: 200px;
+}
+.img6{
+    display: inline;
+    width:200px;
+    height: 200px;
+}
+.img7{
+    display: inline;
+    width:200px;
+    height: 200px;
+}
+.text3{
+    margin-left: 10%;
+    text-align: center;
+    font-size: 17px;
+    color:darkseagreen;    
+}
+.text2{
+    text-align: center;
+    font-size: 17px;
+    color:darkseagreen;    
+}
+.text4{
+    margin-left: 10%;
+    text-align: center;
+    font-size: 17px;
+    color:darkseagreen;    
+}
+.slogan{
+    margin-left: 25%;
+    font-size: 30px;
+    color: darkseagreen;
+}
+div.Chiffres{
+    margin-left: 10%;
+}
+.Chiffre{
+    font-size: 22px;
+    color: darkseagreen;
+}
+.img10{
+    float:left;
+    width: 30px;
+    height: 30px;
+}
