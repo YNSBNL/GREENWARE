@@ -21,7 +21,7 @@
                     <li><a href="home.php">Profil</a></li>
                     <li><a href="about.php">About</a></li>
 
-                    <li style="float:right"><a class="active" href="=disconnect.php">Déconnexion</a></li>
+                    <li style="float:right"><a class="active" href="disconnect.php">Déconnexion</a></li>
             </ul>
             </nav>
         </div>

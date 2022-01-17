@@ -56,8 +56,8 @@ if (isset($_POST['submit'])) {
     }
     ?>
 
-            <!-- Logo Techsens -->
-            <br>
+          <!-- Logo Techsens -->
+          <br>
             <p>
             <div class="block-formulaire">
                 <form method="post" class="formulaire" action="">

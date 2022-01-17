@@ -118,7 +118,7 @@ img {
 
 .formulaire {
     width: 60%;
-    height: 400px;
+    height: 550px;
     background: darkseagreen;
     margin: auto;
     border-radius: 10px;
@@ -363,6 +363,7 @@ div.Chiffres {
     height: 30px;
     position: relative;
     margin-right: 2%;
+    margin-top: -100px;
 }
 
 .Chiffres ul {
@@ -1068,16 +1069,18 @@ h2.Hun {
     border: 2px solid darkseagreen;
 }
 
+
 /*MAP*/
-.map{
+
+.map {
     margin-left: 11%;
     margin-top: 2%;
     position: relative;
 }
-.t{
+
+.t {
     font-size: 22px;
     margin-top: 2000px;
     margin-left: 200px;
     position: relative;
 }
-

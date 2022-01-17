@@ -11,21 +11,6 @@
 </head>
 
 <body>
-    <!-- Barre de navigation-->
-    <!--
-    <div class="navigation"></div>
-    <nav>
-        <ul>
-            <li> <img src="techsens3.jpg" alt="photo du logo" class="img1" /> </li>
-            <li><a href="accueil.php">Accueil</a></li>
-            <li class="déroulant"><a href="#Histoire">Notre histoire &ensp;</a>
-            <li><a href="identification.php">Se connecter</a></li>
-            <li><a href="aide.php">Aide</a></li>
-
-        </ul>
-    </nav>
-    </div>-->
-
        <?php
          if(!isset($_SESSION)){
             session_start();
@@ -41,8 +26,9 @@
         <img class="paysage1" src="gare.png" alt="photo background" onmouseenter="textappears()" 
         onmouseleave="textleave()"/>
         <div class="titre1"> INNOVATION</div>
-        <div class="paragraphe1"> Techsens innove en permanence afin d'offrir à ses clients la technologie la plus efficace pour les aider à améliorer leur impact sur l'environnement. Nous considérons que l'innovation est la clé pour développer des solutions toujours plus efficaces. </div>
+        <div class="paragraphe1"> Techsens innove en permanence afin d'offrir à ses clients la technologie la plus efficace pour les aider à améliorer leur impact sur l'environnement. Nous considérons que l'innovation est la clé pour développer des solutions toujours plus efficaces.</div>
     </div>
+
 
     <div class="imgaj2">
         <img class="paysage2" src="ecologie.png" alt="photo background" onmouseenter="textappears1()" 
