@@ -67,8 +67,8 @@ if (isset($_POST['but_logout'])) {
 
             </div>
     </div>
-    <p class="pdp">Photo de profil : </p>
-    <img src="anonyme.png" alt="photo de profil" class="img30" />
+    <p class="photo_de_profil">Photo de profil : </p>
+    <img src="anonyme.png" alt="photo de profil" class="img_de_profil" />
 
 <div class="footer2">
         <div class="foot">Techsens est une société cherchant à développer des solutions en accord avec le développement durable.</div>
