@@ -19,9 +19,9 @@
                     <li><a href="contact.php">Nous contacter</a></li>
                     <li><a href="aide.php">Aide</a></li>
                     <li><a href="home.php">Profil</a></li>
-                    <li><a href="disconnect.php">Déconnexion</a></li>
+                    <li><a href="about.php">About</a></li>
 
-                    <li style="float:right"><a class="active" href="#about">About</a></li>
+                    <li style="float:right"><a class="active" href="=disconnect.php">Déconnexion</a></li>
             </ul>
             </nav>
         </div>
