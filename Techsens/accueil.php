@@ -11,21 +11,6 @@
 </head>
 
 <body>
-    <!-- Barre de navigation-->
-    <!--
-    <div class="navigation"></div>
-    <nav>
-        <ul>
-            <li> <img src="techsens3.jpg" alt="photo du logo" class="img1" /> </li>
-            <li><a href="accueil.php">Accueil</a></li>
-            <li class="déroulant"><a href="#Histoire">Notre histoire &ensp;</a>
-            <li><a href="identification.php">Se connecter</a></li>
-            <li><a href="aide.php">Aide</a></li>
-
-        </ul>
-    </nav>
-    </div>-->
-
        <?php
          if(!isset($_SESSION)){
             session_start();
