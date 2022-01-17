@@ -375,16 +375,7 @@ div.Chiffres {
     margin-left: 10%;
 }
 
-.intro {
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 7px;
-    width: 700px;
-    background-color: darkseagreen;
-    color: white;
-    font-size: 30px;
-}
+
 
 
 /* Photo greenware corentin celton */
@@ -501,11 +492,37 @@ div.Chiffres {
     margin: 0 500px;
 }
 
-.img30 {
-    width: 150px;
-    display: block;
-    float: left;
-    margin-top: -300px;
+/*_____________________________________________Page Profil (home.php)________________*/
+
+.contacter2 {
+    font-size: 3em;
+    font-family: Bradley Hand, cursive;
+    margin-left: 25px;
+    color: darkseagreen;
+}
+
+.intro {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 7px;
+    width: 700px;
+    background-color: darkseagreen;
+    color: white;
+    font-size: 30px;
+}
+
+.txt1 {
+    font-size: 1.15em;
+    font-family: arial;
+    text-decoration: underline;
+}
+
+.formulaire2 {
+    margin-left: 32%;
+    text-align: justify;
+    font-size: 1.25em;
+    width: 30%;
 }
 
 .button2 {
@@ -527,32 +544,28 @@ div.Chiffres {
     box-shadow: 0 8px 16px 0;
 }
 
-.contacter2 {
-    font-size: 3em;
-    font-family: Bradley Hand, cursive;
-    margin-left: 25px;
-    color: darkseagreen;
-}
-
-.formulaire2 {
-    margin-left: 32%;
-    text-align: justify;
-    font-size: 1.25em;
-    width: 30%;
-}
-
 .texteleft {
     float: left;
     width: 10%;
 }
 
-.pdp {
+.photo_de_profil {
     color: darkseagreen;
     font-size: 1.7em;
     margin-top: -350px;
     float: left;
+    margin-left: 100px;
 }
 
+.img_de_profil {
+    width: 150px;
+    display: block;
+    float: left;
+    margin-top: -300px;
+    margin-left: 100px;
+}
+
+/*jsp ou c'est*/
 .blabla {
     float: center;
     width: 50%;
@@ -561,14 +574,10 @@ div.Chiffres {
     z-index: 100000;
 }
 
-.txt1 {
-    font-size: 1.15em;
-    font-family: arial;
-    text-decoration: underline;
-}
 
 
-/*footer*/
+
+/*_____________________________________________footer______________*/
 
 .footer {
     top: 100%;
@@ -612,7 +621,7 @@ div.Chiffres {
     color: #F3F3F3;
     text-align: center;
     opacity: 0.9;
-    margin-bottom: 0px;
+    margin-top: 200px;
 }
 
 .footer3 {
