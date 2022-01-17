@@ -1057,3 +1057,17 @@ h2.Hun {
     height: 150px;
     border: 2px solid darkseagreen;
 }
+
+/*MAP*/
+.map{
+    margin-left: 11%;
+    margin-top: 2%;
+    position: relative;
+}
+.t{
+    font-size: 22px;
+    margin-top: 2000px;
+    margin-left: 200px;
+    position: relative;
+}
+
