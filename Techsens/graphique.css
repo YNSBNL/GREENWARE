@@ -314,14 +314,15 @@ h1.Techsens {
 .text3 {
     margin-left: 10%;
     text-align: center;
-    font-size: 17px;
+    font-size: 1.5em;
     color: #075244;
     width: 20%;
+    margin-top: -2%;
 }
 
 .text2 {
     text-align: center;
-    font-size: 17px;
+    font-size: 1.5em;
     color: #075244;
     width: 20%;
 }
@@ -329,7 +330,7 @@ h1.Techsens {
 .text4 {
     margin-left: 10%;
     text-align: center;
-    font-size: 17px;
+    font-size: 1.5em;
     color: #075244;
     width: 20%;
 }
@@ -580,7 +581,7 @@ div.Chiffres {
     color: #F3F3F3;
     text-align: center;
     opacity: 0.9;
-    margin-top: 2500px;
+    margin-top: 3000px;
 }
 
 .photologo {
@@ -1057,3 +1058,17 @@ h2.Hun {
     height: 150px;
     border: 2px solid darkseagreen;
 }
+
+/*MAP*/
+.map{
+    margin-left: 11%;
+    margin-top: 2%;
+    position: relative;
+}
+.t{
+    font-size: 22px;
+    margin-top: 2000px;
+    margin-left: 200px;
+    position: relative;
+}
+
