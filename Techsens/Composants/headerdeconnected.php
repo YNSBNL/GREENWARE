@@ -14,11 +14,11 @@
             <nav>
             <ul>
                 <a href="accueil.php"> <img src="maison.png" alt="photo du logo" /> </a>
-                    <li><a href="login.php">S'identifier</a></li>
+                    <li><a href="about.php">About</a></li>
                     <li><a href="quizz.php">Quizz</a></li>                    
                     <li><a href="contact.php">Nous contacter</a></li>
                     <li><a href="aide.php">Aide</a></li>
-                    <li style="float:right"><a class="active" href="#about">About</a></li>
+                    <li style="float:right"><a class="active" href="login.php">S'identifier</a></li>
             </ul>
             </nav>
         </div>
