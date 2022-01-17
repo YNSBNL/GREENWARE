@@ -1,0 +1,72 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  min-height: 100vh;
+  background: #eef0ee;
+  color: darkseagreen;
+}
+body h1 {
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+  font-size: 3rem;
+}
+body h1 span,
+body h1 i {
+  color: #02ff0fda;
+}
+body h3 {
+  color: darkseagreen;
+  font-size: 1.5rem;
+}
+body .container .choices {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 3rem auto 3rem;
+  width: 500px;
+}
+body .container .choices button {
+  flex: 1 0 45%;
+  width: 200px;
+  height: 100px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  margin: 0.4rem;
+  outline: none;
+  background: #dfe4ea;
+  user-select: none;
+  font-weight: 400;
+}
+body .container .choices button:hover {
+  background: darkseagreen;
+  transition: 0.5s;
+}
+body .container .choices button:active {
+  transform: scale(0.9);
+  transition: transform 0.1s;
+}
+body .container .choices button p {
+  font-size: 1.3rem;
+  margin: 0;
+}
+body #progress {
+  font-size: 1.3rem;
+  color: darkseagreen;
+  text-align: justify;
+  margin-left: 10rem;
+  margin-left: 10rem;
+  margin: 1rem auto 1rem;
+}
+
+header{
+  width: 100% ;
+}
