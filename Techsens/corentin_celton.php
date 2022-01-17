@@ -4,60 +4,8 @@
 <head>
     <meta content="text/html; charset=utf-8" http-equiv="content-type">
     <link href="graphique.css" rel="stylesheet">
-    <script>
-    var arr_num = Array.from({length: 4}, () => (Math.random() * (900 - 600 + 1) + 600));
-    
-    
-
-    var currentdate = new Date(); 
-var datetime = currentdate.getDate() + "/"
-                + (currentdate.getMonth()+1)  + "/" 
-                + currentdate.getFullYear() + " @ "  
-                + currentdate.getHours() + ":"  
-                + currentdate.getMinutes() + ":" 
-                + currentdate.getSeconds();
-
-
-const moyarr = arr_num;
-
-function getAvg(moyarr) {
-  const total = moyarr.reduce((acc, c) => acc + c, 0);
-  return total / moyarr.length;
-}
-
-const average = getAvg(moyarr);
-
-
-
-
-function run(){ 
-    var counter =0;
-    var grid = document.getElementById("grid");
-    for (var i = 0, row; row = grid.rows[i]; i++){
-        row.cells[0].textContent = arr_num[getRandom()];
-        row.cells[1].textContent = datetime;
-        row.cells[2].textContent = average;
-        row.cells[3].textContent = Math.sqrt(average);
-		      
-      
-        
-    }
-    
-    
-}
-
-
-function getRandom(){
-    return Math.floor(Math.random() * arr_num.length) + 0 ;
-    
-}
-
-
-
-
-
-
-</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <script type="text/javascript" src="gares.js"></script>
     <title>Techsens</title>
 </head>
 
@@ -95,7 +43,7 @@ function getRandom(){
     
     
         
-            <div class="center">CAPTEUR-CO2-ZA59</div>
+            <div class="center"><canvas id="myChart" style="width:100%;max-width:600px"></canvas></div>
 
             
        
@@ -174,43 +122,31 @@ function getRandom(){
                 <img src="Haut.png" alt="photo bouton" class="img10" /></a>
         </div>
 
-    <script>
 
-
-
-        function imagefun() {
-            var Image_Id = document.getElementById('getImage');
-            if (Image_Id.src.match("sensor1.gif")) {
-                Image_Id.src = "sensor2.gif" ;
-            }
-            else {
-                Image_Id.src = "sensor1.gif";
-            }
-
-    
-
-
-        } 
-        var c = 0;
-    function fu(){
-      if(c==0){
-        document.getElementById('getImage').src = "sensor0.gif";
-        document.getElementById("button").innerHTML = "Turn ON";
-        c=1;
-      }
-      else if(c==1){
-        document.getElementById("getImage").src = "sensor1.gif";
-        document.getElementById("button").innerHTML = "Turn OFF";
-        c=0;
-      }
-    } 
-        
-       
-
-
-             
-    </script>
 
 </body>
+<script type="text/javascript">
+	
+		var xValues = ["1ère mesure", "2ème mesure", "3ème mesure", "4ème mesure"];
+		var yValues = [firstNumber, secondNumber, thirdNumber, fourthNumber];
+		var barColors = ["red", "green","blue","orange","brown"];
 
+		new Chart("myChart", {
+		  type: "bar",
+		  data: {
+		    labels: xValues,
+		    datasets: [{
+		      backgroundColor: barColors,
+		      data: yValues
+		    }]
+		  },
+		  options: {
+		    legend: {display: false},
+		    title: {
+		      display: true,
+		      text: "Graphique des données sur les particules fines (en quelques secondes)"
+		    }
+		  }
+		});
+</script>
 </html>
