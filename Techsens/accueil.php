@@ -41,21 +41,21 @@
         <img class="paysage1" src="gare.png" alt="photo background" onmouseenter="textappears()" 
         onmouseleave="textleave()"/>
         <div class="titre1"> INNOVATION</div>
-        <div class="paragraphe1"> Quam quidem partem accusationis admiratus sum et moleste tuli potissimum esse Atratino datam. Neque enim decebat neque aetas illa postulabat neque, id quod animadvertere poteratis, pudor patiebatur optimi </div>
+        <div class="paragraphe1"> Techsens innove en permanence afin d'offrir à ses clients la technologie la plus efficace pour les aider à améliorer leur impact sur l'environnement. Nous considérons que l'innovation est la clé pour développer des solutions toujours plus efficaces. </div>
     </div>
 
     <div class="imgaj2">
         <img class="paysage2" src="ecologie.png" alt="photo background" onmouseenter="textappears1()" 
         onmouseleave="textleave1()"/>
         <div class="titre2"> ECOLOGIE</div>
-        <div class="paragraphe2"> Quam quidem partem accusationis admiratus sum et moleste tuli potissimum esse Atratino datam. Neque enim decebat neque aetas illa postulabat neque, id quod animadvertere poteratis, pudor patiebatur optimi </div>
+        <div class="paragraphe2"> Techsens a toujours mis l'écologie au centre de ses préoccupation. En effet le but de notre société est de pouvoir développer des solutions pour les particuliers et les professionnels afin de réduire leur consommation énergétique. Nous faisons le maximum au quotidien pour être plus écologiques ensembles </div>
     </div>
 
     <div class="imgaj3">
         <img class="paysage3" src="technologie.png" alt="photo background" onmouseenter="textappears2()" 
         onmouseleave="textleave2()"/>
         <div class="titre3"> TECHNOLOGIE</div>
-        <div class="paragraphe3"> Quam quidem partem accusationis admiratus sum et moleste tuli potissimum esse Atratino datam. Neque enim decebat neque aetas illa postulabat neque, id quod animadvertere poteratis, pudor patiebatur optimi </div>
+        <div class="paragraphe3"> Techsens utilise la technologie afin de pouvoir développer ses solutions. En effet nous considérons que la technologie est la pierre angulaire de nos projets puisqu'elle nous permet de pouvoir adapter notre innovation à la vie de tout les jours. </div>
     </div>
 
 
@@ -99,6 +99,11 @@
          une pièce quand personne n’y est et donc d’économiser de l’énergie. Il peut être utile aux particuliers comme aux professionnels et est extrêmement fiable
           comme l’attestent nos 99% de clients satisfaits. </div>    
     </div>
+
+    <div class="loc">
+        <div class="t"> Adresses de nos capteurs</div>
+        <iframe src="https://www.google.com/maps/d/embed?mid=1OiCnuAZP8BTITX7955ScqvZUyVuRpwE1&ehbc=2E312F" width="1500" height="480" class="map"></iframe>
+    </div>
 <br>
 <br>
 <br>
@@ -128,6 +133,10 @@
                     <label for="end"> 
                         <a href="#"> Mentions légales</a> | <a href="#"> Politique de confidentialité</a></label></div>
     </div>
+    <div id="scrollUp">
+            <a href="#haut" class="top">
+                <img src="Haut.png" alt="photo bouton" class="img10" /></a>
+        </div>
 </body>
 
 
