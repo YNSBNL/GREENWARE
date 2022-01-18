@@ -80,13 +80,22 @@ if (isset($_POST['but_logout'])) {
  mysqli_close($con);
 ?>
 
-<div><center><h2>Registration Form.</h2></center></div>
+<div><center><h2>Ajouter un utilisateur</h2></center></div>
 	<form action='config3.php' method='POST'>
 		<label for="user">Username:</label>	<br/>
 		<input type='text' name='user' id="user"  required/><br/>
 		<label for="user">Password:</label>	<br/>
 		<input type='password' name='pass' id="pass"  required/><br/>
 		<input type='submit' name='sentForm' id="sentForm" />
+	</form>
+
+
+	<div><center><h2>Supprimer un utilisateur : séléctionnez son pseudonyme</h2></center></div>
+	<form action='config3.php' method='POST'>
+		<label for="user">Username:</label>	<br/>
+		<input type='text' name='user' id="user"  required/><br/>
+		
+		<input type='submit' name='delete' id="sentForm" />
 	</form>
 
 
