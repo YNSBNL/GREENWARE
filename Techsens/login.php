@@ -18,7 +18,7 @@ if (isset($_POST['but_submit'])) {
             $remoteip = $_SERVER['REMOTE_ADDR'];
             $url = "https://www.google.com/recaptcha/api/siteverify?secret=$secret&response=$response&remoteip=$remoteip";
             $fire = file_get_contents($url);
-            $data = json_decode($fire);}
+            $data = json_decode($fire);
 
         if ($result-> num_rows>0) {
             $_SESSION['connected'] = true;  
@@ -39,7 +39,7 @@ if (isset($_POST['but_submit'])) {
     else{
         echo " Remplir le Captcha";
     }
-
+    }
 }
 ?>
 <!DOCTYPE html>
