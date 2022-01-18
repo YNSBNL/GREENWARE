@@ -99,9 +99,3 @@ if (isset($_POST['but_logout'])) {
 
 
 
-
-
-
-
-
-</html>
