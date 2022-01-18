@@ -945,12 +945,16 @@ div.Chiffres {
 
 
 /*notre histoire*/
+.imaagee1{
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: none;
+}
 
 .building {
     width: 54%;
-    height: 504px;
     margin-left: 5%;
-    margin-top: 100px;
+    margin-top: 10%;
 }
 
 .title1 {
@@ -977,7 +981,6 @@ div.Chiffres {
 
 .greeenware {
     width: 54%;
-    height: 504px;
     float: right;
     margin-right: 5%;
     margin-top: 50px;
@@ -1007,7 +1010,6 @@ div.Chiffres {
 
 .sensmoov {
     width: 54%;
-    height: 504px;
     margin-left: 5%;
     margin-top: 50px;
 }
