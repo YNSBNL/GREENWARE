@@ -37,8 +37,7 @@ if (isset($_POST['but_logout'])) {
         <center>
             <p class="contacter2"> Votre Profil: </p>
         </center>
-        <span>
-
+        
             <div class="formulaire2">
                 <form class="intro">
                     <p class="txt1"> Vos Informations Personnelles </p>
@@ -61,7 +60,7 @@ if (isset($_POST['but_logout'])) {
                     ?>
                     <br><br>
                     <a href="aide.php" class="button2">Information incorrecte ? Contactez-nous !</a>
-                    <div class="texteleft">
+                    
         
                 </form>
 
@@ -92,16 +91,6 @@ if (isset($_POST['but_logout'])) {
                         <a href="#" class="white34"> Mentions légales</a> | <a href="#" class="white34"> Politique de confidentialité</a></label></div>
 </div>
 
-
 </body>
-
-</html>
-
-
-
-
-
-
-
 
 </html>

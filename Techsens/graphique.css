@@ -502,6 +502,13 @@ div.Chiffres {
     color: darkseagreen;
 }
 
+.formulaire2 {
+    margin-left: 32%;
+    text-align: justify;
+    font-size: 1.25em;
+    width: 30%;
+}
+
 .intro {
     text-align: center;
     margin-left: auto;
@@ -517,13 +524,6 @@ div.Chiffres {
     font-size: 1.15em;
     font-family: arial;
     text-decoration: underline;
-}
-
-.formulaire2 {
-    margin-left: 32%;
-    text-align: justify;
-    font-size: 1.25em;
-    width: 30%;
 }
 
 .button2 {
@@ -545,10 +545,7 @@ div.Chiffres {
     box-shadow: 0 8px 16px 0;
 }
 
-.texteleft {
-    float: left;
-    width: 10%;
-}
+
 
 .photo_de_profil {
     color: darkseagreen;
