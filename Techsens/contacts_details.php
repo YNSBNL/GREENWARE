@@ -2,7 +2,7 @@
 $servername="localhost";
 $username="root";
 $password="";
-$database_name="databaseC";
+$database_name="techsens";
 
 $conn = mysqli_connect($servername,$username,$password,$database_name);
 

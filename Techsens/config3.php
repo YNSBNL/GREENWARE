@@ -35,6 +35,21 @@
 		}
 
 
-
+	if ($_SERVER['REQUEST_METHOD'] == 'POST' && isSet($_POST['addfaq'])) {
+		$conn2 = mysqli_connect('localhost', 'root', '','techsens') or die("Connection failed: " . mysqli_connect_error());
+		if (isSet($_POST['message'])) {
+			$message1 = $_POST['message'];
+			
+ 
+			$sql2 = "INSERT INTO `faq` (`message`) VALUES ('$message1')";
+ 
+			$query2 = mysqli_query($conn2,$sql2);
+			if ($query2) {
+				echo 'Data Successfully Saved!';
+			} else {
+				echo "An error occured while save the data.";
+			}
+		}
+	}
 
 ?>
