@@ -10,6 +10,9 @@ let titre3=document.querySelector(".titre3");
 let paysage3=document.querySelector(".paysage3");
 let paragraphe3=document.querySelector(".paragraphe3");
 
+
+/*ANIMATION PICTURES*/
+
 function textappears(){
 	titre1.style.opacity="1"
 	paragraphe1.style.opacity="1"
@@ -45,3 +48,18 @@ function textleave2(){
 	paragraphe3.style.opacity="0"
 	paysage3.style.opacity="1"
 }
+
+
+/*CHECK EMAIL*/
+
+function checkEmail(email) {
+            ar email = document.myForm.email.value;
+			atpos = email.indexOf("@");
+			dotpos = email.lastIndexOf(".");
+
+			if (atpos < 1 || ( dotpos - atpos < 2 )) {
+				alert("Please enter correct email ID")
+				document.myForm.email.focus() ;
+				return false;
+}
+         }
