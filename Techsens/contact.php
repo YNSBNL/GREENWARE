@@ -37,7 +37,7 @@
 						<input class="boxe" type="text" name="FirstName" id="FirstName" required />
 						<br>
 						<label for="email">E-mail professionnel*</label><br>
-						<input class="boxe" type="text" name="email" id="email" required />
+						<input class="boxe" type="email" name="email" id="email" required />
 						<br>
 						<label for="phone">Téléphone*</label><br>
 						<input class="boxe" type="text" name="phone" id="phone" required />
@@ -51,7 +51,7 @@
 								<a href="#"> politique de confidentialité</a> et j'autorise la team TechSens à m'envoyer des informations</label><br />
 						</p>
 
-						<input class="button51" type="Submit" name="Submit" id="Submit" value="Submit" onsubmit="return checkEmail()">
+						<input class="button51" type="Submit" name="Submit" id="Submit" value="Submit">
 
 
 				</form>
@@ -107,4 +107,3 @@
 </body>
 
 </html>
-<script src="test.js"></script>

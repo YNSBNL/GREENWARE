@@ -49,17 +49,3 @@ function textleave2(){
 	paysage3.style.opacity="1"
 }
 
-
-/*CHECK EMAIL*/
-
-function checkEmail(email) {
-            ar email = document.myForm.email.value;
-			atpos = email.indexOf("@");
-			dotpos = email.lastIndexOf(".");
-
-			if (atpos < 1 || ( dotpos - atpos < 2 )) {
-				alert("Please enter correct email ID")
-				document.myForm.email.focus() ;
-				return false;
-}
-         }
