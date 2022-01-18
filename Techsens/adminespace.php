@@ -1,16 +1,9 @@
 <?php
-include "config2.php";
+
+include "config3.php";
 
 // Check user login or not
-if (!isset($_SESSION['uname'])) {
-    header('Location: adminid.php');
-}
 
-// logout
-if (isset($_POST['but_logout'])) {
-    session_unset();
-    header('Location: adminid.php');
-}
 ?>
 <!doctype html>
 <html>
@@ -95,7 +88,13 @@ if (isset($_POST['but_logout'])) {
 		<label for="user">Username:</label>	<br/>
 		<input type='text' name='user' id="user"  required/><br/>
 		
-		<input type='submit' name='delete' id="sentForm" />
+		<input type='submit' name='delete' id="delete" />
+	</form>
+<div><center><h2>Additionner FAQ</h2></center></div>
+	<form action='config3.php' method='POST'>
+		<label for="message">FAQ:</label>	<br/>
+		<input type='text' name='message' id="message"  required/><br/>
+		<input type='submit' name='addfaq' id="addfaq" />
 	</form>
 
 
