@@ -1,13 +1,23 @@
-@media screen and (max-width: 1200px){
-    .building{ 
+
+
+@media screen (min-width: 650px) and (max-width: 1200px){
+    
+
+}
+
+
+
+@media screen and (max-width: 650px){
+
+    .building{
         opacity: 0;
-     }
-     .greeenware{
+    }
+    .greeenware{
         opacity: 0;
-     }
-     .sensmoov{
+    }
+    .sensmoov{
         opacity: 0;
-     }
+    }
 }
 
 
@@ -962,9 +972,10 @@ div.Chiffres {
 
 /*notre histoire*/
 
+
 .building {
     width: 54%;
-    height: auto;
+    height: 504px;
     margin-left: 5%;
     margin-top: 100px;
 }
@@ -986,9 +997,10 @@ div.Chiffres {
     color: #075244;
     line-height: 40px;
     width: 30%;
+    height: 100%;
     float: right;
     margin-right: 8%;
-    margin-top: 60px;
+    margin-top: 2%;
 }
 
 .greeenware {
@@ -1022,7 +1034,7 @@ div.Chiffres {
 
 .sensmoov {
     width: 54%;
-    height: auto;
+    height: 504px;
     margin-left: 5%;
     margin-top: 50px;
 }
