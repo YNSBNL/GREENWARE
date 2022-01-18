@@ -80,23 +80,25 @@ if (isset($_POST['but_logout'])) {
  mysqli_close($con);
 ?>
 
-<form name = "form1" action="config3.php" method = "post" enctype = "multipart/form-data" >    
-            <div class = "container">    
-                <div class = "form_group">    
-                    <label>id</label>    
-                    <input type = "text" name = "fname" value = "" required/>    
-                </div>    
-                <div class = "username">    
-                    <label>Middle Name:</label>    
-                    <input type = "text" name = "mname" value = "" required />    
-                </div>    
-                    
-                <div class = "form_group">    
-                    <label>Password:</label>    
-                    <input type = "password" name = "pwd" value = "" required/>    
-                </div>    
-            </div>    
-        </form> 
+<div><center><h2>Ajouter un utilisateur</h2></center></div>
+	<form action='config3.php' method='POST'>
+		<label for="user">Username:</label>	<br/>
+		<input type='text' name='user' id="user"  required/><br/>
+		<label for="user">Password:</label>	<br/>
+		<input type='password' name='pass' id="pass"  required/><br/>
+		<input type='submit' name='sentForm' id="sentForm" />
+	</form>
+
+
+	<div><center><h2>Supprimer un utilisateur : séléctionnez son pseudonyme</h2></center></div>
+	<form action='config3.php' method='POST'>
+		<label for="user">Username:</label>	<br/>
+		<input type='text' name='user' id="user"  required/><br/>
+		
+		<input type='submit' name='delete' id="sentForm" />
+	</form>
+
+
 <div class="footer2">
         <div class="foot">Techsens est une société cherchant à développer des solutions en accord avec le développement durable.</div>
         <img src="logoo.png" alt="photo du logo" />
