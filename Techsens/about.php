@@ -6,42 +6,16 @@
     <title>Techsens</title>
 </head>
 <body>
-        <!-- Barre de navigation-->
-    <!--
-    <div class="navigation"></div>
-    <nav>
-        <ul>
-            <li> <img src="techsens3.jpg" alt="photo du logo" class="img1" /> </li>
-            <li><a href="accueil.php">Accueil</a></li>
-            <li class="déroulant"><a href="#Histoire">Notre histoire &ensp;</a>
-            <li><a href="identification.php">Se connecter</a></li>
-            <li><a href="aide.php">Aide</a></li>
-
-        </ul>
-    </nav>
-    </div>-->
-    <header id="header">    
-        <div class="topheader">
-            <div class="logomenu">
-            <img src="logoo.png" alt="photo du logo" /> </p></a></div>
-            <div class="phrase">
-                <p>La technologie au coeur de l'environnement </p></div></div>
-
-        <div class="mainheader">            
-        <nav>
-            <ul>
-                <a href="accueil.php"> <img src="maison.png" alt="photo du logo" /> </a>
-                <li><a href="login.php">S'identifier</a></li>
-                <li><a href="greenware1.php">Greenware</a></li>
-                <li><a href="quizz.php">Quizz</a></li>
-                <li><a href="contact.php">Nous contacter</a></li>
-                <li><a href="aide.php">Aide</a></li>
-                <li style="float:right"><a class="active" href="about.php">About</a></li>
-                
-
-            </ul>
-        </nav>  
-</div>
+<?php
+         if(!isset($_SESSION)){
+            session_start();
+         }
+         if (isset($_SESSION['connected']) && $_SESSION['connected'] == true){
+            include("./Composants/headerconnected.php");
+                }
+        else {include("./Composants/headerdeconnected.php");
+    }
+    ?>
 
 <center><h1> Qui sommes-nous ?</h1></center>
 
