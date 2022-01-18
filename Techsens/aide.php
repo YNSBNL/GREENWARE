@@ -4,7 +4,7 @@ include "config.php";
 if(isset($_POST["envoyer"])){
 	if(!empty($_POST["ticket"])){
 		$ticket=htmlspecialchars($_POST["ticket"]);
-		$addticket = $con->prepare("INSERT INTO ticket(content) VALUES(?)");
+		$addticket = $con->prepare("INSERT INTO aide(content) VALUES(?)");
 		$addticket->execute(array($ticket));
 	}
 }
