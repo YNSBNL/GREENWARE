@@ -10,28 +10,36 @@ if (isset($_POST['but_submit'])) {
 
         $sql_query = "select all * from users where username='" . $uname . "' and password='" . $password . "'";
         $result = $con->query($sql_query);
+    
 
+        if (isset($_POST['g-recaptcha-response'])) {
+            $secret = "6Lf8Ru0dAAAAAEZVVCFQuG62e3xQS0AwXnxQKixo";
+            $response = $_POST['g-recaptcha-response'];
+            $remoteip = $_SERVER['REMOTE_ADDR'];
+            $url = "https://www.google.com/recaptcha/api/siteverify?secret=$secret&response=$response&remoteip=$remoteip";
+            $fire = file_get_contents($url);
+            $data = json_decode($fire);
 
         if ($result-> num_rows>0) {
             $_SESSION['connected'] = true;  
             $_SESSION['uname'] = $uname;
+            if($data->success==true)
             header('Location: home.php');
         } else {
-            echo "Mot de Passe incorrect";
+            echo "Nom d'utilisateur ou Mot de Passe incorrect";
         }
     }
-}
-?>
-<?php
 
-if (isset($_POST['submit'])) {
-    $secret = "6Lf8Ru0dAAAAAEZVVCFQuG62e3xQS0AwXnxQKixo";
-    $response = $_POST['g-recaptcha-response'];
-    $remoteip = $_SERVER['REMOTE_ADDR'];
-    $url = "https://www.google.com/recaptcha/api/siteverify?secret=$secret&response=$response&remoteip=$remoteip";
-    $data = file_get_contents($url);
-    $row = json_decode($data, true);
-
+    if($data->success==true){
+        if ($result-> num_rows>0) {
+            $_SESSION['connected'] = true;  
+            $_SESSION['uname'] = $uname;
+            header('Location: home.php');}
+    }
+    else{
+        echo " Remplir le Captcha";
+    }
+    }
 }
 ?>
 <!DOCTYPE html>
@@ -42,6 +50,7 @@ if (isset($_POST['submit'])) {
     <link href="graphique.css" media="all" rel="stylesheet" type="text/css">
     <title>Techsens</title>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
 </head>
 <body>
     
@@ -60,7 +69,7 @@ if (isset($_POST['submit'])) {
           <br>
             <p>
             <div class="block-formulaire">
-                <form method="post" class="formulaire" action="">
+                <form method="POST" class="formulaire" action="">
                     <fieldset class="fieldset2">
                         <h1 class="titre-du-formulaire">S'identifier</h1>
                         <div class="block-champ">
@@ -68,17 +77,16 @@ if (isset($_POST['submit'])) {
                         </div>
                         <div class="block-champ">
                             <input class="champ" type="password" id="txt_uname" name="txt_pwd" placeholder="Password">
-                            
                             <br>
                             <br>
                             <br>
                             <br>
                             <center><div class="row">
-                                <div class="g-recaptcha" data-sitekey="6Lf8Ru0dAAAAAJpzstp9a79qEE2wdosC7uGkPjVV"></div>
+                                <div class="g-recaptcha" data-sitekey="6Lf8Ru0dAAAAAJpzstp9a79qEE2wdosC7uGkPjVV" aria-required></div>
                             </div></center>
                             <center><input type="submit" class="button1" name="but_submit" id="but_submit" value="Se Connecter"></center>
                             <div class="lien-champ">
-                                <a href="" class="lien">Mot de Passe Oublié</a>
+                                <a href="contact.php" class="lien">Mot de Passe Oublié</a>
                             </div>
                 </form>
             </div>

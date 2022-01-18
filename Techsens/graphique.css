@@ -118,7 +118,7 @@ img {
 
 .formulaire {
     width: 60%;
-    height: 550px;
+    height: 450px;
     background: darkseagreen;
     margin: auto;
     border-radius: 10px;
@@ -155,15 +155,13 @@ img {
 
 .button1 {
     width: 380px;
-    height: 40px;
+    height: 30px;
     background: white;
     border-radius: 5px;
     color: darkseagreen;
     font-size: 20px;
     margin: 15px;
     position: relative;
-    top: 60px;
-    margin-left: 100px;
 }
 
 .button1:hover {
@@ -175,7 +173,6 @@ img {
     margin: auto;
     text-align: center;
     position: relative;
-    top: 80px;
     font-size: 17px;
 }
 
@@ -377,8 +374,6 @@ div.Chiffres {
 }
 
 
-
-
 /* Photo greenware corentin celton */
 
 .celton {
@@ -493,6 +488,7 @@ div.Chiffres {
     margin: 0 500px;
 }
 
+
 /*_____________________________________________Page Profil (home.php)________________*/
 
 .contacter2 {
@@ -561,7 +557,9 @@ div.Chiffres {
     margin-left: 100px;
 }
 
+
 /*jsp ou c'est*/
+
 .blabla {
     float: center;
     width: 50%;
@@ -569,8 +567,6 @@ div.Chiffres {
     text-align: justify;
     z-index: 100000;
 }
-
-
 
 
 /*_____________________________________________footer______________*/
