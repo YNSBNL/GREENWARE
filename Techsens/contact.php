@@ -24,7 +24,7 @@
 			<p class="contacter4"> Contactez-nous </p><br>
 			<img scr="enveloppe.pnj">
 			<span>
-				<form action="contacts_details.php" method="post">
+				<form action="contacts_details.php" method="post" name="myForm" >
 					<div class="formulaire4">
 
 						<label for="Society">Société*</label><br>
@@ -51,7 +51,7 @@
 								<a href="#"> politique de confidentialité</a> et j'autorise la team TechSens à m'envoyer des informations</label><br />
 						</p>
 
-						<input class="button51" type="Submit" name="Submit" id="Submit" value="Submit">
+						<input class="button51" type="Submit" name="Submit" id="Submit" value="Submit" onsubmit="return checkEmail()">
 
 
 				</form>
@@ -107,3 +107,4 @@
 </body>
 
 </html>
+<script src="test.js"></script>
