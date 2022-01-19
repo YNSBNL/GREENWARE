@@ -62,7 +62,7 @@
 
 
 
-<div class="imaagee1">
+        <div class="imaagee1">
         <img class="building" src="building.png" alt="photo background" />
         <div class="title1"> Notre entreprise</div>
         <div class="paragraffe1"> Techsens est une société créée en 2018 qui met le numérique au service de l'environnement. À travers nos différents projets 
@@ -70,7 +70,7 @@
             sont nos deux produits Sens’moov et Greenware qui connaissent tout deux un beau succès.</div>
     </div>
 
-<div class="imaagee2">
+    <div class="imaagee2">
         <img class="greeenware" src="greeenware.png" alt="photo background" />
         <div class="title2"> GREENWARE</div>
         <div class="paragraffe2"> Notre nouveau produit, Greenware, détecte le taux de particules fines dans l’air et permet aux sociétés et municipalités qui l’utilisent 
@@ -78,7 +78,7 @@
             en direct où sont les plus gros taux de particules et y remédier en impactant le moins de personnes possibles. </div>
     </div>
 
-<div class="imaagee3">
+    <div class="imaagee3">
         <img class="sensmoov" src="sensmoov.png" alt="photo background" />
         <div class="title3"> SENS'MOOV</div>
         <div class="paragraffe3"> Sens’Moov est le premier projet que nous avons développé, c’est un détecteur de mouvement qui permet de couper l'électricité dans
@@ -87,7 +87,7 @@
     </div>
 
     <div class="loc">
-        <div class="t"> Adresses de nos capteurs</div>
+        <p class="t"> Adresses de nos capteurs</p>
         <iframe src="https://www.google.com/maps/d/embed?mid=1OiCnuAZP8BTITX7955ScqvZUyVuRpwE1&ehbc=2E312F" width="1500" height="480" class="map"></iframe>
     </div>
 <br>
