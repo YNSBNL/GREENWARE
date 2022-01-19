@@ -1,28 +1,16 @@
+@media screen and (min-width: 650px) and (max-width: 1200px) {}
 
-
-@media screen and (min-width: 650px) and (max-width: 1200px){
-    
-
-}
-
-
-
-@media screen and (max-width: 650px){
-
-    .building{
+@media screen and (max-width: 650px) {
+    .building {
         opacity: 0;
     }
-    .greeenware{
+    .greeenware {
         opacity: 0;
     }
-    .sensmoov{
+    .sensmoov {
         opacity: 0;
     }
 }
-
-
-
-
 
 nav {
     width: 100%;
@@ -972,7 +960,6 @@ div.Chiffres {
 
 /*notre histoire*/
 
-
 .building {
     width: 54%;
     height: 504px;
@@ -1091,6 +1078,8 @@ h2.Hun {
 /*MAP*/
 
 .map {
+    width: 950px;
+    height: 350px;
     margin-left: 11%;
     margin-top: 2%;
     position: relative;
@@ -1098,7 +1087,7 @@ h2.Hun {
 
 .t {
     font-size: 22px;
-    margin-top: 2000px;
+    margin-top: 1900px;
     margin-left: 200px;
     position: relative;
 }

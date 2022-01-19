@@ -88,7 +88,7 @@
 
     <div class="loc">
         <p class="t"> Adresses de nos capteurs</p>
-        <iframe src="https://www.google.com/maps/d/embed?mid=1OiCnuAZP8BTITX7955ScqvZUyVuRpwE1&ehbc=2E312F" width="1500" height="480" class="map"></iframe>
+        <iframe src="https://www.google.com/maps/d/embed?mid=1OiCnuAZP8BTITX7955ScqvZUyVuRpwE1&ehbc=2E312F"  class="map"></iframe>
     </div>
 <br>
 <br>
