@@ -1,21 +1,16 @@
-<!DOCTYPE html>          
+<!DOCTYPE html>
 <html>
-	<head>
-	<meta charset="utf-8" /> 
-	<link href="graphique.css" media="all" rel="stylesheet" type="text/css">
+<head>
+    <meta charset="utf-8" />
+    <link href="graphique.css" media="all" rel="stylesheet" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-<title>QUIZZ</title>
-<link
-      rel="stylesheet"
-      href="//use.fontawesome.com/releases/v5.8.2/css/all.css"/>
+    <title>QUIZZ</title>
     <link href="./QUIZ1.css" rel="stylesheet" />
-	
-</style>
 </head>
-<body>
 
-       <?php
+<body>
+    <?php
          if(!isset($_SESSION)){
             session_start();
          }
@@ -25,77 +20,77 @@
         else {include("./Composants/headerdeconnected.php");
     }
     ?>
-        <br>
-    <br><br>
-
-
-    <div class="container">
-
-    		
-
-    <p class="contacter"> Mini-Jeu : Quizz </p><br>
-    <div id="quiz">
+<div class="container">
+        <p class="contacter"> Mini-Jeu : Quizz </p><br>
+        <div id="quiz">
             <h1><span>Q</span>uizz <i class="far fa-question-circle"></i></h1>
 
             <h2 id="question"></h2>
 
             <h3 id="score"></h3>
-          
+
 
             <div class="choices">
                 <div>
-                <button id="guess0" class="btn">
-                    <p id="choice0"></p>
-                  </button>
+                    <button id="guess0" class="btn">
+                        <p id="choice0"></p>
+                    </button>
                 </div>
 
                 <div>
-                  <button id="guess1" class="btn">
-                    <p id="choice1"></p>
-                  </button>
+                    <button id="guess1" class="btn">
+                        <p id="choice1"></p>
+                    </button>
                 </div>
 
                 <div>
-                  <button id="guess2" class="btn">
-                    <p id="choice2"></p>
-                  </button>
+                    <button id="guess2" class="btn">
+                        <p id="choice2"></p>
+                    </button>
                 </div>
 
                 <div>
-        
-                  <button id="guess3" class="btn">
-                    <p id="choice3"></p>
-                  </button>
+
+                    <button id="guess3" class="btn">
+                        <p id="choice3"></p>
+                    </button>
                 </div>
-            
-              
-            <p id="progress"></p>
-          </div>
+                <p id="progress"></p>
+            </div>
         </div>
-        <script src="./QUIZ1.js" type="text/javascript"></script>
 
-    	</div>
-      <div class="footer6">
-            <div class="foot">Techsens est une société cherchant à développer des solutions en accord avec le développement durable.</div>
-            <img src="logoo.png" alt="photo du logo" />
-            
-            <div class="content">
-                <div class="barre">
+    </div>
+    <div class="footer6">
+        <div class="foot">Techsens est une société cherchant à développer des solutions en accord avec le développement
+            durable.</div>
+        <img src="logoo.png" alt="photo du logo" />
+
+        <div class="content">
+            <div class="barre">
                 <br>
-                <p>---------------------------------------------------</p></div>
-                <div class="photologo">
+                <p>---------------------------------------------------</p>
+            </div>
+            <div class="photologo">
                 <div class="logofb">
-                    <a href="accueil.html"> <img src="fb.png" alt="logo fb" /> </p></a></div>
+                    <a href="accueil.html"> <img src="fb.png" alt="logo fb" /> </p></a>
+                </div>
                 <div class="logoinsta">
-                    <a href="accueil.html"> <img src="insta.png" alt="logo insta" /> </a></div>
+                    <a href="accueil.html"> <img src="insta.png" alt="logo insta" /> </a>
+                </div>
                 <div class="logotwitter">
-                    <a href="accueil.html"> <img src="twitter.png" alt="logo twitter" /></a></div>
+                    <a href="accueil.html"> <img src="twitter.png" alt="logo twitter" /></a>
+                </div>
                 <div class="logolinkedin">
-                    <a href="https://www.linkedin.com/in/techsens-a9887b222"> <img src="linkedin.png" alt="logo linkedin" /> </a></div>
-            </div></div>
-                <div class="end">
-                        <label for="end"> 
-                            <a href="#"> Mentions légales</a> | <a href="#"> Politique de confidentialité</a></label></div>
-
+                    <a href="https://www.linkedin.com/in/techsens-a9887b222"> <img src="linkedin.png"
+                            alt="logo linkedin" /> </a>
+                </div>
+            </div>
+        </div>
+        <div class="end">
+            <label for="end">
+                <a href="#"> Mentions légales</a> | <a href="#"> Politique de confidentialité</a></label>
+        </div>
 </body>
+<script src="./QUIZ1.js" type="text/javascript"></script>
+
 </html>

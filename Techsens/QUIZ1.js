@@ -10,68 +10,67 @@ class Question {
 }
 let questions = [
   new Question(
-    "GreenWare est un projet qui permet d'observer et de mesurer la qualité de l'air sur Paris. ",
-    ["Vrai", "Faux", "Je ne sais pas", "Autres Réponses"],
+    "Techsens est un projet qui permet d'observer et de mesurer la qualité de l'air sur paris. ",
+    ["Vrai", "Faux"],
     "Vrai"
   ),
 
   new Question(
-    "Quel est l'origine principal d'émissions des polluants atmosphériques. (plusieurs réponses possibles)",
+    "Greenware est un capteur visant à detecter",
     [
-      "les phénomènes naturelles. ",
-      "les activités humaines.",
-      "le trafic routier.",
-      "l'éruption volcanique.",
+      "des métaux",
+      "des mouvements",
+      "des particules fines",
+      "des radars",
+    ],
+    "des particules fines" ,
+  ),
+
+  new Question(
+    "Quel est l'origine principal d'émission des polluants atmosphériques ?",
+    [
+      "les phénomènes naturelles ",
+      "les activités humaines",
+      "le trafic routier",
+      "l'éruption volcanique",
     ],
     "les activités humaines"
   ),
 
   new Question(
     "Quels sont les polluants atmosphériques les plus néfastes pour la santé ?",
-    ["l'OZONE", "les particules fines", "le dioxygène", "monoxyde de carbone"],
+    ["l'OZONE", "les particules fines", "le dioxygène", "aucune bonne réponse"],
     "les particules fines"
   ),
 
   new Question(
-    "les particules fines PM10 sont moins dangereuses que les PM2,5.",
-    ["Vrai", "Faux"],
+    "Les particules fines PM10 sont moins dangereuses que les PM 2,5.",
+    ["Vrai","Faux"],
     "Faux"
   ),
 
   new Question(
-    "Quels sont les effets des particules fines sur la santé ?(plusieurs réponses possibles)",
+    "Quels sont les effets des particules fines sur la santé ?",
     [
-      "La cause de maladies respiratoires ou cardiovasculaires",
-      "L'origine d'un cancer",
-      "Augmente les chances d'avoir le diabète",
-      "Développement de migraines"
+      "Une augmentation des maladies respiratoires ou cardiovasculaires",
+      "Une augmentation du nombre de cas atteint de la Covid-19",
+      "Un développement des muscles",
+      "Une baisse de la fertilité et de la fécondité"
     ],
-    "la cause de maladies respiratoires ou cardiavasculaires",
-    "l'origine d'un cancer"
+    "Une augmentation des maladies respiratoires ou cardiovasculaires",
+    
   ),
 
   new Question(
-    "comment peut varier les particules polluants de l'air? (plusieurs réponses possibles) ",
-    [
-      "la méteo",
-      "en fonction des emissions",
-      " en fonction de l'environement",
-      "aucune bonnes réponses",
-    ],
-    "la méteo", "en fonction des emissions",
-    " en fonction de l'environement"
-  ),
-
-  new Question(
-    "il existe des inégalités d'exposition liées à la pollution de l'air.",
-    ["Vrai", "Faux"],
+    "Existe-il des inégalités d'exposition liées à la pollution de l'air ?",
+    ["Vrai", "Faux",],
     "Vrai"
   ),
 
   new Question(
-    "où somme nous le plus exposé aux polluants atmosphériques.",
-    ["à l'intérieur d'une voiture", "En vélo", "En montagne", "aucune bonnes réponses"],
-    "à l'interieur d'une voiture"
+    "Où sommes nous le plus exposé aux polluants atmosphériques ?",
+    ["A l'intérieur d'une voiture", "En vélo", "En montagne", "A la plage"],
+    "A l'intérieur d'une voiture"
   ),
 ];
 
@@ -106,9 +105,9 @@ const display = {
   },
   endQuiz: function () {
     endQuizHTML = `
-      <h1>Quizz terminé !</h1>
+      <h1>Quiz terminé !</h1>
       <h3> Votre score est de : ${quiz.score} / ${quiz.questions.length}</h3>`;
-    this.elementShown("quizz", endQuizHTML);
+    this.elementShown("quiz", endQuizHTML);
   },
   question: function () {
     this.elementShown("question", quiz.getCurrentQuestion().text);
