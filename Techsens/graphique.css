@@ -344,7 +344,7 @@ h1.Techsens {
 
 div.Chiffres {
     width: 86%;
-    margin-left: 14%;
+    margin-left: 20%;
     color: #075244;
 }
 
@@ -363,7 +363,7 @@ div.Chiffres {
     height: 30px;
     position: relative;
     margin-right: 2%;
-    margin-top: -100px;
+    margin-top: 10px;
 }
 
 .Chiffres ul {
@@ -893,9 +893,11 @@ div.Chiffres {
     opacity: 0;
     position: relative;
     margin-top: 50px;
-    margin-left: -20%;
+    margin-left: -22%;
     float: left;
-    font-size: 1.5em;
+    font-size: 2em;
+    font-family: fantasy;
+    font-weight: 700;
 }
 
 .titre2 {
@@ -903,8 +905,10 @@ div.Chiffres {
     position: relative;
     margin-top: 50px;
     float: left;
-    margin-left: -20%;
-    font-size: 1.5em;
+    margin-left: -22%;
+    font-size: 2em;
+    font-family: fantasy;
+    font-weight: 700;
 }
 
 .titre3 {
@@ -912,38 +916,46 @@ div.Chiffres {
     position: relative;
     margin-top: 50px;
     float: left;
-    margin-left: -20%;
-    font-size: 1.5em;
+    margin-left: -22%;
+    font-size: 2em;
+    font-family: fantasy;
+    font-weight: 700;
 }
 
 .paragraphe1 {
     opacity: 0;
     position: relative;
-    margin-top: 100px;
+    margin-top: 150px;
     float: left;
     text-align: center;
     margin-left: -27%;
     width: 20%;
+    font-size: 1.5em;
+    line-height: 40px;
 }
 
 .paragraphe2 {
     opacity: 0;
     position: relative;
-    margin-top: 100px;
+    margin-top: 150px;
     float: left;
     text-align: center;
     margin-left: -27%;
     width: 20%;
+    font-size: 1.5em;
+    line-height: 40px;
 }
 
 .paragraphe3 {
     opacity: 0;
     position: relative;
-    margin-top: 100px;
+    margin-top: 150px;
     float: left;
     text-align: center;
     margin-left: -27%;
     width: 20%;
+    font-size: 1.5em;
+    line-height: 40px;
 }
 
 

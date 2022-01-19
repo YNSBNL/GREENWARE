@@ -16,7 +16,7 @@ let paragraphe3=document.querySelector(".paragraphe3");
 function textappears(){
 	titre1.style.opacity="1"
 	paragraphe1.style.opacity="1"
-	paysage1.style.opacity="0.5"
+	paysage1.style.opacity="0.3"
 
 }
 function textleave(){
@@ -28,7 +28,7 @@ function textleave(){
 function textappears1(){
 	titre2.style.opacity="1"
 	paragraphe2.style.opacity="1"
-	paysage2.style.opacity="0.5"
+	paysage2.style.opacity="0.3"
 
 }
 function textleave1(){
@@ -40,7 +40,7 @@ function textleave1(){
 function textappears2(){
 	titre3.style.opacity="1"
 	paragraphe3.style.opacity="1"
-	paysage3.style.opacity="0.5"
+	paysage3.style.opacity="0.2"
 
 }
 function textleave2(){
