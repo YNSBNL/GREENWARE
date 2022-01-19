@@ -12,17 +12,6 @@
     }
 }
 
-nav {
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 auto;
-    background-color: white;
-    position: sticky;
-}
-
-nav ul {
-    list-style-type: none;
-}
 
 .mainheader ul {
     list-style-type: none;

@@ -1,21 +1,17 @@
 header{
   width: 100% ;
-  
 }
 
 .mainheader ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow:  hidden;
-    /*background-color: #7d9e6d;
-    background-color: #5c834a;*/
+    overflow: hidden;
     background-color: #dde7d6;
     width: 100%;
 }
 
 
-} 
 .mainheader ul li{
     width: 15%;
     height: 60px;

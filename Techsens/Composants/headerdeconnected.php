@@ -1,5 +1,11 @@
-<link href="graphique.css" media="all" rel="stylesheet" type="text/css">
+<!DOCTYPE html>
+<html>
 
+<head>
+<link href="graphique.css" media="all" rel="stylesheet" type="text/css">
+</head>
+
+<body>
 <header id="header">    
         <div class="topheader">
             <div class="logomenu">
