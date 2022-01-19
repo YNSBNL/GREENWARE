@@ -1076,18 +1076,20 @@ h2.Hun {
 
 
 /*MAP*/
-
+.loc{
+    margin: auto;
+    text-align: center;
+    
+}
 .map {
     width: 950px;
     height: 350px;
-    margin-left: 11%;
     margin-top: 2%;
     position: relative;
 }
 
 .t {
     font-size: 22px;
-    margin-top: 1900px;
-    margin-left: 200px;
+    margin-top: 2000px;
     position: relative;
 }
