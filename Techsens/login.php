@@ -1,6 +1,9 @@
 <?php
 include "config.php";
 
+$_SESSION['errormdp']="";
+$_SESSION['errorcaptcha']="";
+
 if (isset($_POST['but_submit'])) {
 
     $uname = mysqli_real_escape_string($con, $_POST['txt_uname']);
@@ -10,8 +13,7 @@ if (isset($_POST['but_submit'])) {
 
         $sql_query = "select all * from users where username='" . $uname . "' and password='" . $password . "'";
         $result = $con->query($sql_query);
-    
-
+     
         if (isset($_POST['g-recaptcha-response'])) {
             $secret = "6Lf8Ru0dAAAAAEZVVCFQuG62e3xQS0AwXnxQKixo";
             $response = $_POST['g-recaptcha-response'];
@@ -23,10 +25,11 @@ if (isset($_POST['but_submit'])) {
         if ($result-> num_rows>0) {
             $_SESSION['connected'] = true;  
             $_SESSION['uname'] = $uname;
+            $_SESSION['errormdp']="";
             if($data->success==true)
             header('Location: home.php');
         } else {
-            echo "Nom d'utilisateur ou Mot de Passe incorrect";
+            $_SESSION['errormdp'] = '<p style="color: darkred;"/> Nom d utilisateur ou Mot de Passe incorrect';
         }
     }
 
@@ -34,10 +37,11 @@ if (isset($_POST['but_submit'])) {
         if ($result-> num_rows>0) {
             $_SESSION['connected'] = true;  
             $_SESSION['uname'] = $uname;
+            $_SESSION['errorcaptcha']="";
             header('Location: home.php');}
     }
     else{
-        echo " Remplir le Captcha";
+        $_SESSION['errorcaptcha'] ='<p style="color: darkred;"/> Remplir le Captcha';
     }
     }
 }
@@ -79,8 +83,8 @@ if (isset($_POST['but_submit'])) {
                             <input class="champ" type="password" id="txt_uname" name="txt_pwd" placeholder="Password">
                             <br>
                             <br>
-                            <br>
-                            <br>
+                            <?php echo $_SESSION['errormdp']?><br>
+                            <?php echo $_SESSION['errorcaptcha']?>
                             <center><div class="row">
                                 <div class="g-recaptcha" data-sitekey="6Lf8Ru0dAAAAAJpzstp9a79qEE2wdosC7uGkPjVV" aria-required></div>
                             </div></center>
