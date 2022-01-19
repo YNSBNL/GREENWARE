@@ -31,7 +31,7 @@ if(isset($_POST['Submit']))
 		echo "New details entry inserted successfully!";
 	}
 	else{
-		echo "Error:" . $sql . "" . mysqli_error($conn);
+		echo "Error:" . $sql  . "" . mysqli_error($conn);
 	}
 	mysqli_close($conn);
 }

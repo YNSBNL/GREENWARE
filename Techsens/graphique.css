@@ -1,4 +1,8 @@
+
+
 @media screen and (min-width: 650px) and (max-width: 1200px) {}
+
+
 
 @media screen and (max-width: 650px) {
     .building {
@@ -12,6 +16,7 @@
     }
 }
 
+/*BARRE DE NAVIGUATION*/
 
 .mainheader ul {
     list-style-type: none;
@@ -31,9 +36,6 @@ li {
     float: left;
 }
 
-
-/*Barre menu*/
-
 li a {
     display: flex;
     color: #2e6604;
@@ -52,22 +54,13 @@ li a {
     justify-content: space-between;
 }
 
-
-/* Change the link color to on hover */
-
 li a:hover {
     background-color: rgba(46, 102, 4, 0.3);
 }
 
-
-/*Barre de menu déroulant*/
-
 nav>ul li:hover .sous {
     display: block;
 }
-
-
-/*Menu déroulant*/
 
 .sous li {
     float: none;
@@ -83,10 +76,6 @@ nav>ul li:hover .sous {
     background-color: rgba(125, 158, 109, 0.8);
     display: center;
 }
-
-
-/*Taille des boîtes du menu déroulant*/
-
 .phrase {
     position: relative;
     float: right;
@@ -97,13 +86,10 @@ nav>ul li:hover .sous {
     font-style: italic;
     color: #075244;
 }
-
-
-/*Hover du menu déroulant*/
-
 img {
     float: left;
 }
+
 
 
 /* Formulaire de connexion */
@@ -871,6 +857,9 @@ div.Chiffres {
     height: 600px;
     float: left;
     margin-top: 0px;
+    z-index: 100;
+    
+
 }
 
 .paysage2 {
