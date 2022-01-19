@@ -1,4 +1,6 @@
-@media screen and (min-width: 650px) and (max-width: 1200px) {}
+
+
+@media screen and (min-width: 651px) and (max-width: 1200px) {}
 
 @media screen and (max-width: 650px) {
     .building {
@@ -10,9 +12,21 @@
     .sensmoov {
         opacity: 0;
     }
+    .paragraffe1{
+        
+      border-left: none;  
+      border-right: none;
+      margin-left: 0px;
+      margin-right: 0px;
+      background-color: blueviolet;
+    }
 }
 
-
+/*BARRE DE NAVIGUATION*/
+.maisoon{
+    margin-top: 5px;
+    margin-left: 5px;
+}
 .mainheader ul {
     list-style-type: none;
     margin: 0;
@@ -30,9 +44,6 @@ li {
     display: inline;
     float: left;
 }
-
-
-/*Barre menu*/
 
 li a {
     display: flex;
@@ -52,22 +63,13 @@ li a {
     justify-content: space-between;
 }
 
-
-/* Change the link color to on hover */
-
 li a:hover {
     background-color: rgba(46, 102, 4, 0.3);
 }
 
-
-/*Barre de menu déroulant*/
-
 nav>ul li:hover .sous {
     display: block;
 }
-
-
-/*Menu déroulant*/
 
 .sous li {
     float: none;
@@ -83,10 +85,6 @@ nav>ul li:hover .sous {
     background-color: rgba(125, 158, 109, 0.8);
     display: center;
 }
-
-
-/*Taille des boîtes du menu déroulant*/
-
 .phrase {
     position: relative;
     float: right;
@@ -97,13 +95,10 @@ nav>ul li:hover .sous {
     font-style: italic;
     color: #075244;
 }
-
-
-/*Hover du menu déroulant*/
-
 img {
     float: left;
 }
+
 
 
 /* Formulaire de connexion */
@@ -288,13 +283,14 @@ h1.Techsens {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 400px;
+    margin-top:  780px;
     margin-left: 10%;
 }
 
 .img5 {
     display: inline;
     width: 75%;
+    height: auto;
     height: 200px;
     margin-left: 10%;
 }
@@ -302,6 +298,7 @@ h1.Techsens {
 .img6 {
     display: inline;
     width: 75%;
+    height: auto;
     height: 200px;
     margin-left: 10%;
 }
@@ -309,6 +306,7 @@ h1.Techsens {
 .img7 {
     display: inline;
     width: 75%;
+    height: auto;
     height: 200px;
     margin-left: 10%;
 }
@@ -327,6 +325,7 @@ h1.Techsens {
     font-size: 1.5em;
     color: #075244;
     width: 20%;
+    margin-left: 10%;
 }
 
 .text4 {
@@ -345,8 +344,8 @@ h1.Techsens {
 }
 
 div.Chiffres {
-    width: 86%;
-    margin-left: 14%;
+    width: 80%;
+    margin-left: 15%;
     color: #075244;
 }
 
@@ -362,10 +361,11 @@ div.Chiffres {
 .img10 {
     float: right;
     width: 30px;
-    height: 30px;
+    height: auto;
     position: relative;
     margin-right: 2%;
-    margin-top: -100px;
+    margin-top: -6%;
+
 }
 
 .Chiffres ul {
@@ -848,8 +848,8 @@ div.Chiffres {
 
 .fleche {
     float: right;
-    margin-top: -110px;
-    margin-right: 50px;
+    margin-top: -90px;
+    margin-right: -300px;
 }
 
 .button51 {
@@ -873,6 +873,7 @@ div.Chiffres {
     height: 600px;
     float: left;
     margin-top: 0px;
+    z-index: 100;
 }
 
 .paysage2 {
@@ -895,9 +896,11 @@ div.Chiffres {
     opacity: 0;
     position: relative;
     margin-top: 50px;
-    margin-left: -20%;
+    margin-left: -22%;
     float: left;
-    font-size: 1.5em;
+    font-size: 2em;
+    font-family: fantasy;
+    font-weight: 700;
 }
 
 .titre2 {
@@ -905,8 +908,10 @@ div.Chiffres {
     position: relative;
     margin-top: 50px;
     float: left;
-    margin-left: -20%;
-    font-size: 1.5em;
+    margin-left: -22%;
+    font-size: 2em;
+    font-family: fantasy;
+    font-weight: 700;
 }
 
 .titre3 {
@@ -914,38 +919,48 @@ div.Chiffres {
     position: relative;
     margin-top: 50px;
     float: left;
-    margin-left: -20%;
-    font-size: 1.5em;
+    margin-left: -22%;
+    font-size: 2em;
+    font-family: fantasy;
+    font-weight: 700;
 }
 
 .paragraphe1 {
     opacity: 0;
     position: relative;
-    margin-top: 100px;
+    margin-top: 150px;
     float: left;
     text-align: center;
     margin-left: -27%;
     width: 20%;
+    font-size: 1.5em;
+    line-height: 40px;
+    
 }
 
 .paragraphe2 {
     opacity: 0;
     position: relative;
-    margin-top: 100px;
+    margin-top: 150px;
     float: left;
     text-align: center;
     margin-left: -27%;
     width: 20%;
+    font-size: 1.5em;
+    line-height: 40px;
+
 }
 
 .paragraphe3 {
     opacity: 0;
     position: relative;
-    margin-top: 100px;
+    margin-top: 150px;
     float: left;
     text-align: center;
     margin-left: -27%;
     width: 20%;
+    font-size: 1.5em;
+    line-height: 40px;
 }
 
 
@@ -983,6 +998,7 @@ div.Chiffres {
 
 .greeenware {
     width: 54%;
+    height: 504px;
     float: right;
     margin-right: 5%;
     margin-top: 50px;

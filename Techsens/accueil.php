@@ -58,32 +58,33 @@
                 <li class="text3"><img src="CA.png" class="img6" /><br><br><br><br><br><br><br><br>10 millions de Chiffres d'affaires en 2020</li>
                 <li class="text4"><img src="SC.jpg" class="img7" /><br><br>99% des Clients satisfaits</li>
             </ul>
-        </div></div>
+        <hr></div>
+    </div>
 
 
 
         <div class="imaagee1">
         <img class="building" src="building.png" alt="photo background" />
         <div class="title1"> Notre entreprise</div>
-        <div class="paragraffe1"> Techsens est une société créée en 2018 qui met le numérique au service de l'environnement. À travers nos différents projets 
+        <div class="paragraffe1"> <hr>Techsens est une société créée en 2018 qui met le numérique au service de l'environnement. À travers nos différents projets 
             nous utilisons la technologie afin de permettre aux sociétés ou aux particuliers d’être plus écologiques et responsables. Les parfaits exemples 
-            sont nos deux produits Sens’moov et Greenware qui connaissent tout deux un beau succès.</div>
+            sont nos deux produits Sens’moov et Greenware qui connaissent tout deux un beau succès.<hr></div>
     </div>
 
     <div class="imaagee2">
         <img class="greeenware" src="greeenware.png" alt="photo background" />
         <div class="title2"> GREENWARE</div>
-        <div class="paragraffe2"> Notre nouveau produit, Greenware, détecte le taux de particules fines dans l’air et permet aux sociétés et municipalités qui l’utilisent 
+        <div class="paragraffe2"><hr> Notre nouveau produit, Greenware, détecte le taux de particules fines dans l’air et permet aux sociétés et municipalités qui l’utilisent 
             d’agir en conséquence. Nous utilisons des détecteurs de particules fines que nous couplons à des balises GPS afin que nos clients puissent voir 
-            en direct où sont les plus gros taux de particules et y remédier en impactant le moins de personnes possibles. </div>
+            en direct où sont les plus gros taux de particules et y remédier en impactant le moins de personnes possibles. <hr></div>
     </div>
 
     <div class="imaagee3">
         <img class="sensmoov" src="sensmoov.png" alt="photo background" />
         <div class="title3"> SENS'MOOV</div>
-        <div class="paragraffe3"> Sens’Moov est le premier projet que nous avons développé, c’est un détecteur de mouvement qui permet de couper l'électricité dans
+        <div class="paragraffe3"> <hr>Sens’Moov est le premier projet que nous avons développé, c’est un détecteur de mouvement qui permet de couper l'électricité dans
          une pièce quand personne n’y est et donc d’économiser de l’énergie. Il peut être utile aux particuliers comme aux professionnels et est extrêmement fiable
-          comme l’attestent nos 99% de clients satisfaits. </div>    
+          comme l’attestent nos 99% de clients satisfaits. <hr></div>    
     </div>
 
     <div class="loc">
@@ -117,7 +118,7 @@
         </div></div>
             <div class="end">
                     <label for="end"> 
-                        <a href="#"> Mentions légales</a> | <a href="#"> Politique de confidentialité</a></label></div>
+                        <a href="cgu.html"> Mentions légales et politique de cofidentialité</a></label></div>
     </div>
     <div id="scrollUp">
             <a href="#haut" class="top">
