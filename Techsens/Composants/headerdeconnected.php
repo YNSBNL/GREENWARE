@@ -19,7 +19,7 @@
         <div class="mainheader">            
             <nav>
             <ul>
-                <a href="accueil.php"> <img src="maison.png" alt="photo du logo" /> </a>
+                <a href="accueil.php"> <img src="maison.png" alt="photo du logo" class="maisoon"/> </a>
                     <li><a href="quizz.php">Quizz</a></li>                    
                     <li><a href="contact.php">Nous contacter</a></li>
                     <li><a href="about.php">About</a></li>
