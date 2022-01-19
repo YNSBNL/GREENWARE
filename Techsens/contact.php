@@ -48,7 +48,7 @@
 						<p>
 							<input type="checkbox" name="polideconf" id="polideconf" required />
 							<label for="polideconf">J’ai pris connaissance de la
-								<a href="#"> politique de confidentialité</a> et j'autorise la team TechSens à m'envoyer des informations</label><br />
+								<a href="cgu.html"> politique de confidentialité</a> et j'autorise la team TechSens à m'envoyer des informations</label><br />
 						</p>
 
 						<input class="button51" type="Submit" name="Submit" id="Submit" value="Submit">

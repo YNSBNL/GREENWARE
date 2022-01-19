@@ -117,7 +117,7 @@
         </div></div>
             <div class="end">
                     <label for="end"> 
-                        <a href="#"> Mentions légales</a> | <a href="#"> Politique de confidentialité</a></label></div>
+                        <a href="cgu.html"> Mentions légales et politique de cofidentialité</a></label></div>
     </div>
     <div id="scrollUp">
             <a href="#haut" class="top">
