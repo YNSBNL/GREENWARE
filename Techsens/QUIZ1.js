@@ -45,7 +45,7 @@ let questions = [
 
   new Question(
     "Les particules fines PM10 sont moins dangereuses que les PM 2,5.",
-    ["Vrai","Faux"],
+    ["Vrai","Faux"," "," "],
     "Faux"
   ),
 
@@ -63,7 +63,7 @@ let questions = [
 
   new Question(
     "Existe-il des inégalités d'exposition liées à la pollution de l'air ?",
-    ["Vrai", "Faux",],
+    ["Vrai", "Faux"," "," "],
     "Vrai"
   ),
 
