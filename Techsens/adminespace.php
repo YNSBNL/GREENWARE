@@ -95,7 +95,13 @@ include "config3.php";
 		<label for="message">FAQ:</label>	<br/>
 		<input type='text' name='message' id="message"  required/><br/>
 		<input type='submit' name='addfaq' id="addfaq" />
+        <div><center><h2>SUPPRIMER FAQ FAQ</h2></center></div>
+    <form action='config3.php' method='GET'>
+        <label for="message">FAQ:</label>   <br/>
+        <input type='text' name='message' id="message"  required/><br/>
+        <input type='submit' name='deletefaq' id="deletefaq"/>
 	</form>
+
     <br>
 <br>
 <br>
