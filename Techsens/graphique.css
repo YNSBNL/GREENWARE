@@ -402,9 +402,18 @@ div.Chiffres {
     color: darkseagreen;
     border: 3px solid darkseagreen;
     text-align: center;
-    margin-left: 50%;
+    margin-left: 60%;  
 }
-
+.essy{
+    width: 600px;
+    padding: 5px;
+    color: darkseagreen;
+    border: 3px solid darkseagreen;
+    text-align: center;
+    margin-left: 49.9%;
+    margin-top: 1.65%;
+    position: absolute;
+}
 
 /* Capteur dans le tableu (dimensions de l'image */
 
