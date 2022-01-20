@@ -38,17 +38,16 @@
     <br>
         <br>
         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
+<div class="essy"><canvas id="myChart" style="width:100%;max-width:600px"></canvas></div>
     <table class="centert">
         <tr>
             <th class="center">CAPTEUR-CO2-ZA59</th>
             <th class="center">Statistiques pour la Saint placide</th>
-            <div class="center"><canvas id="myChart" style="width:100%;max-width:600px"></canvas></div>
         </tr>
      <tr>
             <th class = "center" style="text-align: center;">
 
-    <img id="getImage" src="sensor1.gif" style="height: 300px;" alt="Bulb img"><br>
+    <img id="getImage" src="sensor1.png" style="height: 160px; margin-left: 27%;"  alt="Bulb img"><br>
     <input type="button" onclick="imagefun()" value="Refresh " class="buttonRafraichir">
     <button onclick="fu()" class="buttonRafraichir">Turn OFF</button>
   </th>
