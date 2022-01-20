@@ -95,10 +95,22 @@ include "config3.php";
 		<label for="message">FAQ:</label>	<br/>
 		<input type='text' name='message' id="message"  required/><br/>
 		<input type='submit' name='addfaq' id="addfaq" />
+        <div><center><h2>SUPPRIMER FAQ FAQ</h2></center></div>
+    <form action='config3.php' method='GET'>
+        <label for="message">FAQ:</label>   <br/>
+        <input type='text' name='message' id="message"  required/><br/>
+        <input type='submit' name='deletefaq' id="deletefaq"/>
 	</form>
 
-
-<div class="footer2">
+    <br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br/>
+    <div class="footer">
         <div class="foot">Techsens est une société cherchant à développer des solutions en accord avec le développement durable.</div>
         <img src="logoo.png" alt="photo du logo" />
         
@@ -107,18 +119,22 @@ include "config3.php";
             <p>---------------------------------------------------</p></div>
             <div class="photologo">
             <div class="logofb">
-                <a href="accueil.html"> <img src="fb.png" alt="logo fb" /> </p></a></div>
+                <a href="https://www.facebook.com/profile.php?id=100073322512659"> <img src="fb.png" alt="logo fb" /> </p></a></div>
             <div class="logoinsta">
-                <a href="accueil.html"> <img src="insta.png" alt="logo insta" /> </a></div>
+                <a href="https://www.instagram.com/"> <img src="insta.png" alt="logo insta" /> </a></div>
             <div class="logotwitter">
-                <a href="accueil.html"> <img src="twitter.png" alt="logo twitter" /></a></div>
+                <a href="https://twitter.com/Techsens_"> <img src="twitter.png" alt="logo twitter" /></a></div>
             <div class="logolinkedin">
                 <a href="https://www.linkedin.com/in/techsens-a9887b222"> <img src="linkedin.png" alt="logo linkedin" /> </a></div>
         </div></div>
             <div class="end">
                     <label for="end"> 
-                        <a href="#" class="white34"> Mentions légales</a> | <a href="#" class="white34"> Politique de confidentialité</a></label></div>
-</div>
+                        <a href="cgu.html"> Mentions légales et politique de cofidentialité</a></label></div>
+    </div>
+    <div id="scrollUp">
+            <a href="#haut" class="top">
+                <img src="Haut.png" alt="photo bouton" class="img10" /></a>
+        </div>
 
 
 </body>

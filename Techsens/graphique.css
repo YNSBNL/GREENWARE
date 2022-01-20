@@ -1,29 +1,10 @@
-
-@media screen and (min-width: 651px) and (max-width: 1200px) {
-
-}
-
-@media screen and (max-width: 650px) {
-    .building {
-        opacity: 0;
-    }
-    .greeenware {
-        opacity: 0;
-    }
-    .sensmoov {
-        opacity: 0;
-    }
-    .paragraffe1{
-        font-size: 1em;
-    }
-}
-
-@media screen and (min-width: 651px) and (max-width: 2000px){
 /*BARRE DE NAVIGUATION*/
-.maisoon{
+
+.maisoon {
     margin-top: 5px;
     margin-left: 5px;
 }
+
 .mainheader ul {
     list-style-type: none;
     margin: 0;
@@ -82,6 +63,7 @@ nav>ul li:hover .sous {
     background-color: rgba(125, 158, 109, 0.8);
     display: center;
 }
+
 .phrase {
     position: relative;
     float: right;
@@ -92,9 +74,11 @@ nav>ul li:hover .sous {
     font-style: italic;
     color: #075244;
 }
+
 img {
     float: left;
 }
+
 
 /* Formulaire de connexion */
 
@@ -108,7 +92,6 @@ img {
 .fieldset2 {
     border: none;
     height: 600px;
-
 }
 
 .formulaire {
@@ -278,7 +261,7 @@ h1.Techsens {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    margin-top:  780px;
+    margin-top: 780px;
     margin-left: 10%;
 }
 
@@ -360,7 +343,6 @@ div.Chiffres {
     position: relative;
     margin-right: 2%;
     margin-top: -6%;
-
 }
 
 .Chiffres ul {
@@ -516,17 +498,6 @@ div.Chiffres {
     width: 30%;
 }
 
-.intro {
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 7px;
-    width: 700px;
-    background-color: darkseagreen;
-    color: white;
-    font-size: 30px;
-}
-
 .txt1 {
     font-size: 1.15em;
     font-family: arial;
@@ -583,17 +554,15 @@ div.Chiffres {
 /*_____________________________________________footer______________*/
 
 .footer {
-    top: 100%;
-    position: absolute;
-    left: 0;
+    position: relative;
     padding-top: 10px;
     width: 100%;
     height: 170px;
-    background-color: #dde7d6;
+    background-color: rgb(123, 161, 123);
     color: #F3F3F3;
     text-align: center;
     opacity: 0.9;
-    margin-top: 3000px;
+    bottom: 0;
 }
 
 .photologo {
@@ -614,59 +583,6 @@ div.Chiffres {
     margin-top: -20px;
 }
 
-.footer2 {
-    position: absolute;
-    left: 0;
-    padding-top: 10px;
-    width: 100%;
-    height: 170px;
-    background-color: rgb(54, 47, 47);
-    color: #F3F3F3;
-    text-align: center;
-    opacity: 0.9;
-    margin-top: 200px;
-}
-
-.footer3 {
-    position: absolute;
-    left: 0;
-    padding-top: 10px;
-    width: 100%;
-    height: 170px;
-    background-color: gainsboro;
-    color: #F3F3F3;
-    text-align: center;
-    opacity: 0.9;
-    margin-top: 300px;
-}
-
-.footer4 {
-    position: absolute;
-    left: 0;
-    padding-top: 10px;
-    width: 100%;
-    height: 170px;
-    background-color: gainsboro;
-    color: #F3F3F3;
-    text-align: center;
-    opacity: 0.9;
-    margin-top: 100px;
-}
-
-.footer5 {
-    top: 10%;
-    position: absolute;
-    left: 0;
-    padding-top: 10px;
-    width: 100%;
-    height: 170px;
-    background-color: gainsboro;
-    color: #F3F3F3;
-    text-align: center;
-    opacity: 0.9;
-    margin-top: 65%;
-}
-
 .footer6 {
     top: 1%;
     position: absolute;
@@ -683,6 +599,22 @@ div.Chiffres {
 
 
 /* CSS page Greenware */
+
+.intro {
+    position: relative;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 7px;
+    width: 700px;
+    background-color: darkseagreen;
+    color: white;
+    font-size: 30px;
+}
+
+.gares {
+    position: relative;
+}
 
 .gare {
     font-size: 2em;
@@ -809,13 +741,13 @@ div.Chiffres {
 
 .container4 {
     background-color: rgba(143, 188, 122, .6);
-    position: absolute;
+    width: 80%;
+    position: relative;
     height: 625px;
     right: 15%;
     left: 15%;
     margin-left: -50px;
     margin-top: 100px;
-    margin-bottom: 100px;
     border-radius: 10px;
     opacity: 70%;
 }
@@ -942,7 +874,6 @@ div.Chiffres {
     width: 20%;
     font-size: 1.5em;
     line-height: 40px;
-    
 }
 
 .paragraphe2 {
@@ -955,7 +886,6 @@ div.Chiffres {
     width: 20%;
     font-size: 1.5em;
     line-height: 40px;
-
 }
 
 .paragraphe3 {
@@ -1090,11 +1020,12 @@ h2.Hun {
 
 
 /*MAP*/
-.loc{
+
+.loc {
     margin: auto;
     text-align: center;
-    
 }
+
 .map {
     width: 950px;
     height: 350px;
@@ -1106,5 +1037,4 @@ h2.Hun {
     font-size: 22px;
     margin-top: 2000px;
     position: relative;
-}
 }

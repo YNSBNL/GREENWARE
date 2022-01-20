@@ -111,11 +111,11 @@
             <p>---------------------------------------------------</p></div>
             <div class="photologo">
             <div class="logofb">
-                <a href="accueil.html"> <img src="fb.png" alt="logo fb" /> </p></a></div>
+                <a href="https://www.facebook.com/profile.php?id=100073322512659"> <img src="fb.png" alt="logo fb" /> </p></a></div>
             <div class="logoinsta">
-                <a href="accueil.html"> <img src="insta.png" alt="logo insta" /> </a></div>
+                <a href="https://www.instagram.com/"> <img src="insta.png" alt="logo insta" /> </a></div>
             <div class="logotwitter">
-                <a href="accueil.html"> <img src="twitter.png" alt="logo twitter" /></a></div>
+                <a href="https://twitter.com/Techsens_"> <img src="twitter.png" alt="logo twitter" /></a></div>
             <div class="logolinkedin">
                 <a href="https://www.linkedin.com/in/techsens-a9887b222"> <img src="linkedin.png" alt="logo linkedin" /> </a></div>
         </div></div>
