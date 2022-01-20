@@ -38,7 +38,7 @@ if(isset($_POST["envoyer"])){
 <br>
 <br>
 
-    <img src="assitance.png" alt="photo-assistance" class="img3" />
+    <img src="assistance.png" alt="photo-assistance" class="img3" />
     <form method="post">
         <p>
         <h2 class="rut">Assistance</h2>
