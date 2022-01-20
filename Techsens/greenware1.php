@@ -60,10 +60,11 @@
             <div class="end">
                     <label for="end"> 
                         <a href="cgu.html"> Mentions légales et politique de cofidentialité</a></label></div>
-    </div>
+    
     <div id="scrollUp">
             <a href="#haut" class="top">
                 <img src="Haut.png" alt="photo bouton" class="img10" /></a>
         </div>
+    </div>
 </body>
 </html>
