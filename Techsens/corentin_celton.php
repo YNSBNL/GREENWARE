@@ -48,7 +48,8 @@
             
        
         	<div class = "center" style="text-align: center;">
-
+    <p> La moyenne est de <script type="text/javascript">document.write(average)</script>  ppm </p>
+    <p> La variance est de <script type="text/javascript">document.write(Math.sqrt(average))</script>  ppm </p>
     <img id="getImage" src="sensor1.gif" style="height: 300px;" alt="Bulb img"><br>
     <input type="button" onclick="imagefun(); return run();" value="Refresh " class="buttonRafraichir">
     <button onclick="fu()" class="buttonRafraichir">Turn OFF</button></div>
