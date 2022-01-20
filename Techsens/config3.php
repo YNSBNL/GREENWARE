@@ -16,23 +16,22 @@
 		}
 	}
 
-	if ($_SERVER['REQUEST_METHOD'] == 'POST' && isSet($_POST['delete'])) {
-			$conn1 = mysqli_connect('localhost', 'root', '','techsens') or die("Connection failed: " . mysqli_connect_error());
-			if (isSet($_POST['user'])) {
-				$user1 = $_POST['user'];
-				
-				
-	 
-				$sql1 = "DELETE FROM users WHERE  (username =$user1)";
-	 
-				$query1 = mysqli_query($conn1,$sql1);
-				if ($query1) {
-					echo 'Utilisateur  supprimé ';
-				} else {
-					echo "An error occured while save the data.";
-				}
+	if ($_SERVER['REQUEST_METHOD'] == 'GET' && isSet($_GET['delete'])) {
+		$conn4 = mysqli_connect('localhost', 'root', '','techsens') or die("Connection failed: " . mysqli_connect_error());
+		if (isSet($_GET['user'])) {
+			$user4 = $_GET['user'];
+			
+ 
+			$sql4 = "DELETE FROM users WHERE username = '$user4'";
+ 
+			$query4 = mysqli_query($conn4,$sql4);
+			if ($query4) {
+				echo 'Data Successfully Saved!';
+			} else {
+				echo "An error occured while save the data.";
 			}
 		}
+	}
 
 
 	if ($_SERVER['REQUEST_METHOD'] == 'POST' && isSet($_POST['addfaq'])) {
@@ -51,5 +50,27 @@
 			}
 		}
 	}
+
+	if ($_SERVER['REQUEST_METHOD'] == 'GET' && isSet($_GET['deletefaq'])) {
+		$conn3 = mysqli_connect('localhost', 'root', '','techsens') or die("Connection failed: " . mysqli_connect_error());
+		if (isSet($_GET['message'])) {
+			$message3 = $_GET['message'];
+			
+ 
+			$sql3 = "DELETE FROM faq WHERE message = '$message3'";
+ 
+			$query3 = mysqli_query($conn3,$sql3);
+			if ($query3) {
+				echo 'Data Successfully Saved!';
+			} else {
+				echo "An error occured while save the data.";
+			}
+		}
+	}
+
+
+
+		
+
 
 ?>
