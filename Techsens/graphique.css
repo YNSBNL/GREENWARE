@@ -1,6 +1,7 @@
 
+@media screen and (min-width: 651px) and (max-width: 1200px) {
 
-@media screen and (min-width: 651px) and (max-width: 1200px) {}
+}
 
 @media screen and (max-width: 650px) {
     .building {
@@ -13,15 +14,11 @@
         opacity: 0;
     }
     .paragraffe1{
-        
-      border-left: none;  
-      border-right: none;
-      margin-left: 0px;
-      margin-right: 0px;
-      background-color: blueviolet;
+        font-size: 1em;
     }
 }
 
+@media screen and (min-width: 651px) and (max-width: 2000px){
 /*BARRE DE NAVIGUATION*/
 .maisoon{
     margin-top: 5px;
@@ -98,8 +95,6 @@ nav>ul li:hover .sous {
 img {
     float: left;
 }
-
-
 
 /* Formulaire de connexion */
 
@@ -383,8 +378,9 @@ div.Chiffres {
 
 .celton {
     margin-left: 285px;
-    width: 650px;
+    width: 40%;
     height: 300px;
+    margin-left: 30%;
 }
 
 .white34 {
@@ -406,6 +402,7 @@ div.Chiffres {
     color: darkseagreen;
     border: 3px solid darkseagreen;
     text-align: center;
+    margin-left: 50%;
 }
 
 
@@ -689,14 +686,15 @@ div.Chiffres {
 
 .buttongare1 {
     display: inline;
-    width: 300px;
+    width: 18%;
     height: 200px;
     border: 5px solid darkseagreen;
+    margin-left: 11%;
 }
 
 .buttongare2 {
     display: inline;
-    width: 300px;
+    width: 18%;
     height: 200px;
     border: 5px solid darkseagreen;
     margin-left: 10%;
@@ -704,10 +702,10 @@ div.Chiffres {
 
 .buttongare3 {
     display: inline;
-    width: 300px;
+    width: 18%;
     height: 200px;
     border: 5px solid darkseagreen;
-    margin-left: 15%;
+    margin-left: 10%;
 }
 
 .buttongare1:hover {
@@ -984,7 +982,7 @@ div.Chiffres {
 }
 
 .paragraffe1 {
-    font-size: 20px;
+    font-size: 1.3em;
     font-family: sans-serif;
     text-align: justify;
     color: #075244;
@@ -1099,4 +1097,5 @@ h2.Hun {
     font-size: 22px;
     margin-top: 2000px;
     position: relative;
+}
 }
