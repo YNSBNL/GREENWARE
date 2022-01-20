@@ -102,14 +102,13 @@ include "config3.php";
         <input type='submit' name='deletefaq' id="deletefaq"/>
 	</form>
 
-    <br>
 <br>
 <br>
 <br>
 <br>
 <br>
 <br>
-<br/>
+<br>
     <div class="footer">
         <div class="foot">Techsens est une société cherchant à développer des solutions en accord avec le développement durable.</div>
         <img src="logoo.png" alt="photo du logo" />
