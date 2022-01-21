@@ -92,8 +92,8 @@ include "config3.php";
 	</form>
 <div><center><h2>Additionner FAQ</h2></center></div>
 	<form  action='config3.php' method='POST'>
-		<label for="message">FAQ:</label>	<br/>
-		<input type='text' name='message' id="message"  ><br/>
+		<label for="message1">FAQ:</label>	<br/>
+		<input type='text' name='message1' id="message1"  ><br/>
 		<input type='submit' name='addfaq' id="addfaq" />
         <div><center><h2>SUPPRIMER FAQ FAQ</h2></center></div>
     <form  action='config3.php' method='POST'>
