@@ -1,4 +1,3 @@
-
     var arr_num = Array.from({length: 4}, () => (Math.random() * (900 - 600 + 1) + 600));
     const firstNumber = arr_num[arr_num.length - 1]
     const secondNumber = arr_num[arr_num.length - 2];
@@ -25,9 +24,6 @@ function getAvg(moyarr) {
 
 const average = getAvg(moyarr);
 
-
-
-
 function run(){ 
     var counter =0;
     var grid = document.getElementById("grid");
@@ -44,27 +40,10 @@ function run(){
     
 }
 
-
 function getRandom(){
     return Math.floor(Math.random() * arr_num.length) + 0 ;
     
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 		var xValues = ["1ère mesure", "2ème mesure", "3ème mesure", "4ème mesure"];
 		var yValues = [firstNumber, secondNumber, thirdNumber, fourthNumber];
