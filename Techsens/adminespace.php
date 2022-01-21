@@ -75,16 +75,26 @@ include "config3.php";
 
 <div><center><h2>Ajouter un utilisateur</h2></center></div>
 	<form  action='config3.php' method='POST'>
+
 		<label for="user">Username:</label>	<br/>
 		<input type='text' name='user' id="user" ><br/>
 		<label for="user">Password:</label>	<br/>
 		<input type='password' name='pass' id="pass"  ><br/>
+        <label for="user">E-Mail:</label> <br/>
+        <input type='text' name='email' id="email" ><br/>
+        <label for="user">Prenom:</label> <br/>
+        <input type='text' name='prenom' id="prenom" ><br/>
+        <label for="user">Nom:</label> <br/>
+        <input type='text' name='nom' id="nom" ><br/>
+        <label for="user">Numéro de téléphone:</label> <br/>
+        <input type='text' name='telephone' id="telephone" ><br/>
+
 		<input type='submit' name='sentForm' id="sentForm" />
 	</form>
 
 
 	<div><center><h2>Supprimer un utilisateur : séléctionnez son pseudonyme</h2></center></div>
-	<form  action='config3.php' method='GET'>
+	<form  action='config3.php' method='POST'>
 		<label for="user">Username:</label>	<br/>
 		<input type='text' name='user' id="user"  ><br/>
 		
@@ -92,11 +102,11 @@ include "config3.php";
 	</form>
 <div><center><h2>Additionner FAQ</h2></center></div>
 	<form  action='config3.php' method='POST'>
-		<label for="message">FAQ:</label>	<br/>
-		<input type='text' name='message' id="message"  ><br/>
+		<label for="message1">FAQ:</label>	<br/>
+		<input type='text' name='message1' id="message1"  ><br/>
 		<input type='submit' name='addfaq' id="addfaq" />
         <div><center><h2>SUPPRIMER FAQ FAQ</h2></center></div>
-    <form  action='config3.php' method='GET'>
+    <form  action='config3.php' method='POST'>
         <label for="message">FAQ:</label>   <br/>
         <input type='text' name='message' id="message" ><br/>
         <input type='submit' name='deletefaq' id="deletefaq"/>

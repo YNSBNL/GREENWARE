@@ -1,11 +1,18 @@
 <?php
 	if ($_SERVER['REQUEST_METHOD'] == 'POST' && isSet($_POST['sentForm'])) {
 		$conn = mysqli_connect('localhost', 'root', '','techsens') or die("Connection failed: " . mysqli_connect_error());
-		if (isSet($_POST['user']) && isSet($_POST['pass'])) {
+		if (isSet($_POST['user']) && isSet($_POST['pass']) && isSet($_POST['email']) && isSet($_POST['prenom']) && isSet($_POST['nom']) && isSet($_POST['telephone'])) {
 			$user = $_POST['user'];
 			$pass = $_POST['pass'];
+			$email = $_POST['email'];
+			$prenom = $_POST['prenom'];
+ 			$nom = $_POST['nom'];
+ 			$telephone = $_POST['telephone'];
  
-			$sql = "INSERT INTO `users` (`username`,`password`) VALUES ('$user', '$pass')";
+ 
+
+ 
+			$sql = "INSERT INTO `users` (`username`,`password`,`email`,`prenom`,`nom`,`telephone`) VALUES ('$user', '$pass','$email','$prenom','$nom','$telephone')";
  
 			$query = mysqli_query($conn,$sql);
 			if ($query) {
@@ -16,10 +23,10 @@
 		}
 	}
 
-	if ($_SERVER['REQUEST_METHOD'] == 'GET' && isSet($_GET['delete'])) {
+	if ($_SERVER['REQUEST_METHOD'] == 'POST' && isSet($_POST['delete'])) {
 		$conn4 = mysqli_connect('localhost', 'root', '','techsens') or die("Connection failed: " . mysqli_connect_error());
-		if (isSet($_GET['user'])) {
-			$user4 = $_GET['user'];
+		if (isSet($_POST['user'])) {
+			$user4 = $_POST['user'];
 			
  
 			$sql4 = "DELETE FROM users WHERE username = '$user4'";
@@ -36,8 +43,8 @@
 
 	if ($_SERVER['REQUEST_METHOD'] == 'POST' && isSet($_POST['addfaq'])) {
 		$conn2 = mysqli_connect('localhost', 'root', '','techsens') or die("Connection failed: " . mysqli_connect_error());
-		if (isSet($_POST['message'])) {
-			$message1 = $_POST['message'];
+		if (isSet($_POST['message1'])) {
+			$message1 = $_POST['message1'];
 			
  
 			$sql2 = "INSERT INTO `faq` (`message`) VALUES ('$message1')";
@@ -52,15 +59,15 @@
 	}
 
 	if ($_SERVER['REQUEST_METHOD'] == 'POST' && isSet($_POST['deletefaq'])) {
-		$conn5 = mysqli_connect('localhost', 'root', '','techsens') or die("Connection failed: " . mysqli_connect_error());
+		$conn3 = mysqli_connect('localhost', 'root', '','techsens') or die("Connection failed: " . mysqli_connect_error());
 		if (isSet($_POST['message'])) {
-			$message5 = $_POST['message'];
+			$message3 = $_POST['message'];
 			
  
-			$sql5 = "DELETE FROM `faq` WHERE 'message' = '$message5'";
+			$sql3 = "DELETE FROM faq WHERE message = '$message3'";
  
-			$query5 = mysqli_query($conn5,$sql5);
-			if ($query5) {
+			$query3 = mysqli_query($conn3,$sql3);
+			if ($query3) {
 				echo 'Data Successfully Saved!';
 			} else {
 				echo "An error occured while save the data.";
