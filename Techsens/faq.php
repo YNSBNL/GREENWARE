@@ -85,6 +85,35 @@
 		</div>
 	</div>
 
+
+	<?php
+$con=mysqli_connect('localhost', 'root', '','techsens');
+// Check connection
+if (mysqli_connect_errno())
+{
+echo "Failed to connect to MySQL: " . mysqli_connect_error();
+}
+
+$result = mysqli_query($con,"SELECT * FROM faq");
+
+echo "<table border='1'>
+<tr>
+<th>message faq</th>
+
+</tr>";
+
+while($row = mysqli_fetch_array($result))
+{
+echo "<tr>";
+echo "<td>" . $row['message'] . "</td>";
+
+echo "</tr>";
+}
+echo "</table>";
+
+mysqli_close($con);
+?>
+
 	<div class="footer">
         <div class="foot">Techsens est une société cherchant à développer des solutions en accord avec le développement durable.</div>
         <img src="logoo.png" alt="photo du logo" />

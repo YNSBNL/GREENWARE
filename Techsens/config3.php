@@ -10,6 +10,7 @@
 			$query = mysqli_query($conn,$sql);
 			if ($query) {
 				echo 'Data Successfully Saved!';
+				header("Location:adminespace.php");
 			} else {
 				echo "An error occured while save the data.";
 			}
@@ -27,6 +28,7 @@
 			$query4 = mysqli_query($conn4,$sql4);
 			if ($query4) {
 				echo 'Data Successfully Saved!';
+				header("Location:adminespace.php");
 			} else {
 				echo "An error occured while save the data.";
 			}
@@ -45,16 +47,17 @@
 			$query2 = mysqli_query($conn2,$sql2);
 			if ($query2) {
 				echo 'Data Successfully Saved!';
+				header("Location:adminespace.php");
 			} else {
 				echo "An error occured while save the data.";
 			}
 		}
 	}
 
-	if ($_SERVER['REQUEST_METHOD'] == 'GET' && isSet($_GET['deletefaq'])) {
+	if ($_SERVER['REQUEST_METHOD'] == 'POST' && isSet($_POST['deletefaq'])) {
 		$conn3 = mysqli_connect('localhost', 'root', '','techsens') or die("Connection failed: " . mysqli_connect_error());
-		if (isSet($_GET['message'])) {
-			$message3 = $_GET['message'];
+		if (isSet($_POST['message'])) {
+			$message3 = $_POST['message'];
 			
  
 			$sql3 = "DELETE FROM faq WHERE message = '$message3'";
@@ -62,6 +65,7 @@
 			$query3 = mysqli_query($conn3,$sql3);
 			if ($query3) {
 				echo 'Data Successfully Saved!';
+				header("Location:adminespace.php");
 			} else {
 				echo "An error occured while save the data.";
 			}
