@@ -50,20 +50,20 @@
         	<div class = "center" style="text-align: center;">
     <p> La moyenne est de <script type="text/javascript">document.write(average)</script>  ppm </p>
     <p> La variance est de <script type="text/javascript">document.write(Math.sqrt(average))</script>  ppm </p>
-    <img id="getImage" src="sensor1.gif" style="height: 300px;" alt="Bulb img"><br>
-    <input type="button" onclick="imagefun(); return run();" value="Refresh " class="buttonRafraichir">
-    <button onclick="fu()" class="buttonRafraichir">Turn OFF</button></div>
- 
+    <img id="getImage" src="sensor0.gif" style="height: 300px;" alt="Bulb img"><br>
+    <input type="button" onclick="return run();" value="Refresh " class="buttonRafraichir">
+   <button id = "button" onclick="light();"></button>
+   <img id="myImage" src="twitter.png">
   
 
 
 <form method="post">
-<<<<<<< Updated upstream
 
-<table border="1" cellpadding="0" cellspacing="0" style="border-collapse: collapse" width="100" id="grid">
-=======
+
+
+
 <table border="1" cellpadding="0" cellspacing="0" style="border-collapse: collapse" width="100"v>
->>>>>>> Stashed changes
+
 <tr>
     <td  height="19" width="20%">Données du Capteur</td>
     <td height="19" width="20%">Heure locale</td>
@@ -159,5 +159,11 @@
 		    }
 		  }
 		});
+
+
+   
+            
+    
+
 </script>
 </html>

@@ -35,9 +35,7 @@ function run(){
 
       
         
-    }
-    
-    
+    }   
 }
 
 function getRandom(){
@@ -45,7 +43,6 @@ function getRandom(){
     
 }
 
-<<<<<<< Updated upstream
 		var xValues = ["1ère mesure", "2ème mesure", "3ème mesure", "4ème mesure"];
 		var yValues = [firstNumber, secondNumber, thirdNumber, fourthNumber];
 		var barColors = ["red", "green","blue","orange","brown"];
@@ -67,51 +64,28 @@ function getRandom(){
 		    }
 		  }
 		});
-=======
 
+  var on = 0; // 1 is true, 0 is false
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
->>>>>>> Stashed changes
-
-        function imagefun() {
-            var Image_Id = document.getElementById('getImage');
-            if (Image_Id.src.match("sensor1.gif")) {
-                Image_Id.src = "sensor2.gif" ;
-            }
-            else {
-                Image_Id.src = "sensor1.gif";
-            }
-
-    
-
-
-        } 
-        var c = 0;
-    function fu(){
-      if(c==0){
-        document.getElementById('getImage').src = "sensor0.gif";
-        document.getElementById("button").innerHTML = "Turn ON";
-        c=1;
+     function light() {
+       if (on == 0) {
+         var counter =0;
+         var grid = document.getElementById("grid");
+         for (var i = 0, row; row = grid.rows[i]; i++){
+            row.cells[0].textContent = 0;
+            row.cells[1].textContent = 0;
+            row.cells[2].textContent = 0;
+            row.cells[3].textContent = 0;
+         document.getElementById("myImage").src="SC.jpg";
+         on = 1; //You forgot a ; here
+        }
+    }
+        else if (on == 1){document.getElementById("myImage").src="twitter.png"; //You forgot a ; here
+         on = 0; //You forgot a ; here
+       }
       }
-      else if(c==1){
-        document.getElementById("getImage").src = "sensor1.gif";
-        document.getElementById("button").innerHTML = "Turn OFF";
-        c=0;
-      }
-    } 
+ 
+   
         
        
 
