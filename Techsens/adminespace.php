@@ -75,16 +75,26 @@ include "config3.php";
 
 <div><center><h2>Ajouter un utilisateur</h2></center></div>
 	<form  action='config3.php' method='POST'>
+
 		<label for="user">Username:</label>	<br/>
 		<input type='text' name='user' id="user" ><br/>
 		<label for="user">Password:</label>	<br/>
 		<input type='password' name='pass' id="pass"  ><br/>
+        <label for="user">E-Mail:</label> <br/>
+        <input type='text' name='email' id="email" ><br/>
+        <label for="user">Prenom:</label> <br/>
+        <input type='text' name='prenom' id="prenom" ><br/>
+        <label for="user">Nom:</label> <br/>
+        <input type='text' name='nom' id="nom" ><br/>
+        <label for="user">Numéro de téléphone:</label> <br/>
+        <input type='text' name='telephone' id="telephone" ><br/>
+
 		<input type='submit' name='sentForm' id="sentForm" />
 	</form>
 
 
 	<div><center><h2>Supprimer un utilisateur : séléctionnez son pseudonyme</h2></center></div>
-	<form  action='config3.php' method='GET'>
+	<form  action='config3.php' method='POST'>
 		<label for="user">Username:</label>	<br/>
 		<input type='text' name='user' id="user"  ><br/>
 		

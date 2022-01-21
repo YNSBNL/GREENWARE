@@ -1,11 +1,18 @@
 <?php
 	if ($_SERVER['REQUEST_METHOD'] == 'POST' && isSet($_POST['sentForm'])) {
 		$conn = mysqli_connect('localhost', 'root', '','techsens') or die("Connection failed: " . mysqli_connect_error());
-		if (isSet($_POST['user']) && isSet($_POST['pass'])) {
+		if (isSet($_POST['user']) && isSet($_POST['pass']) && isSet($_POST['email']) && isSet($_POST['prenom']) && isSet($_POST['nom']) && isSet($_POST['telephone'])) {
 			$user = $_POST['user'];
 			$pass = $_POST['pass'];
+			$email = $_POST['email'];
+			$prenom = $_POST['prenom'];
+ 			$nom = $_POST['nom'];
+ 			$telephone = $_POST['telephone'];
  
-			$sql = "INSERT INTO `users` (`username`,`password`) VALUES ('$user', '$pass')";
+ 
+
+ 
+			$sql = "INSERT INTO `users` (`username`,`password`,`email`,`prenom`,`nom`,`telephone`) VALUES ('$user', '$pass','$email','$prenom','$nom','$telephone')";
  
 			$query = mysqli_query($conn,$sql);
 			if ($query) {
@@ -16,10 +23,10 @@
 		}
 	}
 
-	if ($_SERVER['REQUEST_METHOD'] == 'GET' && isSet($_GET['delete'])) {
+	if ($_SERVER['REQUEST_METHOD'] == 'POST' && isSet($_POST['delete'])) {
 		$conn4 = mysqli_connect('localhost', 'root', '','techsens') or die("Connection failed: " . mysqli_connect_error());
-		if (isSet($_GET['user'])) {
-			$user4 = $_GET['user'];
+		if (isSet($_POST['user'])) {
+			$user4 = $_POST['user'];
 			
  
 			$sql4 = "DELETE FROM users WHERE username = '$user4'";
