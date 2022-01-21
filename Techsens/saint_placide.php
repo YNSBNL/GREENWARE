@@ -52,6 +52,8 @@ if (isset($_POST['but_logout'])) {
     <br>
         <br>
         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
 <div class="essy"><canvas id="myChart" style="width:100%;max-width:600px"></canvas></div>
     <table class="centert">
         <tr>
@@ -59,53 +61,67 @@ if (isset($_POST['but_logout'])) {
             <th class="center">Statistiques pour la Saint placide</th>
         </tr>
      <tr>
-            <th class = "center" style="text-align: center;">
 
-    <img id="getImage" src="sensor1.png" style="height: 160px; margin-left: 27%;"  alt="Bulb img"><br>
+    
+    <th class = "center" style="text-align: center;">
+
+    <img id="getImage" src="sensor1.png" style="height: 230.3px; margin-left: 20%;"  alt="Bulb img"><br>
+    <!--
     <input type="button" onclick="imagefun()" value="Refresh " class="buttonRafraichir">
-    <button onclick="fu()" class="buttonRafraichir">Turn OFF</button>
+    <button onclick="fu()" class="buttonRafraichir">Turn OFF</button>-->
+    <input type="button" onclick="return run();" value="Refresh/ Turn on " class="buttonRafraichir">
   </th>
 </tr>
     
     </table>
 
 
-<p class="tablo"> Voici les données du capteur en temps réel</p>
+<p class="tablo"> Voici les données du capteur en temps réel:</p>
+
+  <table border="1" cellpadding="10" cellspacing="0" style="border-collapse: collapse; margin-left: 30%; margin-top: 30px; width: 40%;"   width="100"v >
+
+        <tr>
+            <td  height="19" width="20%">Données du Capteur</td>
+            <td height="19" width="20%">Heure locale</td>
+            <td  height="19" width="20%">Moyenne</td>
+            <td  height="19" width="20%">Variance</td>
+        </tr></table>
 
 <form method="post">
 
-<table border="1" cellpadding="10" cellspacing="0" style="border-collapse: collapse; margin-left: 30%; margin-top: 30px; width: 40%;"   width="100"v id="grid">
-<tr>
-    <td  height="19" width="20%">Données du Capteur</td>
-    <td height="19" width="20%">Heure locale</td>
-    <td  height="19" width="20%">Moyenne</td>
-    <td  height="19" width="20%">Variance</td>
-</tr>
-<tr>
-    <td id="1-1" height="19" width="20%">&nbsp;</td>
-    <td id="1-2" height="19" width="20%">&nbsp;</td>
-    <td id="1-3" height="19" width="20%">&nbsp;</td>
-    <td id="1-4" height="19" width="20%">&nbsp;</td>
-</tr>
-<tr>
-    <td id="2-1" height="16" width="20%">&nbsp;</td>
-    <td id="2-2" height="16" width="20%">&nbsp;</td>
-    <td id="2-3" height="16" width="20%">&nbsp;</td>
-    <td id="2-4" height="19" width="20%">&nbsp;</td>
-</tr>
-<tr>
-    <td id="3-1" height="19" width="20%">&nbsp;</td>
-    <td id="3-2" height="19" width="20%">&nbsp;</td>
-    <td id="3-3" height="19" width="20%">&nbsp;</td>
-    <td id="3-4" height="19" width="20%">&nbsp;</td>
-</tr>
-<tr>
-    <td id="4-1" height="19" width="20%">&nbsp;</td>
-    <td id="4-2" height="19" width="20%">&nbsp;</td>
-    <td id="4-3" height="19" width="20%">&nbsp;</td>
-    <td id="4-4" height="19" width="20%">&nbsp;</td>
-</tr>
-</table>
+        <table border="1" cellpadding="10" cellspacing="0" style="border-collapse: collapse; margin-left: 30%; width: 40%;"   width="100"v id="grid">
+        
+        <tr>
+            <td id="1-1" height="19" width="20%">&nbsp;</td>
+            <td id="1-2" height="19" width="20%">&nbsp;</td>
+            <td id="1-3" height="19" width="20%">&nbsp;</td>
+            <td id="1-4" height="19" width="20%">&nbsp;</td>
+        </tr>
+        <tr>
+            <td id="2-1" height="16" width="20%">&nbsp;</td>
+            <td id="2-2" height="16" width="20%">&nbsp;</td>
+            <td id="2-3" height="16" width="20%">&nbsp;</td>
+            <td id="2-4" height="19" width="20%">&nbsp;</td>
+        </tr>
+        <tr>
+            <td id="3-1" height="19" width="20%">&nbsp;</td>
+            <td id="3-2" height="19" width="20%">&nbsp;</td>
+            <td id="3-3" height="19" width="20%">&nbsp;</td>
+            <td id="3-4" height="19" width="20%">&nbsp;</td>
+        </tr>
+        <tr>
+            <td id="4-1" height="19" width="20%">&nbsp;</td>
+            <td id="4-2" height="19" width="20%">&nbsp;</td>
+            <td id="4-3" height="19" width="20%">&nbsp;</td>
+            <td id="4-4" height="19" width="20%">&nbsp;</td>
+        </tr>
+        </table>
+
+        <input type = "button" onclick="light();" value="delete" style="margin-left: 67.2%;">
+
+            <p class="moy"> La moyenne est de <script type="text/javascript">document.write(average)</script>  ppm </p>
+            <p class="var"> La variance est de <script type="text/javascript">document.write(Math.sqrt(average))</script>  ppm </p>
+
 </form>
 
 <br><br>
@@ -168,7 +184,25 @@ if (isset($_POST['but_logout'])) {
           }
         });
 
+        var on = 0; // 1 is true, 0 is false
 
+     function light() {
+       if (on == 0) {
+         var counter =0;
+         var grid = document.getElementById("grid");
+         for (var i = 0, row; row = grid.rows[i]; i++){
+            row.cells[0].textContent = 0;
+            row.cells[1].textContent = 0;
+            row.cells[2].textContent = 0;
+            row.cells[3].textContent = 0;
+    
+         on = 1; //You forgot a ; here
+        }
+    }
+        else if (on == 1){ //You forgot a ; here
+         on = 0; //You forgot a ; here
+       }
+      }
              
     </script>
 
