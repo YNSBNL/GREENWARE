@@ -69,9 +69,12 @@ if (isset($_POST['but_logout'])) {
     
     </table>
 
+
+<p class="tablo"> Voici les données du capteur en temps réel</p>
+
 <form method="post">
 
-<table border="1" cellpadding="0" cellspacing="0" style="border-collapse: collapse; margin-left: 45%; margin-top: 30px;"   width="100"v id="grid">
+<table border="1" cellpadding="10" cellspacing="0" style="border-collapse: collapse; margin-left: 30%; margin-top: 30px; width: 40%;"   width="100"v id="grid">
 <tr>
     <td  height="19" width="20%">Données du Capteur</td>
     <td height="19" width="20%">Heure locale</td>
@@ -103,6 +106,7 @@ if (isset($_POST['but_logout'])) {
     <td id="4-4" height="19" width="20%">&nbsp;</td>
 </tr>
 </table>
+</form>
 
 <br><br>
 <div id="count" name="count"></div>
