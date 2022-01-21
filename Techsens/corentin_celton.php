@@ -58,14 +58,19 @@
 
 
 <form method="post">
+<<<<<<< Updated upstream
 
 <table border="1" cellpadding="0" cellspacing="0" style="border-collapse: collapse" width="100" id="grid">
+=======
+<table border="1" cellpadding="0" cellspacing="0" style="border-collapse: collapse" width="100"v>
+>>>>>>> Stashed changes
 <tr>
     <td  height="19" width="20%">Données du Capteur</td>
     <td height="19" width="20%">Heure locale</td>
-    <td  height="19" width="20%">Moyenne</td>
-    <td  height="19" width="20%">Variance</td>
 </tr>
+</table>
+<table border="1" cellpadding="10" cellspacing="10" style="border-collapse: collapse" width="100"v id="grid">
+
 <tr>
     <td id="1-1" height="19" width="20%">&nbsp;</td>
     <td id="1-2" height="19" width="20%">&nbsp;</td>
@@ -73,9 +78,9 @@
     <td id="1-4" height="19" width="20%">&nbsp;</td>
 </tr>
 <tr>
-    <td id="2-1" height="16" width="20%">&nbsp;</td>
-    <td id="2-2" height="16" width="20%">&nbsp;</td>
-    <td id="2-3" height="16" width="20%">&nbsp;</td>
+    <td id="2-1" height="19" width="20%">&nbsp;</td>
+    <td id="2-2" height="19" width="20%">&nbsp;</td>
+    <td id="2-3" height="19" width="20%">&nbsp;</td>
     <td id="2-4" height="19" width="20%">&nbsp;</td>
 </tr>
 <tr>

@@ -1,5 +1,5 @@
 <?php
-
+include "config2.php";
 include "config3.php";
 
 // Check user login or not
@@ -74,31 +74,31 @@ include "config3.php";
 ?>
 
 <div><center><h2>Ajouter un utilisateur</h2></center></div>
-	<form action='config3.php' method='POST'>
+	<form  action='config3.php' method='POST'>
 		<label for="user">Username:</label>	<br/>
-		<input type='text' name='user' id="user"  required/><br/>
+		<input type='text' name='user' id="user" ><br/>
 		<label for="user">Password:</label>	<br/>
-		<input type='password' name='pass' id="pass"  required/><br/>
+		<input type='password' name='pass' id="pass"  ><br/>
 		<input type='submit' name='sentForm' id="sentForm" />
 	</form>
 
 
 	<div><center><h2>Supprimer un utilisateur : séléctionnez son pseudonyme</h2></center></div>
-	<form action='config3.php' method='POST'>
+	<form  action='config3.php' method='GET'>
 		<label for="user">Username:</label>	<br/>
-		<input type='text' name='user' id="user"  required/><br/>
+		<input type='text' name='user' id="user"  ><br/>
 		
 		<input type='submit' name='delete' id="delete" />
 	</form>
 <div><center><h2>Additionner FAQ</h2></center></div>
-	<form action='config3.php' method='POST'>
+	<form  action='config3.php' method='POST'>
 		<label for="message">FAQ:</label>	<br/>
-		<input type='text' name='message' id="message"  required/><br/>
+		<input type='text' name='message' id="message"  ><br/>
 		<input type='submit' name='addfaq' id="addfaq" />
         <div><center><h2>SUPPRIMER FAQ FAQ</h2></center></div>
-    <form action='config3.php' method='GET'>
+    <form  action='config3.php' method='GET'>
         <label for="message">FAQ:</label>   <br/>
-        <input type='text' name='message' id="message"  required/><br/>
+        <input type='text' name='message' id="message" ><br/>
         <input type='submit' name='deletefaq' id="deletefaq"/>
 	</form>
 

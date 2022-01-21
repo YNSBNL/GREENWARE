@@ -32,7 +32,7 @@ function run(){
         row.cells[1].textContent = datetime;
         row.cells[2].textContent = average;
         row.cells[3].textContent = Math.sqrt(average);
-              
+
       
         
     }
@@ -45,6 +45,7 @@ function getRandom(){
     
 }
 
+<<<<<<< Updated upstream
 		var xValues = ["1ère mesure", "2ème mesure", "3ème mesure", "4ème mesure"];
 		var yValues = [firstNumber, secondNumber, thirdNumber, fourthNumber];
 		var barColors = ["red", "green","blue","orange","brown"];
@@ -66,6 +67,24 @@ function getRandom(){
 		    }
 		  }
 		});
+=======
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>> Stashed changes
 
         function imagefun() {
             var Image_Id = document.getElementById('getImage');
