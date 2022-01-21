@@ -57,59 +57,65 @@ if (isset($_POST['but_logout'])) {
     
     
         
-            <div class="center"><canvas id="myChart" style="width:100%;max-width:600px"></canvas></div>
+    <div class="essy"><canvas id="myChart" style="width:100%;max-width:600px"></canvas></div>
 
-            
+     <table class="centert">
+        <tr>
+            <th class="center">CAPTEUR-CO2-ZA59</th>
+            <th class="center">Statistiques pour la station Corentin Celton</th>
+        </tr>
+     <tr>       
        
-        	<div class = "center" style="text-align: center;">
-    <p> La moyenne est de <script type="text/javascript">document.write(average)</script>  ppm </p>
-    <p> La variance est de <script type="text/javascript">document.write(Math.sqrt(average))</script>  ppm </p>
-    <img id="getImage" src="sensor0.gif" style="height: 300px;" alt="Bulb img"><br>
+        	
+    <th class = "center" style="text-align: center;">
+
+    <img id="getImage" src="sensor0.gif" style="height: 230.3px; margin-left:23%" alt="Bulb img"><br>
     <input type="button" onclick="return run();" value="Refresh " class="buttonRafraichir">
-   <button id = "button" onclick="light();"></button>
-   <img id="myImage" src="twitter.png">
+   <input type = "button" onclick="light();" value="delete">
+   </th>
+</tr>
+</table>
   
 
 
 <form method="post">
 
+    <table border="1" cellpadding="10" cellspacing="0" style="border-collapse: collapse; margin-left: 30%; margin-top: 30px; width: 40%;"   width="100"v id="grid">
 
+    <tr>
+        <td  height="19" width="20%">Données du Capteur</td>
+        <td height="19" width="20%">Heure locale</td>
+        <td  height="19" width="20%">Moyenne</td>
+        <td  height="19" width="20%">Variance</td>
+    </tr>
+        <tr>
+            <td id="1-1" height="19" width="20%">&nbsp;</td>
+            <td id="1-2" height="19" width="20%">&nbsp;</td>
+            <td id="1-3" height="19" width="20%">&nbsp;</td>
+            <td id="1-4" height="19" width="20%">&nbsp;</td>
+        </tr>
+        <tr>
+            <td id="2-1" height="19" width="20%">&nbsp;</td>
+            <td id="2-2" height="19" width="20%">&nbsp;</td>
+            <td id="2-3" height="19" width="20%">&nbsp;</td>
+            <td id="2-4" height="19" width="20%">&nbsp;</td>
+        </tr>
+        <tr>
+            <td id="3-1" height="19" width="20%">&nbsp;</td>
+            <td id="3-2" height="19" width="20%">&nbsp;</td>
+            <td id="3-3" height="19" width="20%">&nbsp;</td>
+            <td id="3-4" height="19" width="20%">&nbsp;</td>
+        </tr>
+        <tr>
+            <td id="4-1" height="19" width="20%">&nbsp;</td>
+            <td id="4-2" height="19" width="20%">&nbsp;</td>
+            <td id="4-3" height="19" width="20%">&nbsp;</td>
+            <td id="4-4" height="19" width="20%">&nbsp;</td>
+        </tr>
+        </table>
 
-
-<table border="1" cellpadding="0" cellspacing="0" style="border-collapse: collapse" width="100"v>
-
-<tr>
-    <td  height="19" width="20%">Données du Capteur</td>
-    <td height="19" width="20%">Heure locale</td>
-</tr>
-</table>
-<table border="1" cellpadding="10" cellspacing="10" style="border-collapse: collapse" width="100"v id="grid">
-
-<tr>
-    <td id="1-1" height="19" width="20%">&nbsp;</td>
-    <td id="1-2" height="19" width="20%">&nbsp;</td>
-    <td id="1-3" height="19" width="20%">&nbsp;</td>
-    <td id="1-4" height="19" width="20%">&nbsp;</td>
-</tr>
-<tr>
-    <td id="2-1" height="19" width="20%">&nbsp;</td>
-    <td id="2-2" height="19" width="20%">&nbsp;</td>
-    <td id="2-3" height="19" width="20%">&nbsp;</td>
-    <td id="2-4" height="19" width="20%">&nbsp;</td>
-</tr>
-<tr>
-    <td id="3-1" height="19" width="20%">&nbsp;</td>
-    <td id="3-2" height="19" width="20%">&nbsp;</td>
-    <td id="3-3" height="19" width="20%">&nbsp;</td>
-    <td id="3-4" height="19" width="20%">&nbsp;</td>
-</tr>
-<tr>
-    <td id="4-1" height="19" width="20%">&nbsp;</td>
-    <td id="4-2" height="19" width="20%">&nbsp;</td>
-    <td id="4-3" height="19" width="20%">&nbsp;</td>
-    <td id="4-4" height="19" width="20%">&nbsp;</td>
-</tr>
-</table>
+        <p> La moyenne est de <script type="text/javascript">document.write(average)</script>  ppm </p>
+    <p> La variance est de <script type="text/javascript">document.write(Math.sqrt(average))</script>  ppm </p>
 
 <br><br>
 <div id="count" name="count"></div>
@@ -121,32 +127,9 @@ if (isset($_POST['but_logout'])) {
 
 <br>
 <br>
-<br/>
-    <div class="footer">
-        <div class="foot">Techsens est une société cherchant à développer des solutions en accord avec le développement durable.</div>
-        <img src="logoo.png" alt="photo du logo" />
-        
-        <div class="content">
-            <div class="barre">
-            <p>---------------------------------------------------</p></div>
-            <div class="photologo">
-            <div class="logofb">
-                <a href="https://www.facebook.com/profile.php?id=100073322512659"> <img src="fb.png" alt="logo fb" /> </p></a></div>
-            <div class="logoinsta">
-                <a href="https://www.instagram.com/"> <img src="insta.png" alt="logo insta" /> </a></div>
-            <div class="logotwitter">
-                <a href="https://twitter.com/Techsens_"> <img src="twitter.png" alt="logo twitter" /></a></div>
-            <div class="logolinkedin">
-                <a href="https://www.linkedin.com/in/techsens-a9887b222"> <img src="linkedin.png" alt="logo linkedin" /> </a></div>
-        </div></div>
-            <div class="end">
-                    <label for="end"> 
-                        <a href="cgu.html"> Mentions légales et politique de cofidentialité</a></label></div>
-    </div>
-    <div id="scrollUp">
-            <a href="#haut" class="top">
-                <img src="Haut.png" alt="photo bouton" class="img10" /></a>
-        </div>
+<br>
+
+    
 
 
 </body>
