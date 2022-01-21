@@ -76,11 +76,11 @@ function getRandom(){
             row.cells[1].textContent = 0;
             row.cells[2].textContent = 0;
             row.cells[3].textContent = 0;
-         document.getElementById("myImage").src="SC.jpg";
+    
          on = 1; //You forgot a ; here
         }
     }
-        else if (on == 1){document.getElementById("myImage").src="twitter.png"; //You forgot a ; here
+        else if (on == 1){ //You forgot a ; here
          on = 0; //You forgot a ; here
        }
       }

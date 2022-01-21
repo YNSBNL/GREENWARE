@@ -5,6 +5,10 @@
     margin-left: 5px;
 }
 
+.tableaugare {
+    white-space: nowrap
+}
+
 .mainheader ul {
     list-style-type: none;
     margin: 0;
