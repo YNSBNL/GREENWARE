@@ -12,63 +12,41 @@ if (isset($_POST['but_logout'])) {
     header('Location: login.php');
 }
 ?>
-<!doctype html>
+<!DOCTYPE html>
 <html>
 
 <head>
     <meta charset="utf-8" />
     <link href="graphique.css" media="all" rel="stylesheet" type="text/css">
+    <title>Techsens</title>
 </head>
 
 <body>
-
-       <?php
-         if(!isset($_SESSION)){
-            session_start();
-         }
-         if (isset($_SESSION['connected']) && $_SESSION['connected'] == true){
-            include("./Composants/headerconnected.php");
-                }
-        else {include("./Composants/headerdeconnected.php");
+    <?php
+     if(!isset($_SESSION)){
+        session_start();
+     }
+     if (isset($_SESSION['connected']) && $_SESSION['connected'] == true){
+        include("./Composants/headerconnected.php");
+            }
+    else {include("./Composants/headerdeconnected.php");
     }
     ?>
 
-    <div class="container2">
-        <center>
-            <p class="contacter2"> Votre Profil: </p>
-        </center>
-        
-            <div class="formulaire2">
-                <form class="intro">
-                    <p class="txt1"> Vos Informations Personnelles </p>
-
-                    <?php
-
-                    if (isset($_GET['Logout'])) {
-                        if ($_GET['Logout'] == true) {
-                            session_unset();
-                            header("location: login.php");
-                        }
-                    } else if ($_SESSION['uname'] !== "") {
-                        $user = $_SESSION['uname'];
-
-
-
-                        // afficher un message
-                        echo "<br>Bonjour $user, vous êtes connecté";
-                    }
-                    ?>
-                    <br><br>
-                    <a href="aide.php" class="button2">Information incorrecte ? Contactez-nous !</a>
-                    
-        
-                </form>
-
-            </div>
+    <div class="intro">
+        <?php
+        $x = "Catherine";
+        echo "<p><center> Bienvenue utilisateur $x  ! </center></p>"
+        ?>
     </div>
-    <p class="photo_de_profil">Photo de profil : </p>
-    <img src="anonyme.png" alt="photo de profil" class="img_de_profil" />
-
+    <div class="gares">
+        <p align="center" class="gare"> Merci de sélectionner une de vos stations/gares </p>
+        <div class="lien-gares">
+            <a href="corentin_celton.php"><img src="corentin-celton.jpg" class="buttongare1"></a>
+            <a href="saint_placide.php"><img src="saint-placide.jpg" class="buttongare2"></a>
+            <a href="gare_du_nord.php"><img src="gare_du_nord.jpg" class="buttongare3"></a>
+        </div>
+    </div>
     <br>
 <br>
 <br>
@@ -76,7 +54,6 @@ if (isset($_POST['but_logout'])) {
 <br>
 <br>
 <br>
-<br/>
     <div class="footer6">
         <div class="foot">Techsens est une société cherchant à développer des solutions en accord avec le développement durable.</div>
         <img src="logoo.png" alt="photo du logo" />
@@ -104,10 +81,4 @@ if (isset($_POST['but_logout'])) {
         </div>
     </div>
 </body>
-
 </html>
-
-
-
-
-

@@ -20,7 +20,7 @@
             <nav>
             <ul>
                 <a href="accueil.php"> <img src="maison.png" alt="photo du logo" /> </a>
-                    <li><a href="greenware1.php">Greenware</a></li>
+                    <li><a href="greenware.php">Greenware</a></li>
                     <li><a href="quizz.php">Quizz</a></li>                    
                     <li><a href="aide.php">Aide</a></li>
                     <li><a href="home.php">Profil</a></li>

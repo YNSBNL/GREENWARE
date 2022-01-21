@@ -60,7 +60,7 @@
         </div>
 
     </div>
-    <div class="footer6">
+    <div class="footerquizz">
         <div class="foot">Techsens est une société cherchant à développer des solutions en accord avec le développement
             durable.</div>
         <img src="logoo.png" alt="photo du logo" />

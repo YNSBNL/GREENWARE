@@ -1,3 +1,17 @@
+<?php
+include "config.php";
+
+// Check user login or not
+if (!isset($_SESSION['uname'])) {
+    header('Location: login.php');
+}
+
+// logout
+if (isset($_POST['but_logout'])) {
+    session_unset();
+    header('Location: login.php');
+}
+?>
 <!DOCTYPE html> <!-- type de document (html pr nous)-->
 <html>
 
@@ -38,17 +52,16 @@
     <br>
         <br>
         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
+<div class="essy"><canvas id="myChart" style="width:100%;max-width:600px"></canvas></div>
     <table class="centert">
         <tr>
             <th class="center">CAPTEUR-CO2-ZA59</th>
             <th class="center">Statistiques pour la Saint placide</th>
-            <div class="center"><canvas id="myChart" style="width:100%;max-width:600px"></canvas></div>
         </tr>
      <tr>
             <th class = "center" style="text-align: center;">
 
-    <img id="getImage" src="sensor1.gif" style="height: 300px;" alt="Bulb img"><br>
+    <img id="getImage" src="sensor1.png" style="height: 160px; margin-left: 27%;"  alt="Bulb img"><br>
     <input type="button" onclick="imagefun()" value="Refresh " class="buttonRafraichir">
     <button onclick="fu()" class="buttonRafraichir">Turn OFF</button>
   </th>
@@ -56,9 +69,12 @@
     
     </table>
 
+
+<p class="tablo"> Voici les données du capteur en temps réel</p>
+
 <form method="post">
 
-<table border="1" cellpadding="0" cellspacing="0" style="border-collapse: collapse" width="100"v id="grid">
+<table border="1" cellpadding="10" cellspacing="0" style="border-collapse: collapse; margin-left: 30%; margin-top: 30px; width: 40%;"   width="100"v id="grid">
 <tr>
     <td  height="19" width="20%">Données du Capteur</td>
     <td height="19" width="20%">Heure locale</td>
@@ -90,12 +106,16 @@
     <td id="4-4" height="19" width="20%">&nbsp;</td>
 </tr>
 </table>
+</form>
 
 <br><br>
 <div id="count" name="count"></div>
 
 
-<div class="footer4">
+<br>
+<br>
+<br/>
+    <div class="footer">
         <div class="foot">Techsens est une société cherchant à développer des solutions en accord avec le développement durable.</div>
         <img src="logoo.png" alt="photo du logo" />
         
@@ -104,19 +124,19 @@
             <p>---------------------------------------------------</p></div>
             <div class="photologo">
             <div class="logofb">
-                <a href="accueil.html"> <img src="fb.png" alt="logo fb" /> </p></a></div>
+                <a href="https://www.facebook.com/profile.php?id=100073322512659"> <img src="fb.png" alt="logo fb" /> </p></a></div>
             <div class="logoinsta">
-                <a href="accueil.html"> <img src="insta.png" alt="logo insta" /> </a></div>
+                <a href="https://www.instagram.com/"> <img src="insta.png" alt="logo insta" /> </a></div>
             <div class="logotwitter">
-                <a href="accueil.html"> <img src="twitter.png" alt="logo twitter" /></a></div>
+                <a href="https://twitter.com/Techsens_"> <img src="twitter.png" alt="logo twitter" /></a></div>
             <div class="logolinkedin">
                 <a href="https://www.linkedin.com/in/techsens-a9887b222"> <img src="linkedin.png" alt="logo linkedin" /> </a></div>
         </div></div>
             <div class="end">
                     <label for="end"> 
-                        <a href="#"> Mentions légales</a> | <a href="#"> Politique de confidentialité</a></label></div>
-</div>
-<div id="scrollUp">
+                        <a href="cgu.html"> Mentions légales et politique de cofidentialité</a></label></div>
+    </div>
+    <div id="scrollUp">
             <a href="#haut" class="top">
                 <img src="Haut.png" alt="photo bouton" class="img10" /></a>
         </div>

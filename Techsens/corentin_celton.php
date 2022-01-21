@@ -1,3 +1,17 @@
+<?php
+include "config.php";
+
+// Check user login or not
+if (!isset($_SESSION['uname'])) {
+    header('Location: login.php');
+}
+
+// logout
+if (isset($_POST['but_logout'])) {
+    session_unset();
+    header('Location: login.php');
+}
+?>
 <!DOCTYPE html> <!-- type de document (html pr nous)-->
 <html>
 
@@ -48,23 +62,29 @@
             
        
         	<div class = "center" style="text-align: center;">
-
-    <img id="getImage" src="sensor1.gif" style="height: 300px;" alt="Bulb img"><br>
-    <input type="button" onclick="imagefun(); return run();" value="Refresh " class="buttonRafraichir">
-    <button onclick="fu()" class="buttonRafraichir">Turn OFF</button></div>
- 
+    <p> La moyenne est de <script type="text/javascript">document.write(average)</script>  ppm </p>
+    <p> La variance est de <script type="text/javascript">document.write(Math.sqrt(average))</script>  ppm </p>
+    <img id="getImage" src="sensor0.gif" style="height: 300px;" alt="Bulb img"><br>
+    <input type="button" onclick="return run();" value="Refresh " class="buttonRafraichir">
+   <button id = "button" onclick="light();"></button>
+   <img id="myImage" src="twitter.png">
   
 
 
 <form method="post">
 
-<table border="1" cellpadding="0" cellspacing="0" style="border-collapse: collapse" width="100"v id="grid">
+
+
+
+<table border="1" cellpadding="0" cellspacing="0" style="border-collapse: collapse" width="100"v>
+
 <tr>
     <td  height="19" width="20%">Données du Capteur</td>
     <td height="19" width="20%">Heure locale</td>
-    <td  height="19" width="20%">Moyenne</td>
-    <td  height="19" width="20%">Variance</td>
 </tr>
+</table>
+<table border="1" cellpadding="10" cellspacing="10" style="border-collapse: collapse" width="100"v id="grid">
+
 <tr>
     <td id="1-1" height="19" width="20%">&nbsp;</td>
     <td id="1-2" height="19" width="20%">&nbsp;</td>
@@ -72,9 +92,9 @@
     <td id="1-4" height="19" width="20%">&nbsp;</td>
 </tr>
 <tr>
-    <td id="2-1" height="16" width="20%">&nbsp;</td>
-    <td id="2-2" height="16" width="20%">&nbsp;</td>
-    <td id="2-3" height="16" width="20%">&nbsp;</td>
+    <td id="2-1" height="19" width="20%">&nbsp;</td>
+    <td id="2-2" height="19" width="20%">&nbsp;</td>
+    <td id="2-3" height="19" width="20%">&nbsp;</td>
     <td id="2-4" height="19" width="20%">&nbsp;</td>
 </tr>
 <tr>
@@ -98,9 +118,7 @@
 </form>
 <br>
 <br>
-<br>
-<br>
-<br>
+
 <br>
 <br>
 <br/>
@@ -155,5 +173,11 @@
 		    }
 		  }
 		});
+
+
+   
+            
+    
+
 </script>
 </html>

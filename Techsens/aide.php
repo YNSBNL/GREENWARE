@@ -38,12 +38,12 @@ if(isset($_POST["envoyer"])){
 <br>
 <br>
 
-    <img src="assitance.png" alt="photo-assistance" class="img3" />
+    <img src="assistance.png" alt="photo-assistance" class="img3" />
     <form method="post">
         <p>
-        <h2 class="rut">Assistance</h2>
+        <center><h2 class="rut">Assistance</h2></center>
         </p>
-        <p><textarea name="ticket" id="Ticket" placeholder=" Rédiger un Ticket ici" class="ticket"></textarea></p>
+        <center><p><textarea name="ticket" id="Ticket" placeholder=" Rédiger un Ticket ici" class="ticket"></textarea></p></center>
             <input type="submit" class="button20" name= "envoyer" value="Envoyer le ticket"></a>
 
     </form>

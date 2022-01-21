@@ -1,3 +1,17 @@
+<?php
+include "config.php";
+
+// Check user login or not
+if (!isset($_SESSION['uname'])) {
+    header('Location: login.php');
+}
+
+// logout
+if (isset($_POST['but_logout'])) {
+    session_unset();
+    header('Location: login.php');
+}
+?>
 <!DOCTYPE html> <!-- type de document (html pr nous)-->
 <html>
 
@@ -94,11 +108,6 @@
 <div id="count" name="count"></div>
 
 
-<br>
-<br>
-<br>
-<br>
-<br>
 <br>
 <br>
 <br/>

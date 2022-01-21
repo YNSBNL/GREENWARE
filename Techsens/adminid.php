@@ -78,11 +78,12 @@ if (isset($_POST['submit'])) {
                             </div></center>
                             <center><input type="submit" class="button1" name="but_submit" id="but_submit" value="Se Connecter"></center>
                             <div class="lien-champ">
-                                <a href="" class="lien">Mot de Passe Oublié</a>
+                                <a href="" class="lien">Mot de Passe Oublié</a><br>
+                                
+                                <a href="login.php" class="lien">Section utilisateur</a>
                             </div>
                 </form>
-                <br><br>
-                <a href="login.php">Section utilisateur</a>
+            
             </div>
 
         </div>
