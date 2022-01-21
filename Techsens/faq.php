@@ -4,12 +4,21 @@
     <title>Faq</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <link rel="stylesheet" href="css-FAQ.css">
+    
 	
 </head>
 
 <body class="body-faq">
-
+<?php
+         if(!isset($_SESSION)){
+            session_start();
+         }
+         if (isset($_SESSION['connected']) && $_SESSION['connected'] == true){
+            include("./Composants/headerconnected.php");
+                }
+        else {include("./Composants/headerdeconnected.php");
+    }
+    ?>
 	<h1 class="h1-faq"> Consultez la foire aux questions ! </h1>
 
 	<div class="container-faq">

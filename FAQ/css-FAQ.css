@@ -4,10 +4,10 @@
     padding: 0;
 }
 
-body {
+.body-faq {
     font-family: 'Courier New', Courier, monospace;
 }
-h1 {
+.h1-faq {
     text-align: center;
     padding: 35px 0;
     font-size: 40px;
@@ -32,7 +32,7 @@ h1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #f1f1f1;
+    background: darkseagreen;
     border-radius: 10px;
     position: relative;
     z-index: 100;
@@ -50,9 +50,9 @@ h1 {
 }
 
 .toggle-pannel {
-    padding: 20px 15px;
-    /*height: 0px;
-    opacity: 0;*/
+    padding: 0px 15px;
+    height: 0px;
+    opacity: 0;
 }
 .toggle-pannel h4 {
     font-size: 18px;

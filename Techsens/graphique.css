@@ -541,6 +541,65 @@ div.Chiffres {
     z-index: 100000;
 }
 
+/*_____________________________________________FAQ______________*/
+
+.body-faq {
+    font-family: 'Courier New', Courier, monospace;
+}
+.h1-faq {
+    text-align: center;
+    padding: 35px 0;
+    font-size: 40px;
+}
+.container-faq {
+    width: 70%;
+    max-width: 900px;
+    min-width: 700px;
+    height: auto;
+    margin: 10px auto 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.questions {
+    width: 100%;
+    height: auto;
+    margin: 5px;
+}
+.pannel-faq {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: darkseagreen;
+    border-radius: 10px;
+    position: relative;
+    z-index: 100;
+}
+
+.pannel-faq h2 {
+    margin-left: 10px;
+    padding: 15px 5px;
+    font-size: 25px;
+}
+.pannel-faq img {
+    margin-right: 10px;
+    width: 25px;
+    cursor: pointer;
+}
+
+.toggle-pannel {
+    padding: 0px 15px;
+    height: 0px;
+    opacity: 0;
+}
+.toggle-pannel h4 {
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+.toggle-pannel p {
+    line-height: 1.5;
+}
 
 /*_____________________________________________footer______________*/
 
