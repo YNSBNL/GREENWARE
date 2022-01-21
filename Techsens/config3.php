@@ -51,16 +51,16 @@
 		}
 	}
 
-	if ($_SERVER['REQUEST_METHOD'] == 'GET' && isSet($_GET['deletefaq'])) {
-		$conn3 = mysqli_connect('localhost', 'root', '','techsens') or die("Connection failed: " . mysqli_connect_error());
-		if (isSet($_GET['message'])) {
-			$message3 = $_GET['message'];
+	if ($_SERVER['REQUEST_METHOD'] == 'POST' && isSet($_POST['deletefaq'])) {
+		$conn5 = mysqli_connect('localhost', 'root', '','techsens') or die("Connection failed: " . mysqli_connect_error());
+		if (isSet($_POST['message'])) {
+			$message5 = $_POST['message'];
 			
  
-			$sql3 = "DELETE FROM faq WHERE message = '$message3'";
+			$sql5 = "DELETE FROM `faq` WHERE 'message' = '$message5'";
  
-			$query3 = mysqli_query($conn3,$sql3);
-			if ($query3) {
+			$query5 = mysqli_query($conn5,$sql5);
+			if ($query5) {
 				echo 'Data Successfully Saved!';
 			} else {
 				echo "An error occured while save the data.";
