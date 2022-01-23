@@ -27,7 +27,7 @@ if (isset($_POST['but_submit'])) {
             $_SESSION['uname'] = $uname;
             $_SESSION['errormdp']="";
             if($data->success==true)
-            header('Location: home.php');
+            header('Location: profil.php');
         } else {
             $_SESSION['errormdp'] = '<p style="color: darkred;"/> Nom d utilisateur ou Mot de Passe incorrect';
         }
@@ -38,7 +38,7 @@ if (isset($_POST['but_submit'])) {
             $_SESSION['connected'] = true;  
             $_SESSION['uname'] = $uname;
             $_SESSION['errorcaptcha']="";
-            header('Location: home.php');}
+            header('Location: profil.php');}
     }
     else{
         $_SESSION['errorcaptcha'] ='<p style="color: darkred;"/> Remplir le Captcha';

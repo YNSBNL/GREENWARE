@@ -11,6 +11,7 @@ h1 {
     text-align: center;
     padding: 35px 0;
     font-size: 40px;
+    color: rgb(90, 122, 96);
 }
 .container-faq {
     width: 70px;
@@ -27,22 +28,29 @@ h1 {
     width: 100%;
     height: auto;
     margin: 5px;
+    color: white;
 }
-.visible-pannel {
+.p-faq{
+    color: darkseagreen;
+}
+.trait{
+    color: darkseagreen;
+}
+.pannel-faq {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #f1f1f1;
+    background: darkseagreen;
     border-radius: 10px;
     position: relative;
     z-index: 100;
 }
-.visible-pannel h2 {
+.pannel-faq h2 {
     margin-left: 10px;
     padding: 15px 5px;
     font-size: 25px;
 }
-.visible-pannel img {
+.pannel-faq img {
     margin-right: 10px;
     width: 25px;
     cursor: pointer;

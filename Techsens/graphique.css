@@ -1071,3 +1071,38 @@ h2.Hun {
     margin-top: 2000px;
     position: relative;
 }
+
+/* Espace Admin */
+
+.inline-block-admin{
+    background-color: darkseagreen;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 80%;
+    border-radius: 10px;
+}
+.inline-block-admin :first-child{
+    align-self: center;
+}
+.inline-block-admin h2{
+    color: white;
+}
+.inline-block-admin label{
+    color: white;
+}
+
+.button7 {
+    width: 280px;
+    height: 30px;
+    background: white;
+    border-radius: 5px;
+    color: darkseagreen;
+    font-size: 20px;
+    margin: 15px;
+    position: relative;
+}
+
+.button7:hover {
+    background: rgba(0, 0, 0, 0.5);
+}
