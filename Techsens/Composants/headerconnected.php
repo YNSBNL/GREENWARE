@@ -23,7 +23,7 @@
                     <li><a href="greenware.php">Greenware</a></li>
                     <li><a href="quizz.php">Quizz</a></li>                    
                     <li><a href="aide.php">Aide</a></li>
-                    <li><a href="home.php">Profil</a></li>
+                    <li><a href="profil.php">Profil</a></li>
                     <li><a href="about.php">About</a></li>
 
                     <li style="float:right"><a class="active" href="disconnect.php">Déconnexion</a></li>

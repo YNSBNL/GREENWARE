@@ -2,9 +2,16 @@
 include "config2.php";
 include "config3.php";
 
+
+
 // Check user login or not
+if (!isset($_SESSION['uname'])) {
+    header('Location: adminid.php');
+}
 
 ?>
+
+
 <!doctype html>
 <html>
 

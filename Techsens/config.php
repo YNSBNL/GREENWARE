@@ -5,7 +5,6 @@ $user = "root"; /* User */
 $password = ""; /* Password */
 
 $dbname = "techsens"; /* Database name */
-$sql1 = "SELECT email FROM users";
 
 $con = mysqli_connect($host, $user, $password,$dbname);
 // Check connection
