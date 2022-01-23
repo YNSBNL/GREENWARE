@@ -71,10 +71,10 @@ var xValues = ["1ère mesure", "2ème mesure", "3ème mesure", "4ème mesure"];
          var counter =0;
          var grid = document.getElementById("grid");
          for (var i = 0, row; row = grid.rows[i]; i++){
-            row.cells[0].textContent = 0;
-            row.cells[1].textContent = 0;
-            row.cells[2].textContent = 0;
-            row.cells[3].textContent = 0;
+            row.cells[0].textContent = "";
+            row.cells[1].textContent = "";
+            row.cells[2].textContent = "";
+            row.cells[3].textContent = "";
     
          on = 1; //You forgot a ; here
         }
