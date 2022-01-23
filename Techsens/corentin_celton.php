@@ -69,7 +69,7 @@ if (isset($_POST['but_logout'])) {
         	
     <th class = "center" style="text-align: center;">
 
-    <img id="getImage" src="sensor0.gif" style="height: 230.3px; margin-left:23%" alt="Bulb img"><br>
+    <img id="getImage" src="sensor1.png" style="height: 230.3px; margin-left:23%" alt="Bulb img"><br>
     <input type="button" onclick="return run();" value="Refresh/ Turn on " class="buttonRafraichir">
    </th>
 </tr>
