@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Faq</title>
+    <title>Techsens</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    
-	
+    <link href="css-FAQ.css" rel="stylesheet">
 </head>
 
-<body class="body-faq">
+<body>
 <?php
          if(!isset($_SESSION)){
             session_start();
@@ -19,7 +18,7 @@
         else {include("./Composants/headerdeconnected.php");
     }
     ?>
-	<h1 class="h1-faq"> Consultez la foire aux questions ! </h1>
+	<h1 class="h1-faq"> Les réponses à vos questions fréquentes. </h1>
 
 	<div class="container-faq">
 
@@ -37,7 +36,7 @@
 			</div>
 		</div>
 
-----------------------------------------------------------
+<p class="trait">----------------------------------------------------------</p>
 		<div class="questions">
 			<div class="pannel-faq">
 				<h2 class="h2-faq"> question 2. </h2>
@@ -49,7 +48,7 @@
 			</div>
 		</div>
 
-----------------------------------------------------------
+<p class="trait">----------------------------------------------------------</p>
 
 		<div class="questions">
 			<div class="pannel-faq">
@@ -67,7 +66,7 @@
 			</div>
 		</div>
 
-----------------------------------------------------------
+<p class="trait">----------------------------------------------------------</p>
 
 		<div class="questions">
 			<div class="pannel-faq">
@@ -84,8 +83,12 @@
 
 		</div>
 	</div>
+	<br>
+	<br>
+	<br>
+	<br>
 
-
+<center>
 	<?php
 $con=mysqli_connect('localhost', 'root', '','techsens');
 // Check connection
@@ -113,11 +116,16 @@ echo "</table>";
 
 mysqli_close($con);
 ?>
-
+</center>
+<br>
+<br>
+<br>
+<br><br>
+<br>
 	<div class="footer">
         <div class="foot">Techsens est une société cherchant à développer des solutions en accord avec le développement durable.</div>
         <img src="logoo.png" alt="photo du logo" />
-        
+        <br>
         <div class="content">
             <div class="barre">
             <p>---------------------------------------------------</p></div>
