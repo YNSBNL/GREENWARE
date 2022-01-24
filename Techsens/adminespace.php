@@ -70,17 +70,19 @@ if (!isset($_SESSION['uname'])) {
     <p class="photo_de_profil">Photo de profil : </p>
     <img src="anonyme.png" alt="photo de profil" class="img_de_profil" />
 
-    <br>
+<div class="gestion-ticket">
+    <h4>Gestion des Tickets</h4>
     <?php
- $rasult = mysqli_query($con,"SELECT * FROM ticket");
- echo "ticket";
- while($rew = mysqli_fetch_array($rasult))
+        $rasult = mysqli_query($con,"SELECT * FROM ticket");
+        echo "ticket";
+        while($rew = mysqli_fetch_array($rasult))
           {
           echo "<tr><td>" . $rew['email'] . "</td><td> " . $rew['message'] . "</td></tr>"; //these are the fields that you have stored in your database table employee
           }
- echo "</table>";
- mysqli_close($con);
-?>
+        echo "</table>";
+        mysqli_close($con);
+    ?>
+</div>
 <br>
 <br>
 <br>

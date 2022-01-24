@@ -1113,3 +1113,11 @@ h2.Hun {
 .button7:hover {
     background: rgba(0, 0, 0, 0.5);
 }
+
+.gestion-ticket{
+    background-color: darkseagreen;
+    width: 20%;
+}
+.gestion-ticket h4{
+    color: white;
+}
