@@ -75,9 +75,30 @@
 		}
 	}
 
-
-
 		
+if ($_SERVER['REQUEST_METHOD'] == 'POST' && isSet($_POST['search'])) {
+        $conn9 = mysqli_connect('localhost', 'root', '','techsens') or die("Connection failed: " . mysqli_connect_error());
+        if (isSet($_POST['user'])) {
+            $user9 = $_POST['user'];
+            
+            $sql9 = "SELECT * FROM users WHERE user = '$user9'";
+ 
+            $query9 = mysqli_query($conn9,$sql9);
+			if ($query9) {
+            	echo "infos utilisateur : ";
+            	while($rew9 = mysqli_fetch_array($query9))
+                      {
+                      echo "<tr><td>" . $rew['id'] . "</td><td> " . $rew['username'] . "</td><td> " . $rew['password'] . "</td></tr>"; 
+                      }
+             	echo "</table>";
+             	mysqli_close($con);
+
+
+            } else {
+                echo "An error occured while save the data.";
+            }
+        }
+    }
 
 
 ?>
