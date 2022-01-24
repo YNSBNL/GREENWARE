@@ -24,27 +24,22 @@
 
 		<div class="questions">
 			<div class="pannel-faq">
-				<h2 class="h2-faq"> question 1. </h2>
+				<h2 class="h2-faq"> Comment puis-je utiliser Greenware? </h2>
 				<img class="img-faq" src="image/plus.png" alt="animation">
 			</div>
 			<div class="toggle-pannel">
-				<h4 class="h4-faq">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, ad?</h4>
-				<p class="p-faq"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque ratione hic excepturi 
-                    sunt commodi suscipit, ea eum, nobis unde tenetur enim aliquid. Fugit adipisci nisi unde
-                    molestiae ratione corrupti minus eaque provident officiis deleniti ullam explicabo quae 
-                    voluptates, minima at saepe dignissimos ad? Aperiam consectetur non nesciunt impedit rerum earum! </p>
+				<p class="p-faq">Pour utiliser Greenware, il faut avoir un compte. Si vous avez un compte connectez vous sur la page <a href="login.php" class="lien2">« s’identifier »</a>. Si vous n’avez pas de compte vous pouvez nous contacter sur la page <a href="contact.php" class="lien2">« nous contacter »</a> afin que nous puissions peut être travailler ensemble dans le futur. </p>
 			</div>
 		</div>
 
 <p class="trait">----------------------------------------------------------</p>
 		<div class="questions">
 			<div class="pannel-faq">
-				<h2 class="h2-faq"> question 2. </h2>
+				<h2 class="h2-faq"> J’ai perdu mon identifiant/mot de passe, que dois-je faire?  </h2>
 				<img class="img-faq" src="image/plus.png" alt="animation">
 			</div>
 			<div class="toggle-pannel">
-				<h4 class="h4-faq">On est la, ta vu!.</h4>
-				<p class="p-faq"> bonsoir lyon j'espère que vous allez bien,  </p>
+				<p class="p-faq">Écrivez nous grâce à la page <a href="contact.php" class="lien2">« nous contacter »</a> en décrivant votre problème. Précisez bien votre nom/prénom/société/date de naissance et identifiant (si vous l’avez), nous vous enverrons un mail afin de réinitialiser votre identifiant/mot de passe.</p>
 			</div>
 		</div>
 
@@ -52,17 +47,12 @@
 
 		<div class="questions">
 			<div class="pannel-faq">
-				<h2 class="h2-faq"> question 3. </h2>
+				<h2 class="h2-faq">Où puis-je voir les informations des capteurs?</h2>
 				<img class="img-faq" src="image/plus.png" alt="animation">
 			</div>
 			<div class="toggle-pannel">
-				<h4 class="h4-faq">On est la, ta vu!.</h4>
-				<p class="p-faq"> bonsoir lyon j'espère que vous allez bien, moi ça vas super tranquille pépouz
-					bonsoir lyon j'espère que vous allez bien, moi ça vas super tranquille pépouz
-					bonsoir lyon j'espère que vous allez bien, moi ça vas super tranquille pépouz
-					bonsoir lyon j'espère que vous allez bien, moi ça vas super tranquille pépouz
-					bonsoir lyon j'espère que vous allez bien, moi ça vas super tranquille pépouz
-					bonsoir lyon j'espère que vous allez bien, moi ça vas super tranquille pépouz </p>
+				<p class="p-faq"> Pour voir les informations des capteurs il faut vous connecter, aller dans l’onglet « Greenware » puis choisir l’endroit dont vous voulez voir les valeurs. 
+					Vous pouvez ensuite allumer le capteur et le rafraîchir pour voir ses valeurs. </p>
 			</div>
 		</div>
 
@@ -70,15 +60,12 @@
 
 		<div class="questions">
 			<div class="pannel-faq">
-				<h2 class="h2-faq"> question 4. </h2>
+				<h2 class="h2-faq">J’ai un problème avec les capteurs que puis/je faire?</h2>
 				<img class="img-faq" src="image/plus.png" alt="animation">
 			</div>
 			<div class="toggle-pannel">
-				<h4 class="h4-faq">On est la, ta vu!.</h4>
-				<p class="p-faq"> bonsoir lyon j'espère que vous allez bien, moi ça vas super tranquille pépouz
-					bonsoir lyon j'espère que vous allez bien, moi ça vas super tranquille pépouz
-					bonsoir lyon j'espère que vous allez bien, moi ça vas super tranquille pépouz
-					bonsoir lyon j'espère que vous allez bien, moi ça vas super tranquille pépouz </p>
+				<p class="p-faq">Si vous avez un problème avec les capteurs vous pouvez nous écrire depuis la page <a href="aide.php" class="lien2">« Aide »</a> en nous décrivant votre problème. 
+					Nos techniciens vous répondront dans les plus brefs délais pour vous aider.</p>
 			</div>
 
 		</div>
