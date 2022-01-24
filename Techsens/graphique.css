@@ -1,8 +1,15 @@
+
+@media screen and (max-width: 80rem){
+    html {
+        font-size: 75%; /* Ré-équilibrage du Rem face au Pixel pour des calculs simples */
+    }  
+}
+
 /*BARRE DE NAVIGUATION*/
 
 .maisoon {
-    margin-top: 5px;
-    margin-left: 5px;
+    margin-top: .3125rem;
+    margin-left: .3125rem;
 }
 
 .mainheader ul {
@@ -27,17 +34,17 @@ li a {
     display: flex;
     color: #2e6604;
     text-align: center;
-    padding: 14px 16px;
+    padding: .875rem 1rem;
     text-decoration: none;
     background-color: #dde7d6;
-    height: 60px;
+    height: 3.75rem;
     font-size: 1.3em;
     justify-content: space-around;
 }
 
 .mainheader ul li {
     width: 13%;
-    height: 60px;
+    height: 3.75rem;
     justify-content: space-between;
 }
 
@@ -56,7 +63,7 @@ nav>ul li:hover .sous {
 }
 
 .topheader {
-    height: 60px;
+    height: 3.75rem;
 }
 
 .active {
@@ -67,8 +74,8 @@ nav>ul li:hover .sous {
 .phrase {
     position: relative;
     float: right;
-    margin-top: 0px;
-    margin-right: 5px;
+    margin-top: 0rem;
+    margin-right: .3125rem;
     font-family: cursive;
     font-size: 1em;
     font-style: italic;
@@ -84,31 +91,31 @@ img {
 
 .block-formulaire {
     width: 50%;
-    height: 600px;
+    height: 37.5rem;
     margin: auto;
     border: none;
 }
 
 .fieldset2 {
     border: none;
-    height: 600px;
+    height: 37.5rem;
 }
 
 .formulaire {
     width: 80%;
-    height: 470px;
+    height: 29.375rem;
     background: darkseagreen;
     margin: auto;
-    border-radius: 10px;
+    border-radius: .625rem;
 }
 
 .titre-du-formulaire {
     cursor: pointer;
     text-align: center;
-    font-size: 24px;
-    font-weight: 600px;
+    font-size: 1.5rem;
+    font-weight: 37.5rem;
     position: relative;
-    top: 40px;
+    top: 2.5rem;
     color: white;
 }
 
@@ -119,26 +126,26 @@ img {
 }
 
 .champ {
-    width: 380px;
-    height: 40px;
-    margin: 15px;
-    font-size: 18px;
+    width: 23.75rem;
+    height: 2.5rem;
+    margin: .9375rem;
+    font-size: 1.125rem;
     border: none;
-    border-bottom: 2px solid white;
+    border-bottom: .125rem solid white;
     outline: none;
     color: black;
     position: relative;
-    top: 50px;
+    top: 3.125rem;
 }
 
 .button1 {
-    width: 380px;
-    height: 30px;
+    width: 23.75rem;
+    height: 1.875rem;
     background: white;
-    border-radius: 5px;
+    border-radius: .3125rem;
     color: darkseagreen;
-    font-size: 20px;
-    margin: 15px;
+    font-size: 1.25rem;
+    margin: .9375rem;
     position: relative;
 }
 
@@ -151,7 +158,7 @@ img {
     margin: auto;
     text-align: center;
     position: relative;
-    font-size: 17px;
+    font-size: 1.0625rem;
 }
 
 .lien {
@@ -166,11 +173,11 @@ body {
 
 .background {
     width: 90%;
-    margin-top: 650px;
+    margin-top: 40.625rem;
 }
 
 .photofond {
-    margin-top: 20px;
+    margin-top: 1.25rem;
     margin-left: 2%;
 }
 
@@ -184,8 +191,8 @@ h3 {
 }
 
 .premier {
-    margin-left: 400px;
-    margin-right: 400px;
+    margin-left: 25rem;
+    margin-right: 25rem;
 }
 
 
@@ -196,14 +203,14 @@ h3 {
 
 .img1 {
     margin-left: 40%;
-    width: 90px;
+    width: 5.625rem;
     align-items: center;
 }
 
 .rut {
-    width: 300px;
-    height: 55px;
-    font-size: 40px;
+    width: 18.75rem;
+    height: 3.4375rem;
+    font-size: 2.5rem;
     position: relative;
     text-align: center;
     color: darkseagreen;
@@ -211,24 +218,24 @@ h3 {
 
 .ticket {
     position: relative;
-    border: 1px solid black;
-    width: 840px;
-    height: 300px;
-    margin-top: 8px;
-    font-size: 17px;
+    border: .0625rem solid black;
+    width: 52.5rem;
+    height: 18.75rem;
+    margin-top: .5rem;
+    font-size: 1.0625rem;
     background-color: darkseagreen;
     color: ghostwhite;
-    border-radius: 7px;
-    box-shadow: 5px 5px 5px black;
+    border-radius: .4375rem;
+    box-shadow: .3125rem .3125rem .3125rem black;
 }
 
 .button20 {
     position: relative;
     border: none;
-    border-radius: 5px;
-    width: 300px;
-    height: 50px;
-    font-size: 20px;
+    border-radius: .3125rem;
+    width: 18.75rem;
+    height: 3.125rem;
+    font-size: 1.25rem;
     background-color: darkseagreen;
     text-align: center;
     margin-left: 70%;
@@ -242,10 +249,10 @@ h3 {
 .img3 {
     position: absolute;
     display: flex;
-    margin-top: 160px;
+    margin-top: 10rem;
     margin-left: 5%;
-    width: 270px;
-    height: 200px;
+    width: 16.875rem;
+    height: 12.5rem;
 }
 
 
@@ -260,7 +267,7 @@ h1.Techsens {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 780px;
+    margin-top: 48.75rem;
     margin-left: 10%;
 }
 
@@ -268,7 +275,7 @@ h1.Techsens {
     display: inline;
     width: 75%;
     height: auto;
-    height: 200px;
+    height: 12.5rem;
     margin-left: 10%;
 }
 
@@ -276,7 +283,7 @@ h1.Techsens {
     display: inline;
     width: 75%;
     height: auto;
-    height: 200px;
+    height: 12.5rem;
     margin-left: 10%;
 }
 
@@ -284,7 +291,7 @@ h1.Techsens {
     display: inline;
     width: 75%;
     height: auto;
-    height: 200px;
+    height: 12.5rem;
     margin-left: 10%;
 }
 
@@ -315,7 +322,7 @@ h1.Techsens {
 
 .slogan {
     margin-left: 42%;
-    font-size: 30px;
+    font-size: 1.875rem;
     color: #075244;
     font-style: italic;
 }
@@ -327,9 +334,9 @@ div.Chiffres {
 }
 
 .Chiffre {
-    margin-top: 50px;
+    margin-top: 3.125rem;
     margin-left: -5%;
-    font-size: 36px;
+    font-size: 2.25rem;
     font-family: sans-serif;
     font-weight: 500;
     color: #075244;
@@ -337,7 +344,7 @@ div.Chiffres {
 
 .img10 {
     float: right;
-    width: 30px;
+    width: 1.875rem;
     height: auto;
     position: relative;
     margin-right: 2%;
@@ -358,9 +365,9 @@ div.Chiffres {
 /* Photo greenware corentin celton */
 
 .celton {
-    margin-left: 285px;
+    margin-left: 17.8125rem;
     width: 40%;
-    height: 300px;
+    height: 18.75rem;
     margin-left: 30%;
 }
 
@@ -378,19 +385,19 @@ div.Chiffres {
 }
 
 .center {
-    width: 600px;
-    padding: 5px;
+    width: 37.5rem;
+    padding: .3125rem;
     color: darkseagreen;
-    border: 3px solid darkseagreen;
+    border: .1875rem solid darkseagreen;
     text-align: center;
     margin-left: 40%;  
 }
 
 .essy{
-    width: 600px;
-    padding: 5px;
+    width: 37.5rem;
+    padding: .3125rem;
     color: darkseagreen;
-    border: 3px solid darkseagreen;
+    border: .1875rem solid darkseagreen;
     text-align: center;
     margin-left: 49.9%;
     margin-top: 1.65%;
@@ -421,8 +428,8 @@ div.Chiffres {
 .sensor {
     margin-left: auto;
     margin-right: auto;
-    width: 400px;
-    height: 300px;
+    width: 25rem;
+    height: 18.75rem;
 }
 
 
@@ -431,19 +438,19 @@ div.Chiffres {
 .stat {
     margin-left: auto;
     margin-right: auto;
-    width: 450px;
-    height: 350px;
+    width: 28.125rem;
+    height: 21.875rem;
 }
 
 .buttonRafraichir {
     margin-left: auto;
     margin-right: auto;
-    width: 400px;
-    height: 70px;
-    padding: 5px 3px;
+    width: 25rem;
+    height: 4.375rem;
+    padding: .3125rem .1875rem;
     background-color: #2E8B57;
     border: none;
-    border-radius: 10px;
+    border-radius: .625rem;
     cursor: pointer;
     color: white;
 }
@@ -451,31 +458,31 @@ div.Chiffres {
 .buttonRafraichir:hover {
     background-color: darkgreen;
     color: white;
-    box-shadow: 0 8px 16px 0;
+    box-shadow: 0 .5rem 1rem 0;
 }
 
 .rectangl1 {
     text-align: center;
-    margin-left: 60px;
+    margin-left: 3.75rem;
 }
 
 .rectangl2 {
     text-align: center;
-    margin-left: 30px;
-    margin-right: 1200px;
-    margin-bottom: 1200px;
-    margin-top: 200px;
+    margin-left: 1.875rem;
+    margin-right: 75rem;
+    margin-bottom: 75rem;
+    margin-top: 12.5rem;
 }
 
 .button {
     background-color: #ffffff;
     border: black;
     color: black;
-    padding: 15px 32px;
+    padding: .9375rem 2rem;
     text-align: center;
     text-decoration: none;
-    font-size: 16px;
-    margin: 4px 2px;
+    font-size: 1rem;
+    margin: .25rem .125rem;
     cursor: pointer;
     left: 50%;
     right: 50%;
@@ -483,21 +490,21 @@ div.Chiffres {
 }
 
 #trait_dessus {
-    border-top: 5px solid #000;
-    width: 1600px;
-    margin-top: 150px
+    border-top: .3125rem solid #000;
+    width: 100rem;
+    margin-top: 9.375rem
 }
 
 #trait_dessous {
-    border-top: 5px solid #000;
-    width: 1600px;
+    border-top: .3125rem solid #000;
+    width: 100rem;
 }
 
 .vertical-line {
-    border-left: 5px solid #000;
+    border-left: .3125rem solid #000;
     display: inline-block;
-    height: 500px;
-    margin: 0 500px;
+    height: 31.25rem;
+    margin: 0 31.25rem;
 }
 
 
@@ -506,7 +513,7 @@ div.Chiffres {
 .contacter2 {
     font-size: 3em;
     font-family: Bradley Hand, cursive;
-    margin-left: 25px;
+    margin-left: 1.5625rem;
     color: darkseagreen;
 }
 
@@ -528,34 +535,34 @@ div.Chiffres {
     margin-right: auto;
     margin-left: auto;
     color: darkseagreen;
-    width: 300px;
-    padding: 5px 3px;
+    width: 18.75rem;
+    padding: .3125rem .1875rem;
     background-color: white;
     border: none;
-    border-radius: 10px;
+    border-radius: .625rem;
     cursor: pointer;
 }
 
 .button2:hover {
     background-color: darkgreen;
     color: white;
-    box-shadow: 0 8px 16px 0;
+    box-shadow: 0 .5rem 1rem 0;
 }
 
 .photo_de_profil {
     color: darkseagreen;
     font-size: 1.7em;
-    margin-top: -350px;
+    margin-top: -21.875rem;
     float: left;
-    margin-left: 100px;
+    margin-left: 6.25rem;
 }
 
 .img_de_profil {
-    width: 150px;
+    width: 9.375rem;
     display: block;
     float: left;
-    margin-top: -300px;
-    margin-left: 100px;
+    margin-top: -18.75rem;
+    margin-left: 6.25rem;
 }
 
 
@@ -574,9 +581,9 @@ div.Chiffres {
 
 .footer {
     position: relative;
-    padding-top: 10px;
+    padding-top: .625rem;
     width: 100%;
-    height: 170px;
+    height: 10.625rem;
     background-color: rgb(123, 161, 123);
     color: #F3F3F3;
     text-align: center;
@@ -592,23 +599,23 @@ div.Chiffres {
 }
 
 .end {
-    margin-top: 100px;
+    margin-top: 6.25rem;
 }
 
 .content {
     margin-left: 25%;
     margin-right: 25%;
     width: 50%;
-    margin-top: -20px;
+    margin-top: -1.25rem;
 }
 
 .footerquizz {
     top: 1%;
     position: absolute;
     left: 0;
-    padding-top: 10px;
+    padding-top: .625rem;
     width: 100%;
-    height: 170px;
+    height: 10.625rem;
     background-color: rgb(123, 161, 123);
     color: #F3F3F3;
     text-align: center;
@@ -620,9 +627,9 @@ div.Chiffres {
     top: 1%;
     position: absolute;
     left: 0;
-    padding-top: 10px;
+    padding-top: .625rem;
     width: 100%;
-    height: 170px;
+    height: 10.625rem;
     background-color: rgb(123, 161, 123);
     color: #F3F3F3;
     text-align: center;
@@ -638,11 +645,11 @@ div.Chiffres {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 7px;
-    width: 700px;
+    border-radius: .4375rem;
+    width: 43.75rem;
     background-color: darkseagreen;
     color: white;
-    font-size: 30px;
+    font-size: 1.875rem;
 }
 
 .gares {
@@ -661,24 +668,24 @@ div.Chiffres {
 .buttongare1 {
     display: inline;
     width: 18%;
-    height: 200px;
-    border: 5px solid darkseagreen;
+    height: 12.5rem;
+    border: .3125rem solid darkseagreen;
     margin-left: 11%;
 }
 
 .buttongare2 {
     display: inline;
     width: 18%;
-    height: 200px;
-    border: 5px solid darkseagreen;
+    height: 12.5rem;
+    border: .3125rem solid darkseagreen;
     margin-left: 10%;
 }
 
 .buttongare3 {
     display: inline;
     width: 18%;
-    height: 200px;
-    border: 5px solid darkseagreen;
+    height: 12.5rem;
+    border: .3125rem solid darkseagreen;
     margin-left: 10%;
 }
 
@@ -723,13 +730,13 @@ div.Chiffres {
 
 .button10 {
     width: 20%;
-    height: 40px;
+    height: 2.5rem;
     background: darkseagreen;
-    border-radius: 5px;
+    border-radius: .3125rem;
     color: white;
-    font-size: 20px;
+    font-size: 1.25rem;
     position: relative;
-    top: 60px;
+    top: 3.75rem;
     margin-left: 40%;
 }
 
@@ -747,26 +754,26 @@ div.Chiffres {
 }
 
 .button5 {
-    width: 150px;
-    padding: 5px 3px;
+    width: 9.375rem;
+    padding: .3125rem .1875rem;
     background-color: #2E8B57;
     border: none;
-    border-radius: 10px;
+    border-radius: .625rem;
     cursor: pointer;
 }
 
 .button5:hover {
     background-color: white;
     color: white;
-    box-shadow: 0 8px 16px 0;
+    box-shadow: 0 .5rem 1rem 0;
 }
 
 .contacter4 {
-    width: 400px;
-    height: 100px;
+    width: 25rem;
+    height: 6.25rem;
     font-size: 2.5em;
     font-family: Bradley Hand, cursive;
-    margin-left: 25px;
+    margin-left: 1.5625rem;
     background-image: url("enveloppe.png");
     background-repeat: no-repeat;
     background-position: top right;
@@ -776,12 +783,12 @@ div.Chiffres {
     background-color: rgba(143, 188, 122, .6);
     width: 80%;
     position: relative;
-    height: 625px;
+    height: 39.0625rem;
     right: 15%;
     left: 15%;
-    margin-left: -50px;
-    margin-top: 100px;
-    border-radius: 10px;
+    margin-left: -3.125rem;
+    margin-top: 6.25rem;
+    border-radius: .625rem;
     opacity: 70%;
 }
 
@@ -790,15 +797,15 @@ div.Chiffres {
     text-align: justify;
     width: 30%;
     font-size: 1.25em;
-    margin-right: 50px;
-    margin-top: -120px;
+    margin-right: 3.125rem;
+    margin-top: -7.5rem;
 }
 
 .boxe {
     padding: 1em;
-    width: 200px;
-    height: 7px;
-    border: 1px solid;
+    width: 12.5rem;
+    height: .4375rem;
+    border: .0625rem solid;
 }
 
 .texteleft {
@@ -806,8 +813,8 @@ div.Chiffres {
     width: 50%;
     font-size: 1.5em;
     text-align: justify;
-    margin-left: 50px;
-    margin-top: -40px;
+    margin-left: 3.125rem;
+    margin-top: -2.5rem;
 }
 
 .blabla {
@@ -820,20 +827,20 @@ div.Chiffres {
 
 .fleche {
     float: right;
-    margin-top: -90px;
-    margin-right: -300px;
+    margin-top: -5.625rem;
+    margin-right: -18.75rem;
 }
 
 .button51 {
-    width: 150px;
-    padding: 5px 3px;
+    width: 9.375rem;
+    padding: .3125rem .1875rem;
     background-color: #5c834a;
     border: none;
-    border-radius: 10px;
+    border-radius: .625rem;
     cursor: pointer;
     font-family: Papyrus;
     color: white;
-    font-size: 15px;
+    font-size: .9375rem;
 }
 
 
@@ -842,32 +849,32 @@ div.Chiffres {
 .paysage1 {
     position: relative;
     width: 33.333%;
-    height: 600px;
+    height: 37.5rem;
     float: left;
-    margin-top: 0px;
+    margin-top: 0rem;
     z-index: 100;
 }
 
 .paysage2 {
     position: relative;
     width: 33.333%;
-    height: 600px;
+    height: 37.5rem;
     float: left;
-    margin-top: 0px;
+    margin-top: 0rem;
 }
 
 .paysage3 {
     position: relative;
     width: 33.333%;
-    height: 600px;
+    height: 37.5rem;
     float: left;
-    margin-top: 0px;
+    margin-top: 0rem;
 }
 
 .titre1 {
     opacity: 0;
     position: relative;
-    margin-top: 50px;
+    margin-top: 3.125rem;
     margin-left: -22%;
     float: left;
     font-size: 2em;
@@ -878,7 +885,7 @@ div.Chiffres {
 .titre2 {
     opacity: 0;
     position: relative;
-    margin-top: 50px;
+    margin-top: 3.125rem;
     float: left;
     margin-left: -22%;
     font-size: 2em;
@@ -889,7 +896,7 @@ div.Chiffres {
 .titre3 {
     opacity: 0;
     position: relative;
-    margin-top: 50px;
+    margin-top: 3.125rem;
     float: left;
     margin-left: -22%;
     font-size: 2em;
@@ -900,37 +907,37 @@ div.Chiffres {
 .paragraphe1 {
     opacity: 0;
     position: relative;
-    margin-top: 150px;
+    margin-top: 9.375rem;
     float: left;
     text-align: center;
     margin-left: -27%;
     width: 20%;
     font-size: 1.5em;
-    line-height: 40px;
+    line-height: 2.5rem;
 }
 
 .paragraphe2 {
     opacity: 0;
     position: relative;
-    margin-top: 150px;
+    margin-top: 9.375rem;
     float: left;
     text-align: center;
     margin-left: -27%;
     width: 20%;
     font-size: 1.5em;
-    line-height: 40px;
+    line-height: 2.5rem;
 }
 
 .paragraphe3 {
     opacity: 0;
     position: relative;
-    margin-top: 150px;
+    margin-top: 9.375rem;
     float: left;
     text-align: center;
     margin-left: -27%;
     width: 20%;
     font-size: 1.5em;
-    line-height: 40px;
+    line-height: 2.5rem;
 }
 
 
@@ -938,19 +945,19 @@ div.Chiffres {
 
 .building {
     width: 54%;
-    height: 504px;
+    height: 31.5rem;
     margin-left: 5%;
-    margin-top: 100px;
+    margin-top: 6.25rem;
 }
 
 .title1 {
-    font-size: 36px;
+    font-size: 2.25rem;
     font-family: sans-serif;
     font-weight: 700;
     color: #075244;
     float: left;
     margin-left: 1%;
-    margin-top: 120px;
+    margin-top: 7.5rem;
 }
 
 .paragraffe1 {
@@ -958,7 +965,7 @@ div.Chiffres {
     font-family: sans-serif;
     text-align: justify;
     color: #075244;
-    line-height: 40px;
+    line-height: 2.5rem;
     width: 30%;
     height: 100%;
     float: right;
@@ -968,61 +975,61 @@ div.Chiffres {
 
 .greeenware {
     width: 54%;
-    height: 504px;
+    height: 31.5rem;
     float: right;
     margin-right: 5%;
-    margin-top: 50px;
+    margin-top: 3.125rem;
 }
 
 .title2 {
-    font-size: 36px;
+    font-size: 2.25rem;
     font-family: sans-serif;
     font-weight: 700;
     color: #075244;
     float: left;
     margin-left: 5%;
-    margin-top: 50px;
+    margin-top: 3.125rem;
 }
 
 .paragraffe2 {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-family: sans-serif;
     text-align: justify;
-    line-height: 40px;
+    line-height: 2.5rem;
     color: #075244;
     width: 30%;
     float: right;
     margin-right: 4%;
-    margin-top: 60px;
+    margin-top: 3.75rem;
 }
 
 .sensmoov {
     width: 54%;
-    height: 504px;
+    height: 31.5rem;
     margin-left: 5%;
-    margin-top: 50px;
+    margin-top: 3.125rem;
 }
 
 .title3 {
-    font-size: 36px;
+    font-size: 2.25rem;
     font-family: sans-serif;
     font-weight: 700;
     color: #075244;
     float: left;
     margin-left: 1%;
-    margin-top: 60px;
+    margin-top: 3.75rem;
 }
 
 .paragraffe3 {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-family: sans-serif;
     text-align: justify;
     color: #075244;
-    line-height: 40px;
+    line-height: 2.5rem;
     width: 30%;
     float: right;
     margin-right: 8%;
-    margin-top: 60px;
+    margin-top: 3.75rem;
 }
 
 .cgu {
@@ -1046,9 +1053,9 @@ h2.Hun {
 /* Page ABOUT */
 
 .img33 {
-    width: 150px;
-    height: 150px;
-    border: 2px solid darkseagreen;
+    width: 9.375rem;
+    height: 9.375rem;
+    border: .125rem solid darkseagreen;
 }
 
 
@@ -1060,15 +1067,15 @@ h2.Hun {
 }
 
 .map {
-    width: 950px;
-    height: 350px;
+    width: 59.375rem;
+    height: 21.875rem;
     margin-top: 2%;
     position: relative;
 }
 
 .t {
-    font-size: 22px;
-    margin-top: 2000px;
+    font-size: 1.375rem;
+    margin-top: 125rem;
     position: relative;
 }
 
@@ -1080,7 +1087,7 @@ h2.Hun {
     align-items: flex-start;
     justify-content: space-between;
     width: 80%;
-    border-radius: 10px;
+    border-radius: .625rem;
 }
 .inline-block-admin :first-child{
     align-self: center;
@@ -1093,13 +1100,13 @@ h2.Hun {
 }
 
 .button7 {
-    width: 280px;
-    height: 30px;
+    width: 17.5rem;
+    height: 1.875rem;
     background: white;
-    border-radius: 5px;
+    border-radius: .3125rem;
     color: darkseagreen;
-    font-size: 20px;
-    margin: 15px;
+    font-size: 1.25rem;
+    margin: .9375rem;
     position: relative;
 }
 
