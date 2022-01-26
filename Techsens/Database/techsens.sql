@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : dim. 23 jan. 2022 à 16:13
--- Version du serveur : 10.4.21-MariaDB
--- Version de PHP : 7.3.31
+-- Généré le : mer. 26 jan. 2022 à 12:06
+-- Version du serveur : 10.4.22-MariaDB
+-- Version de PHP : 7.4.26
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -50,7 +50,12 @@ CREATE TABLE `admin` (
 --
 
 INSERT INTO `admin` (`id`, `username`, `password`) VALUES
-(1, 'khsa', 'admini');
+(1, 'khsa', 'admini'),
+(2, 'yobe60742', 'admini2'),
+(3, 'aula60706', 'admini3'),
+(4, 'auwa60934', 'admini4'),
+(5, 'juga62132\r\n', 'admini5'),
+(6, 'scbo62195', 'admini6');
 
 -- --------------------------------------------------------
 
@@ -144,47 +149,23 @@ INSERT INTO `ticket` (`id`, `nom`, `email`, `message`) VALUES
 --
 
 CREATE TABLE `users` (
-  `id` int(10) NOT NULL,
-  `username` varchar(100) NOT NULL,
-  `password` varchar(100) NOT NULL,
-  `email` varchar(100) NOT NULL,
-  `prenom` varchar(100) NOT NULL,
-  `nom` varchar(100) NOT NULL,
-  `telephone` int(10) NOT NULL,
-  `role` int(11) NOT NULL
+  `id` int(100) NOT NULL,
+  `username` varchar(19) NOT NULL,
+  `password` varchar(20) NOT NULL,
+  `email` varchar(40) NOT NULL,
+  `prenom` varchar(50) NOT NULL,
+  `nom` varchar(50) NOT NULL,
+  `telephone` int(12) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Déchargement des données de la table `users`
 --
 
-INSERT INTO `users` (`id`, `username`, `password`, `email`, `prenom`, `nom`, `telephone`, `role`) VALUES
-(1, 'lol123', 'motdepasse', 'dddd@dddd.f', 'ddddd', 'ffff', 55555, 1),
-(2, 'lol', 'lolol', 'effed', 'dfdfd', 'fggg', 222, 2),
-(0, 'ouibj', 'polo123', '', '', '', 0, 0),
-(0, 'augustin', 'wztine', '', '', '', 0, 0),
-(0, 'yapa', 'lappa', '', '', '', 0, 0),
-(0, 'al', 'aooo', '', '', '', 0, 0);
-
---
--- Index pour les tables déchargées
---
-
---
--- Index pour la table `aide`
---
-ALTER TABLE `aide`
-  ADD PRIMARY KEY (`id`);
-
---
--- AUTO_INCREMENT pour les tables déchargées
---
-
---
--- AUTO_INCREMENT pour la table `aide`
---
-ALTER TABLE `aide`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+INSERT INTO `users` (`id`, `username`, `password`, `email`, `prenom`, `nom`, `telephone`) VALUES
+(1, 'ratp75', 'metro6', 'ratp@gmail.com', 'Catherine', 'Guillouard', 677881234),
+(2, 'g7taxi', 'mercedes75', 'g7taxi@gmail.com', 'Nicolas', 'Rousselet', 722312675),
+(0, 'sncf', 'tgv365', 'sncf@gmail.com', 'Jean-Pierre', 'Farandou', 645367819);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
