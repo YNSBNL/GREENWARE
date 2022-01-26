@@ -1,7 +1,10 @@
 <?php
 include "config2.php";
 
-
+// Check user login or not
+if (!isset($_SESSION['uname'])) {
+    header('Location: gestionnaireid.php');
+}
 
 
 
@@ -42,7 +45,7 @@ include "config2.php";
                     if (isset($_GET['Logout'])) {
                         if ($_GET['Logout'] == true) {
                             session_unset();
-                            header("location: adminid.php");
+                            header("location: gestionnaireid.php");
                         }
                     } else if ($_SESSION['uname'] !== "") {
                         $user = $_SESSION['uname'];
@@ -50,7 +53,7 @@ include "config2.php";
 
 
                         // afficher un message
-                        echo "<br>Bonjour $user, vous êtes connecté";
+                        echo "<br>Bonjour $user, vous êtes connecté.";
                     }
                     ?>
                     <br><br>
@@ -61,17 +64,25 @@ include "config2.php";
 
             </div>
     </div>
-        <p class="pdp">Photo de profil : </p>
-    <img src="anonyme.png" alt="photo de profil" class="img30" />
+    <p class="photo_de_profil">Photo de profil : </p>
+    <img src="anonyme.png" alt="photo de profil" class="img_de_profil" />
 
+<br>
+<br>
+<br>
 
-    <div><center><h2>Moteur de recherche : trouvez les informations de l'adhérent souhaité en écrivant son login (username)</h2></center></div>
+<center><div class="inline-block-gestion">
+    <h2>Moteur de recherche : trouvez les informations de l'adhérent souhaité en écrivant son login (username)</h2>
+    <br>
+    <br>
+
     <form  action='' method='post'>
        
         Username: <input type='text' name='user' id='user'><br>
         
         <input type='submit' name='search'>
     </form>
+    </div></center>
 <?php
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST' && isSet($_POST['search'])) {
@@ -110,6 +121,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isSet($_POST['search'])) {
                     
                 
 ?>
+<br>
+<br>
+<br>
+<br>
+<br>
+
 <div class="footer">
         <div class="foot">Techsens est une société cherchant à développer des solutions en accord avec le développement durable.</div>
         <img src="logoo.png" alt="photo du logo" />

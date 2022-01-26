@@ -27,7 +27,7 @@ if (isset($_POST['but_submit'])) {
             $_SESSION['uname'] = $uname;
             $_SESSION['errormdp']="";
             if($data->success==true)
-            header('Location: adminespace.php');
+            header('Location: gestionespace.php');
         } else {
             $_SESSION['errormdp'] = '<p style="color: darkred;"/> Nom d utilisateur ou Mot de Passe incorrect';
         }
@@ -38,7 +38,7 @@ if (isset($_POST['but_submit'])) {
             $_SESSION['connected'] = true;  
             $_SESSION['uname'] = $uname;
             $_SESSION['errorcaptcha']="";
-            header('Location: adminespace.php');}
+            header('Location: gestionespace.php');}
     }
     else{
         $_SESSION['errorcaptcha'] ='<p style="color: darkred;"/> Remplir le Captcha';
@@ -74,7 +74,7 @@ if (isset($_POST['but_submit'])) {
             <div class="block-formulaire">
                 <form method="post" class="formulaire" action="">
                     <fieldset class="fieldset2">
-                        <h1 class="titre-du-formulaire">Espace Administrateur</h1>
+                        <h1 class="titre-du-formulaire">Connexion Espace Gestionnaire</h1>
                         <div class="block-champ">
                             <input class="champ" type="text" id="txt_uname" name="txt_uname" placeholder="Username ">
                         </div>
@@ -92,8 +92,7 @@ if (isset($_POST['but_submit'])) {
                             <div class="lien-champ">
                                 <a href="" class="lien">Mot de Passe Oublié</a><br>
                                 
-                                <a href="login.php" class="lien">Section Utilisateur</a><br>
-                                <a href="gestionnaireid.php" class="lien">Section Gestionnaire</a>
+                                <a href="login.php" class="lien">Section utilisateur</a>
                             </div>
                 </form>
             

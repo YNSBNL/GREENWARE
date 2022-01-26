@@ -91,7 +91,8 @@ if (isset($_POST['but_submit'])) {
                             <center><input type="submit" class="button1" name="but_submit" id="but_submit" value="Se Connecter"></center>
                             <div class="lien-champ">
                                 <a href="contact.php" class="lien">Mot de Passe Oublié</a><br>
-                                <a href="adminid.php" class="lien">Section administrateur</a>
+                                <a href="adminid.php" class="lien">Section administrateur</a><br>
+                                <a href="gestionnaireid.php" class="lien">Section Gestionnaire</a>
                             </div>
                 </form>
             </div>
