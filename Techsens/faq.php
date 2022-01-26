@@ -86,16 +86,18 @@ echo "Failed to connect to MySQL: " . mysqli_connect_error();
 
 $result = mysqli_query($con,"SELECT * FROM faq");
 
-echo "<stable border='1'>
+echo "<table border='1'>
 <tr>
-<th>message faq</th>
+
 
 </tr>";
 
 while($row = mysqli_fetch_array($result))
 {
 echo "<tr>";
-echo "<td>" . $row['message'] . "</td>";
+echo "<td>" . $row['question'] . "</td>";
+
+echo "<td>" . $row['reponse'] . "</td>";
 
 echo "</tr>";
 }
