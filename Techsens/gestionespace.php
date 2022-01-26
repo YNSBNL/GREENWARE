@@ -66,13 +66,50 @@ include "config2.php";
 
 
     <div><center><h2>Moteur de recherche : trouvez les informations de l'adhérent souhaité en écrivant son login (username)</h2></center></div>
-    <form  action='config3.php' method='POST'>
-        <label for="user">Username:</label> <br/>
-        <input type='text' name='user' id="user"  ><br/>
+    <form  action='' method='post'>
+       
+        Username: <input type='text' name='user' id='user'><br>
         
-        <input type='submit' name='search' id="search" />
+        <input type='submit' name='search'>
     </form>
+<?php
 
+if ($_SERVER['REQUEST_METHOD'] == 'POST' && isSet($_POST['search'])) {
+       
+
+        $servername = "localhost";
+        $username = "root";
+        $password = "";
+        $db = "techsens";
+
+        $conn = new mysqli($servername, $username, $password, $db);
+
+        if ($conn->connect_error){
+            die("Connection failed: ". $conn->connect_error);
+        }
+        if (isSet($_POST['user'])) {
+            $user9 = $_POST['user'];
+            $sql = "select * from users where username like '%$user9%'";
+
+            $result = $conn->query($sql);
+
+            if ($result->num_rows > 0){
+            while($row = $result->fetch_assoc() ){
+                echo $row["username"]." ".$row["password"]." ".$row["email"]."  ".$row["nom"]." ".$row["prenom"]." ".$row["telephone"]."<br>";
+            }
+            } else {
+                echo "0 records";
+            }
+        }
+        $conn->close();
+    }
+
+
+
+
+                    
+                
+?>
 <div class="footer">
         <div class="foot">Techsens est une société cherchant à développer des solutions en accord avec le développement durable.</div>
         <img src="logoo.png" alt="photo du logo" />
