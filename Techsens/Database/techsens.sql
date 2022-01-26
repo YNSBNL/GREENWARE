@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : mer. 26 jan. 2022 à 12:06
--- Version du serveur : 10.4.22-MariaDB
--- Version de PHP : 7.4.26
+-- Généré le : mer. 26 jan. 2022 à 16:46
+-- Version du serveur : 10.4.21-MariaDB
+-- Version de PHP : 7.3.31
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -20,18 +20,6 @@ SET time_zone = "+00:00";
 --
 -- Base de données : `techsens`
 --
-
--- --------------------------------------------------------
-
---
--- Structure de la table `addutilisateur`
---
-
-CREATE TABLE `addutilisateur` (
-  `id` int(11) NOT NULL,
-  `username` varchar(100) NOT NULL,
-  `password` varchar(100) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
@@ -51,11 +39,8 @@ CREATE TABLE `admin` (
 
 INSERT INTO `admin` (`id`, `username`, `password`) VALUES
 (1, 'khsa', 'admini'),
-(2, 'yobe60742', 'admini2'),
-(3, 'aula60706', 'admini3'),
-(4, 'auwa60934', 'admini4'),
-(5, 'juga62132\r\n', 'admini5'),
-(6, 'scbo62195', 'admini6');
+(2, 'aula', 'azerty123'),
+(3, 'yobe', 'agadir555');
 
 -- --------------------------------------------------------
 
@@ -106,21 +91,40 @@ INSERT INTO `contacts_details` (`Society`, `LastName`, `FirstName`, `email`, `ph
 
 CREATE TABLE `faq` (
   `id` int(11) NOT NULL,
-  `message` varchar(200) NOT NULL
+  `question` varchar(255) NOT NULL,
+  `reponse` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Déchargement des données de la table `faq`
 --
 
-INSERT INTO `faq` (`id`, `message`) VALUES
-(0, ''),
-(0, 'aaaaaaa'),
-(0, 'comment se connecter ? vous entrez votre id et mdp'),
-(0, 'azzzzzzzzzzzzz'),
-(0, 'comment se connecter ? vous entrez votre id et mdp'),
-(0, 'azzzzzzzzzzzzzzzzzrff'),
-(0, 'wwwiiiiiw');
+INSERT INTO `faq` (`id`, `question`, `reponse`) VALUES
+(1, 'Comment m\'associer à vous pour devenir partenaire ? ', 'Contactez-nous sur la page dédiée à cela pour que l\'on puisse vous présenter nos prestations en détail.'),
+(2, 'Comment actualiser les données de mon tableau pour avoir de nouvelles données sur mon capteur ? ', 'Appuyiez simplement sur le bouton \"Rafraichir\" en haut du tableau et vous aurez de nouvelles données associées à votre capteur'),
+(1, 'Comment m\'associer à vous pour devenir partenaire ? ', 'Contactez-nous sur la page dédiée à cela pour que l\'on puisse vous présenter nos prestations en détail.'),
+(2, 'Comment actualiser les données de mon tableau pour avoir de nouvelles données sur mon capteur ? ', 'Appuyiez simplement sur le bouton \"Rafraichir\" en haut du tableau et vous aurez de nouvelles données associées à votre capteur');
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `gestion`
+--
+
+CREATE TABLE `gestion` (
+  `role` int(11) NOT NULL,
+  `username` varchar(255) NOT NULL,
+  `password` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Déchargement des données de la table `gestion`
+--
+
+INSERT INTO `gestion` (`role`, `username`, `password`) VALUES
+(1, 'auwa', 'dyonisios2000'),
+(2, 'scbo', 'tvl54'),
+(3, 'juga', 'ddass58');
 
 -- --------------------------------------------------------
 
@@ -149,13 +153,13 @@ INSERT INTO `ticket` (`id`, `nom`, `email`, `message`) VALUES
 --
 
 CREATE TABLE `users` (
-  `id` int(100) NOT NULL,
-  `username` varchar(19) NOT NULL,
-  `password` varchar(20) NOT NULL,
-  `email` varchar(40) NOT NULL,
-  `prenom` varchar(50) NOT NULL,
-  `nom` varchar(50) NOT NULL,
-  `telephone` int(12) NOT NULL
+  `id` int(10) NOT NULL,
+  `username` varchar(100) NOT NULL,
+  `password` varchar(100) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `prenom` varchar(100) NOT NULL,
+  `nom` varchar(100) NOT NULL,
+  `telephone` int(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -163,9 +167,34 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `username`, `password`, `email`, `prenom`, `nom`, `telephone`) VALUES
-(1, 'ratp75', 'metro6', 'ratp@gmail.com', 'Catherine', 'Guillouard', 677881234),
-(2, 'g7taxi', 'mercedes75', 'g7taxi@gmail.com', 'Nicolas', 'Rousselet', 722312675),
-(0, 'sncf', 'tgv365', 'sncf@gmail.com', 'Jean-Pierre', 'Farandou', 645367819);
+(7, 'ololo', 'alolol', 'nume566@gmail.com', 'olooof', 'aapo', 205256214),
+(8, 'mod6587', 'dfffvcde', 'poldfu@gmail.com', 'paul', 'dupuit', 25847169),
+(7, 'ololo', 'alolol', 'nume566@gmail.com', 'olooof', 'aapo', 205256214),
+(8, 'mod6587', 'dfffvcde', 'poldfu@gmail.com', 'paul', 'dupuit', 25847169),
+(1, 'oper54', 'passport55', 'opel.technics@opel.com', 'Martin', 'Dubois', 654696356),
+(2, 'ratp75', 'metro6', 'ratp.paris@sncf.com', 'Catherine', 'Guillard', 655498621),
+(1, 'oper54', 'passport55', 'opel.technics@opel.com', 'Martin', 'Dubois', 654696356),
+(2, 'ratp75', 'metro6', 'ratp.paris@sncf.com', 'Catherine', 'Guillard', 655498621);
+
+--
+-- Index pour les tables déchargées
+--
+
+--
+-- Index pour la table `aide`
+--
+ALTER TABLE `aide`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT pour les tables déchargées
+--
+
+--
+-- AUTO_INCREMENT pour la table `aide`
+--
+ALTER TABLE `aide`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
