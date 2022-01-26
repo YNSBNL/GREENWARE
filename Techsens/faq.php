@@ -88,15 +88,16 @@ $result = mysqli_query($con,"SELECT * FROM faq");
 
 echo "<table border='1'>
 <tr>
-<th>message faq</th>
+
 
 </tr>";
 
 while($row = mysqli_fetch_array($result))
 {
 echo "<tr>";
-echo "<td>" . $row['message'] . "</td>";
+echo "<td>" . $row['question'] . "</td>";
 
+echo "<td>" . $row['reponse'] . "</td>";
 echo "</tr>";
 }
 echo "</table>";
