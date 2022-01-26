@@ -51,7 +51,7 @@
 				<img class="img-faq" src="image/plus.png" alt="animation">
 			</div>
 			<div class="toggle-pannel">
-				<p class="p-faq"> Pour voir les informations des capteurs il faut vous connecter, aller dans l’onglet « Greenware » puis choisir l’endroit dont vous voulez voir les valeurs. 
+				<p cl ass="p-faq"> Pour voir les informations des capteurs il faut vous connecter, aller dans l’onglet « Greenware » puis choisir l’endroit dont vous voulez voir les valeurs. 
 					Vous pouvez ensuite allumer le capteur et le rafraîchir pour voir ses valeurs. </p>
 			</div>
 		</div>
@@ -76,7 +76,7 @@
 	<br>
 
 <center>
-	<?php
+<?php
 $con=mysqli_connect('localhost', 'root', '','techsens');
 // Check connection
 if (mysqli_connect_errno())
@@ -86,18 +86,17 @@ echo "Failed to connect to MySQL: " . mysqli_connect_error();
 
 $result = mysqli_query($con,"SELECT * FROM faq");
 
-echo "<table border='1'>
+echo "<stable border='1'>
 <tr>
-
+<th>message faq</th>
 
 </tr>";
 
 while($row = mysqli_fetch_array($result))
 {
 echo "<tr>";
-echo "<td>" . $row['question'] . "</td>";
+echo "<td>" . $row['message'] . "</td>";
 
-echo "<td>" . $row['reponse'] . "</td>";
 echo "</tr>";
 }
 echo "</table>";

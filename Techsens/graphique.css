@@ -1135,3 +1135,367 @@ h2.Hun {
 .inline-block-gestion form{
     color: white;
 }
+/* about */
+
+
+#titre1About 
+{
+    
+    margin-top: 3%;
+    margin-bottom:0rem;
+    padding: 0rem;
+    text-align:center ;
+    font-size :2.5em;
+    color:#075244;
+    font-family: sans-serif;
+    
+ 
+}
+
+#titre2About
+{
+    margin-top :0rem;
+    color:#075244;
+    font-size :1.5em ;
+    text-align:center ;
+    text-size-adjust: 100%;
+    vertical-align: baseline;
+    font-family: serif;
+   
+
+
+}
+#text1About
+{
+    position: absolute;
+    top:35%;
+    left: 4.5%;
+    transform: translate(-50,50%);
+    text-align: justify;
+   
+    font-size: 16px;
+    margin-left:0%;
+    margin-right:2.5%;
+    padding: 0rem;
+    color:#075244; 
+    font-family: system-ui;
+}
+ 
+
+           
+    
+.containerAudrey
+{
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    transform: translate(-40%,50%);
+    width: 23.75rem;
+    padding: 1.875rem;
+    background: #fff;
+    box-sizing: border-box;
+    border-radius: .625rem;
+    box-shadow: 0 .9375rem 3.125rem rgba(0,0,0,.2);
+    margin-left: 0.1%;
+    text-align: justify;
+    color:#075244; 
+    font-family: system-ui;
+   
+   
+    
+
+}
+.imageAudrey
+{   margin-top:1.5625rem;
+    width: 4.75rem;
+    height: 7.1875rem;
+    background: url(audrey.png);
+    background-size: 100% 100%;
+    border-radius: 0;
+    float:left;
+    shape-outside: image();
+    margin-right:1.25rem;
+}
+.nom{
+    font-size: 1.125rem;
+    font-weight: bold;
+    padding: .375rem 0rem;
+    border-bottom: .0625rem dotted #585858;
+    
+    
+}
+.mail {
+   
+   color: #b82721;
+      
+}
+
+a {
+   color: #b82721;
+   text-decoration: none;
+
+   transition: 0.2s;
+}
+* {
+
+   box-sizing: border-box;
+}
+a:-webkit-any-link {
+   
+   cursor: pointer;
+}
+
+/* jules  */
+.containerJules
+{
+    position: absolute;
+    top: 20%;
+    left: 47.5%;
+    transform: translate(-40%,50%);
+    width: 23.75rem;
+    padding: 1.875rem;
+    background: #fff;
+    box-sizing: border-box;
+    border-radius: .625rem;
+    box-shadow: 0 .9375rem 3.125rem rgba(0,0,0,.2);
+    text-align: justify;
+    color:#075244; 
+    font-family: system-ui;
+
+}
+.imageJules
+{
+    margin-top:1.5625rem;
+    width: 4.75rem;
+    height: 7.1875rem;
+    background: url(julesddass.jpg);
+    background-size: 100% 100%;
+    border-radius: 0;
+    float:left;
+    shape-outside: image();
+    margin-right:1.25rem;
+    
+}
+
+a {
+    color: #b82721;
+    text-decoration: none;
+
+    transition: 0.2s;
+}
+* {
+
+    box-sizing: border-box;
+}
+a:-webkit-any-link {
+    
+    cursor: pointer;
+}
+
+/* augustin  */
+.containerAug
+{
+    position: absolute;
+    top: 20%;
+    left: 80%;
+    transform: translate(-40%,50%);
+    width: 23.75rem;
+    padding: 1.875rem;
+    background: #fff;
+    box-sizing: border-box;
+    border-radius: .625rem;
+    box-shadow: 0 .9375rem 3.125rem rgba(0,0,0,.2);
+    text-align: justify;
+    border-bottom: .0625rem dotted #585858;
+    color:#075244; 
+    font-family: system-ui;
+
+}
+.imageAug
+{
+    margin-top:1.5625rem;
+    width: 4.75rem;
+    height: 7.1875rem;
+    background: url(aug.jpg);
+    background-size: 100% 100%;
+    border-radius: 0;
+    float:left;
+    shape-outside: image();
+    margin-right:1.25rem;
+    
+}
+
+a {
+    color: #b82721;
+    text-decoration: none;
+
+    transition: 0.2s;
+}
+* {
+
+    box-sizing: border-box;
+}
+a:-webkit-any-link {
+    
+    cursor: pointer;
+}
+
+/* bottom */
+.containerYoun
+{
+    position: absolute;
+    top: 80%;
+    left: 15%;
+    transform: translate(-40%,50%);
+    width: 23.75rem;
+    padding: 1.875rem;
+    background: #fff;
+    box-sizing: border-box;
+    border-radius: .625rem;
+    box-shadow: 0 .9375rem 3.125rem rgba(0,0,0,.2);
+    margin-left: 0.1%;
+    text-align: justify;
+    color:#075244; 
+    font-family: system-ui;
+
+}
+.imageYoun
+{
+    margin-top:1.5625rem;
+    width: 4.75rem;
+    height: 7.1875rem;
+    background: url(anonyme.png);
+    background-size: 100% 100%;
+    border-radius: 0;
+    float:left;
+    shape-outside: image();
+    margin-right:1.25rem;
+    
+}
+
+a {
+    color: #b82721;
+    text-decoration: none;
+
+    transition: 0.2s;
+}
+* {
+
+    box-sizing: border-box;
+}
+a:-webkit-any-link {
+    
+    cursor: pointer;
+}
+
+
+.containerSco
+{
+    position: absolute;
+    top: 80%;
+    left: 47.5%;
+    transform: translate(-40%,50%);
+    width: 23.75rem;
+    padding: 1.875rem;
+    background: #fff;
+    box-sizing: border-box;
+    border-radius: .625rem;
+    box-shadow: 0 .9375rem 3.125rem rgba(0,0,0,.2);
+    text-align: justify;
+    margin-left: 0.1%;
+    color:#075244; 
+    font-family: system-ui;
+
+}
+.imageSco
+{
+    margin-top:1.5625rem;
+    width: 4.75rem;
+    height: 7.1875rem;
+    background: url(SCO.jpg);
+    background-size: 100% 100%;
+    border-radius: 0;
+    float:left;
+    shape-outside: image();
+    margin-right:1.25rem;
+}
+    
+
+a {
+    color: #b82721;
+    text-decoration: none;
+
+    transition: 0.2s;
+}
+* {
+
+    box-sizing: border-box;
+}
+a:-webkit-any-link {
+    
+    cursor: pointer;
+}
+
+
+
+.containerKha
+{   top: 80%;
+    left: 80%;
+    position: absolute;
+    transform: translate(-40%,50%);
+    width: 23.75rem;
+    padding: 1.875rem;
+    background: #fff;
+    box-sizing: border-box;
+    border-radius: .625rem;
+    box-shadow: 0 .9375rem 3.125rem rgba(0,0,0,.2);
+    text-align: justify;
+    border-bottom: .0625rem dotted #585858;
+    color:#075244; 
+    font-family: system-ui;
+
+}
+.imageKha
+{
+    margin-top: 1.5625rem;
+    width: 4.75rem;
+    height: 7.1875rem;
+    background: url(anonyme.png);
+    background-size: 100% 100%;
+    border-radius: 0;
+    float:left;
+    shape-outside: image();
+    margin-right:1.25rem;
+    
+}
+
+
+a {
+    color: #075244;
+    text-decoration: none;
+
+    transition: 0.2s;
+}
+* {
+
+    box-sizing: border-box;
+}
+a:-webkit-any-link {
+    
+    cursor: pointer;
+}
+.coordonné{
+    font-weight:bold;
+}
+.footer6About{
+    position: relative;
+    padding-top: .625rem;
+    width: 100%;
+    height: 10.625rem;
+    background-color: rgb(123, 161, 123);
+    color: #F3F3F3;
+    text-align: center;
+    opacity: 0.9;
+    bottom: 0;
+    margin-top: 77.5rem;
+}
