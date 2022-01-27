@@ -114,14 +114,27 @@ if (!isset($_SESSION['uname'])) {
             <input type='submit' name='delete' id="delete" class="button7"/>
         </form>
         </div>
-        <div>   <h2>Additionner FAQ</h2>
+        <div>   <h2>Additionner une question à la FAQ</h2>
         <form action='config3.php' method='POST'>
             <label for="message1">FAQ:</label> <br />
-            <input type='text' name='message1' id="message1"><br />
+            <input type='text' name='question' id="message1"><br />
             <input type='submit' name='addfaq' id="addfaq" class="button7"/>
         </form>
         </div>
-        <div>   <h2>SUPPRIMER FAQ</h2>
+        <div>   <h2>Additionner une réponse à la FAQ</h2>
+        <form action='config3.php' method='POST'>
+            <label for="message1">FAQ:</label> <br />
+            <input type='text' name='reponse' id="message1"><br />
+            <input type='submit' name='addfaq' id="addfaq" class="button7"/>
+        </form>
+        </div>
+        <div>   <h2>SUPPRIMER une question de la FAQ</h2>
+        <form action='config3.php' method='POST'>
+            <label for="message">FAQ:</label> <br />
+            <input type='text' name='message' id="message"><br />
+            <input type='submit' name='deletefaq' id="deletefaq" class="button7"/>
+        </form>
+        <div>   <h2>SUPPRIMER une réponse de la FAQ</h2>
         <form action='config3.php' method='POST'>
             <label for="message">FAQ:</label> <br />
             <input type='text' name='message' id="message"><br />

@@ -38,16 +38,32 @@
 				echo "An error occured while save the data.";
 			}
 		}
+	}	
+	if ($_SERVER['REQUEST_METHOD'] == 'POST' && isSet($_POST['addfaq'])) {
+		$conn2 = mysqli_connect('localhost', 'root', '','techsens') or die("Connection failed: " . mysqli_connect_error());
+		if (isset($_POST['question'])) {
+			$question = $_POST['question'];
+			
+ 
+			$sql2 = "INSERT INTO `faq` (`question`) VALUES ('$question')";
+ 
+			$query2 = mysqli_query($conn2,$sql2);
+			if ($query2) {
+				echo 'Data Successfully Saved!';
+			} else {
+				echo "An error occured while save the data.";
+			}
+		}
 	}
 
 
 	if ($_SERVER['REQUEST_METHOD'] == 'POST' && isSet($_POST['addfaq'])) {
 		$conn2 = mysqli_connect('localhost', 'root', '','techsens') or die("Connection failed: " . mysqli_connect_error());
-		if (isSet($_POST['message1'])) {
-			$message1 = $_POST['message1'];
+		if (isset($_POST['reponse'])) {
+			$reponse = $_POST['reponse'];
 			
  
-			$sql2 = "INSERT INTO `faq` (`message`) VALUES ('$message1')";
+			$sql2 = "INSERT INTO `faq` (`reponse`) VALUES ('$reponse')";
  
 			$query2 = mysqli_query($conn2,$sql2);
 			if ($query2) {
@@ -60,11 +76,11 @@
 
 	if ($_SERVER['REQUEST_METHOD'] == 'POST' && isSet($_POST['deletefaq'])) {
 		$conn3 = mysqli_connect('localhost', 'root', '','techsens') or die("Connection failed: " . mysqli_connect_error());
-		if (isSet($_POST['message'])) {
-			$message3 = $_POST['message'];
+		if (isSet($_POST['question'])) {
+			$question = $_POST['question'];
 			
  
-			$sql3 = "DELETE FROM faq WHERE message = '$message3'";
+			$sql3 = "DELETE FROM faq WHERE message = '$question'";
  
 			$query3 = mysqli_query($conn3,$sql3);
 			if ($query3) {
@@ -74,6 +90,21 @@
 			}
 		}
 	}
+	if ($_SERVER['REQUEST_METHOD'] == 'POST' && isSet($_POST['deletefaq'])) {
+		$conn3 = mysqli_connect('localhost', 'root', '','techsens') or die("Connection failed: " . mysqli_connect_error());
+		if (isSet($_POST['reponse'])) {
+			$reponse = $_POST['reponse'];
+			$sql3 = "DELETE FROM faq WHERE message = '$reponse'";
+ 
+			$query3 = mysqli_query($conn3,$sql3);
+			if ($query3) {
+				echo 'Data Successfully Saved!';
+			} else {
+				echo "An error occured while save the data.";
+			}
+		}
+	}
+
 
 		
 if ($_SERVER['REQUEST_METHOD'] == 'POST' && isSet($_POST['search'])) {
