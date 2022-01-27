@@ -146,7 +146,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isSet($_POST['search'])) {
         </div></div>
             <div class="end">
                     <label for="end"> 
-                        <a href="cgu.html"> Mentions légales et ponlitique de cofidentialité</a></label></div>
+                        <a href="cgu.html"> Mentions légales et ponlitique de confidentialité</a></label></div>
     </div>
     <div id="scrollUp">
             <a href="#haut" class="top">

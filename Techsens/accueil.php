@@ -121,7 +121,7 @@
         </div></div>
             <div class="end">
                     <label for="end"> 
-                        <a href="cgu.html"> Mentions légales et politique de co,fidentialité</a></label></div>
+                        <a href="cgu.html"> Mentions légales et politique de confidentialité</a></label></div>
     </div>
     <div id="scrollUp">
             <a href="#haut" class="top">

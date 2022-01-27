@@ -28,7 +28,7 @@
 				<img class="img-faq" src="image/plus.png" alt="animation">
 			</div>
 			<div class="toggle-pannel">
-				<p class="p-faq">Pour utiliser Greenware, il faut avoir un compte. Si vous avez un compte connectez vous sur la page <a href="login.php" class="lien2">« s’identifier »</a>. Si vous n’avez pas de compte vous pouvez nous contacter sur la page <a href="contact.php" class="lien2">« nous contacter »</a> afin que nous puissions peut être travailler ensemble dans le futur. </p>
+				<p class="p-faq">Pour utiliser Greenware, il faut avoir un compte. Si vous avez un compte, connectez-vous sur la page <a href="login.php" class="lien2">« s’identifier »</a>. Si vous n’avez pas de compte, vous pouvez nous contacter sur la page <a href="contact.php" class="lien2">« nous contacter »</a> afin que nous puissions peut-être travailler ensemble dans le futur. </p>
 			</div>
 		</div>
 
@@ -51,7 +51,7 @@
 				<img class="img-faq" src="image/plus.png" alt="animation">
 			</div>
 			<div class="toggle-pannel">
-				<p class="p-faq"> Pour voir les informations des capteurs il faut vous connecter, aller dans l’onglet « Greenware » puis choisir l’endroit dont vous voulez voir les valeurs. 
+				<p cl ass="p-faq"> Pour voir les informations des capteurs, il faut vous connecter, aller dans l’onglet « Greenware » puis choisir l’endroit dont vous voulez voir les valeurs. 
 					Vous pouvez ensuite allumer le capteur et le rafraîchir pour voir ses valeurs. </p>
 			</div>
 		</div>
@@ -60,11 +60,11 @@
 
 		<div class="questions">
 			<div class="pannel-faq">
-				<h2 class="h2-faq">J’ai un problème avec les capteurs que puis/je faire?</h2>
+				<h2 class="h2-faq">J’ai un problème avec les capteurs que puis je faire?</h2>
 				<img class="img-faq" src="image/plus.png" alt="animation">
 			</div>
 			<div class="toggle-pannel">
-				<p class="p-faq">Si vous avez un problème avec les capteurs vous pouvez nous écrire depuis la page <a href="aide.php" class="lien2">« Aide »</a> en nous décrivant votre problème. 
+				<p class="p-faq">Si vous avez un problème avec les capteurs, vous pouvez nous écrire depuis la page <a href="aide.php" class="lien2">« Aide »</a> en nous décrivant votre problème. 
 					Nos techniciens vous répondront dans les plus brefs délais pour vous aider.</p>
 			</div>
 
@@ -130,7 +130,7 @@ mysqli_close($con);
         </div></div>
             <div class="end">
                     <label for="end"> 
-                        <a href="cgu.html"> Mentions légales et politique de cofidentialité</a></label></div>
+                        <a href="cgu.html"> Mentions légales et politique de confidentialité</a></label></div>
     
     <div id="scrollUp">
             <a href="#haut" class="top">
