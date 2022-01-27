@@ -1,19 +1,50 @@
 <?php 
-include "config.php";
+//include "config.php";
 
-if(isset($_POST["envoyer"])){
-	if(!empty($_POST["ticket"])){
-		$ticket=htmlspecialchars($_POST["ticket"]);
-		$addticket = $con->prepare("INSERT INTO aide(content) VALUES(?)");
-		$addticket->execute(array($ticket));
-	}
-}
+//if(isset($_POST["envoyer"])){
+//	if(!empty($_POST["ticket"])){
+//		$ticket=htmlspecialchars($_POST["ticket"]);
+//		$addticket = $con->prepare("INSERT INTO aide(content) VALUES(?)");
+//		$addticket->execute(array($ticket));
+//	}
+//}
 
 // Check user login or not
-if (!isset($_SESSION['uname'])) {
-    header('Location: login.php');
+//if (!isset($_SESSION['uname'])) {
+  //  header('Location: login.php');
+//}
+$servername="localhost";
+$username="root";
+$password="";
+$database_name="techsens";
+
+$conn = mysqli_connect($servername,$username,$password,$database_name);
+
+//check the connection
+if(!$conn)
+{
+    die("Connection failed:" .mysql_connect_error());
+
 }
 
+if(isset($_POST['envoyer']))
+{
+    $ticket = $_POST['ticket'];
+
+
+
+    $sql_query = "INSERT INTO aide (texte) 
+    VALUES ('$ticket')";
+
+    if(mysqli_query($conn, $sql_query))
+    {
+        echo '<p style="color: darkred; font-size: 1em;"/>Vos données ont été envoyées ! Nous nous efforçons de vous répondre dans les meilleurs délais.';
+    }
+    else{
+        echo '<p style="color: darkred; font-size: 1.8em;"Erreur. Données non sauvegardées' . $sql . "" . mysqli_error($conn);
+    }
+    mysqli_close($conn);
+}
 
 
 ?>
