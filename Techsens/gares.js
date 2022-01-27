@@ -1,5 +1,5 @@
-var arr_num = Array.from({length: 4}, () =>(Math.random() * (900 - 600 + 1) + 600);
-    const firstNumber = arr_num[arr_num.length - 1]
+var arr_num = Array.from({length: 4}, () =>(Math.random() * (900 - 600 + 1) + 600));
+    const firstNumber = arr_num[arr_num.length - 1];
     const secondNumber = arr_num[arr_num.length - 2];
     const thirdNumber = arr_num[arr_num.length - 3];
     const fourthNumber = arr_num[arr_num.length - 4];
