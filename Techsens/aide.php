@@ -1,12 +1,49 @@
-<?php 
+
+
+<!DOCTYPE html>
+<html>
+<a name="haut"></a>
+
+<head>
+    <meta charset="utf-8" />
+    <link href="graphique.css" media="all" rel="stylesheet" type="text/css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>Techsens</title>
+
+</head>
+
+<body>
+       <?php
+         if(!isset($_SESSION)){
+            session_start();
+         }
+         if (isset($_SESSION['connected']) && $_SESSION['connected'] == true){
+            include("./Composants/headerconnected.php");
+                }
+        else {include("./Composants/headerdeconnected.php");
+    }
+    ?>
+<br>
+<br>
+
+    <img src="assistance.png" alt="photo-assistance" class="img3" />
+    <form method="post">
+        <p>
+        <center><h2 class="rut">Assistance</h2></center>
+        </p>
+        <center><p><textarea name="ticket" id="Ticket" placeholder=" Rédiger un Ticket ici" class="ticket"></textarea></p></center>
+            <input type="submit" class="button20" name= "envoyer" value="Envoyer le ticket"></a>
+
+    </form>
+    <?php 
 //include "config.php";
 
 //if(isset($_POST["envoyer"])){
-//	if(!empty($_POST["ticket"])){
-//		$ticket=htmlspecialchars($_POST["ticket"]);
-//		$addticket = $con->prepare("INSERT INTO aide(content) VALUES(?)");
-//		$addticket->execute(array($ticket));
-//	}
+//  if(!empty($_POST["ticket"])){
+//      $ticket=htmlspecialchars($_POST["ticket"]);
+//      $addticket = $con->prepare("INSERT INTO aide(content) VALUES(?)");
+//      $addticket->execute(array($ticket));
+//  }
 //}
 
 // Check user login or not
@@ -48,42 +85,6 @@ if(isset($_POST['envoyer']))
 
 
 ?>
-
-<!DOCTYPE html>
-<html>
-<a name="haut"></a>
-
-<head>
-    <meta charset="utf-8" />
-    <link href="graphique.css" media="all" rel="stylesheet" type="text/css">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <title>Techsens</title>
-
-</head>
-
-<body>
-       <?php
-         if(!isset($_SESSION)){
-            session_start();
-         }
-         if (isset($_SESSION['connected']) && $_SESSION['connected'] == true){
-            include("./Composants/headerconnected.php");
-                }
-        else {include("./Composants/headerdeconnected.php");
-    }
-    ?>
-<br>
-<br>
-
-    <img src="assistance.png" alt="photo-assistance" class="img3" />
-    <form method="post">
-        <p>
-        <center><h2 class="rut">Assistance</h2></center>
-        </p>
-        <center><p><textarea name="ticket" id="Ticket" placeholder=" Rédiger un Ticket ici" class="ticket"></textarea></p></center>
-            <input type="submit" class="button20" name= "envoyer" value="Envoyer le ticket"></a>
-
-    </form>
 
     <br>
 <br>
