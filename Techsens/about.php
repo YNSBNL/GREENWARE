@@ -21,7 +21,11 @@
 
 <p>
     <div  id="titre1About">UNE ÉQUIPE EXPÉRIMENTÉE ET PASSIONNÉE </div><br>
+
     <div id="titre2About">5 années d’expérience dans les technologies du web.</div>
+
+    <div id="titre2About">5 années d’expérience dans les technologies du web.  </div><br><br>
+
 
 
     <div id="text1About">

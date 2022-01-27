@@ -68,7 +68,7 @@ if (isset($_POST['but_logout'])) {
     <!--
     <input type="button" onclick="imagefun()" value="Refresh " class="buttonRafraichir">
     <button onclick="fu()" class="buttonRafraichir">Turn OFF</button>-->
-    <input type="button" onclick="return run();" value="Refresh/ Turn on " class="buttonRafraichir">
+    <input type="button" onclick="return run();" value="Actualiser / Démarrer " class="buttonRafraichir">
   </th>
 </tr>
     
@@ -115,7 +115,7 @@ if (isset($_POST['but_logout'])) {
         </tr>
         </table>
 
-        <input type = "button" onclick="light();" value="delete" style="margin-left: 67.2%;">
+        <input type = "button" onclick="light();" value="delete" class="buttonRafraichir" style="margin-left: 40%;">
 
             <p class="moy"> La moyenne est de <script type="text/javascript">document.write(average)</script>  ppm </p>
             <p class="var"> La variance est de <script type="text/javascript">document.write(Math.sqrt(average))</script>  ppm </p>
