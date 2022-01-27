@@ -36,7 +36,7 @@ if (!isset($_SESSION['uname'])) {
         </center>
         <span>
 
-            <div class="formulaire2">
+        <center> <div class="formulaire3">
                 <form class="intro">
                     <p class="txt1"> Vos Informations Personnelles </p>
 
@@ -63,7 +63,7 @@ if (!isset($_SESSION['uname'])) {
                 </form>
 
             </div>
-    </div>
+    </div></center>
     <p class="photo_de_profil">Photo de profil : </p>
     <img src="anonyme.png" alt="photo de profil" class="img_de_profil" />
 
@@ -106,7 +106,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isSet($_POST['search'])) {
 
             if ($result->num_rows > 0){
             while($row = $result->fetch_assoc() ){
-                echo $row["username"]." ".$row["password"]." ".$row["email"]."  ".$row["nom"]." ".$row["prenom"]." ".$row["telephone"]."<br>";
+                echo $row["username"]." ".$row["email"]."  ".$row["nom"]." ".$row["prenom"]." ".$row["telephone"]."<br>";
             }
             } else {
                 echo "0 records";

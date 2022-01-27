@@ -11,7 +11,7 @@ if (isset($_POST['but_submit'])) {
     $password = mysqli_real_escape_string($con, $_POST['txt_pwd']);
 
     if ($uname != "" && $password != "") {
-        $sql_query = "select all * from admin where username='" . $uname . "' and password='" . $password . "'";
+        $sql_query = "select all * from gestion where username='" . $uname . "' and password='" . $password . "'";
         $result = $con->query($sql_query);
      
         if (isset($_POST['g-recaptcha-response'])) {

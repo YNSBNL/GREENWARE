@@ -1135,6 +1135,14 @@ h2.Hun {
 .inline-block-gestion form{
     color: white;
 }
+
+.formulaire3 {
+    margin-left: 32%;
+    text-align: justify;
+    font-size: 1.25em;
+    width: 30%;
+}
+
 /* about */
 
 
