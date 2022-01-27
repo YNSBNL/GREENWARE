@@ -1,9 +1,26 @@
 
-@media screen and (max-width: 80rem){
+@media screen and (min-width: 61.25rem) and (max-width: 80rem){
     html {
-        font-size: 75%; /* Ré-équilibrage du Rem face au Pixel pour des calculs simples */
+        font-size: 75%; 
     }  
 }
+@media screen and (min-width: 49.25rem) and (max-width: 61.25rem){
+    html {
+        font-size: 67%; 
+    }  
+}
+@media screen and (min-width: 37rem) and (max-width: 49.25rem){
+    html {
+        font-size: 50%; 
+    }  
+}
+@media screen and (min-width: 30rem) and (max-width: 37rem){
+    html {
+        font-size: 40%; 
+    }  
+}
+
+
 
 /*BARRE DE NAVIGUATION*/
 

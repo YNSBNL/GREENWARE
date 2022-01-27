@@ -28,10 +28,10 @@ if(isset($_POST['Submit']))
 
 	if(mysqli_query($conn, $sql_query))
 	{
-		echo "New details entry inserted successfully!";
+		echo '<p style="color: darkred; font-size: 1em;"/>Vos données ont été envoyées ! Nous nous efforçons de vous répondre dans les meilleurs délais.';
 	}
 	else{
-		echo "Error:" . $sql  . "" . mysqli_error($conn);
+		echo '<p style="color: darkred; font-size: 1.8em;"Erreur. Données non sauvegardées' . $sql  . "" . mysqli_error($conn);
 	}
 	mysqli_close($conn);
 }
