@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : jeu. 27 jan. 2022 à 21:10
+-- Généré le : jeu. 27 jan. 2022 à 21:25
 -- Version du serveur : 10.4.22-MariaDB
--- Version de PHP : 8.0.13
+-- Version de PHP : 7.4.26
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -33,6 +33,18 @@ CREATE TABLE `admin` (
   `password` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Déchargement des données de la table `admin`
+--
+
+INSERT INTO `admin` (`id`, `username`, `password`) VALUES
+(1, 'khsa', 'admini'),
+(2, 'yobe', 'admini2'),
+(3, 'aula', 'admini3'),
+(4, 'auwa', 'admini4'),
+(5, 'juga', 'admini5'),
+(6, 'scbo', 'admini6');
+
 -- --------------------------------------------------------
 
 --
@@ -50,7 +62,8 @@ CREATE TABLE `aide` (
 
 INSERT INTO `aide` (`id`, `texte`) VALUES
 (0, 'svsvqv'),
-(0, 'test');
+(0, 'test'),
+(0, 'dz');
 
 -- --------------------------------------------------------
 
@@ -96,6 +109,14 @@ CREATE TABLE `faq` (
   `reponse` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Déchargement des données de la table `faq`
+--
+
+INSERT INTO `faq` (`id`, `question`, `reponse`) VALUES
+(1, 'Comment m\'associer à vous pour devenir partenaire ?', 'Contactez-nous sur la page dédiée à cela pour que l\'on puisse vous présenter nos prestations en détail.'),
+(2, 'Comment actualiser les données de mon tableau pour avoir de nouvelles données sur mon capteur ?', 'Appuyiez simplement sur le bouton \"Rafraichir\" en haut du tableau et vous aurez de nouvelles données associées à votre capteur');
+
 -- --------------------------------------------------------
 
 --
@@ -107,6 +128,13 @@ CREATE TABLE `gestion` (
   `username` varchar(100) NOT NULL,
   `password` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Déchargement des données de la table `gestion`
+--
+
+INSERT INTO `gestion` (`id`, `username`, `password`) VALUES
+(1, 'sncf38', 'grenoble');
 
 -- --------------------------------------------------------
 
@@ -162,19 +190,19 @@ ALTER TABLE `gestion`
 -- AUTO_INCREMENT pour la table `admin`
 --
 ALTER TABLE `admin`
-  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT pour la table `faq`
 --
 ALTER TABLE `faq`
-  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT pour la table `gestion`
 --
 ALTER TABLE `gestion`
-  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
