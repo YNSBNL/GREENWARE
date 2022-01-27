@@ -54,24 +54,16 @@ if (isset($_POST['but_logout'])) {
         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 
-<div class="essy"><canvas id="myChart" style="width:100%;max-width:600px"></canvas></div>
-    <table class="centert">
+        <table class="centert">
         <tr>
             <th class="center">CAPTEUR-CO2-ZA59</th>
-            <th class="center">Statistiques pour la Gare du Nord</th>
+            <th class="center">Statistiques pour la Saint placide</th>
         </tr>
-     <tr>
-
-    <th class = "center" style="text-align: center;">
-
-    <img id="getImage" src="sensor1.png" style="height: 230.3px; margin-left: 20%" alt="Bulb img"><br>
-    <!--
-    <input type="button" onclick="imagefun()" value="Refresh " class="buttonRafraichir">
-    <button onclick="fu()" class="buttonRafraichir">Turn OFF</button>-->
-    <input type="button" onclick="return run();" value="Actualiser / Démarrer " class="buttonRafraichir">
-  </th>
-</tr>
-    
+    <tr>
+    <th class="center"><img id="getImage" src="sensor1.png" style="height: 230.3px; margin-left: 20%;"  alt="Bulb img"><br>
+        <input type="button" onclick="return run();" value="Actualiser / Démarrer " class="buttonRafraichir"></th>
+        <th class="center"><canvas id="myChart" style="width:100%;max-width:600px"></canvas></th>
+    </tr>
     </table>
 
     <p class="tablo"> Voici les données du capteur en temps réel:</p>
@@ -115,7 +107,7 @@ if (isset($_POST['but_logout'])) {
         </tr>
         </table>
 
-        <input type = "button" onclick="light();" value="delete" class="buttonRafraichir" style="margin-left: 40%;">
+        <input type = "button" onclick="light();" value="Supprimer" class="buttonRafraichir" style="margin-left: 40%;">
 
             <p class="moy"> La moyenne est de <script type="text/javascript">document.write(average)</script>  ppm </p>
             <p class="var"> La variance est de <script type="text/javascript">document.write(Math.sqrt(average))</script>  ppm </p>
