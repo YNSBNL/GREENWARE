@@ -93,6 +93,7 @@ if (isset($_POST['but_submit'])) {
                                 <a href="" class="lien">Mot de Passe Oublié</a><br>
                                 
                                 <a href="login.php" class="lien">Section utilisateur</a>
+                                <a href="adminid.php" class="lien">Section admininistrateur</a>
                             </div>
                 </form>
             

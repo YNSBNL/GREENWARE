@@ -31,7 +31,7 @@
         <p>
         <center><h2 class="rut">Assistance</h2></center>
         </p>
-        <center><p><textarea name="ticket" id="Ticket" placeholder=" Rédiger un Ticket ici" class="ticket"></textarea></p></center>
+        <center><p><textarea name="ticket" id="Ticket" placeholder=" Rédiger un Ticket ici et n'oubliez pas de mettre votre identifiant" class="ticket"></textarea></p></center>
             <input type="submit" class="button20" name= "envoyer" value="Envoyer le ticket"></a>
 
     </form>

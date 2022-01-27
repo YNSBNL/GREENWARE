@@ -112,7 +112,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isSet($_POST['search'])) {
 
             if ($result->num_rows > 0){
             while($row = $result->fetch_assoc() ){
-                echo "login :       " .$row["username"]." mot de passe :         ".$row["password"]." email :            ".$row["email"]." nom:            ".$row["nom"]." prenom :          ".$row["prenom"]." telephone :           ".$row["telephone"]."<br>";
+                echo "login :       " .$row["username"]."  email :            ".$row["email"]."  nom:   ".$row["nom"]."  prenom :   ".$row["prenom"]."   telephone :           ".$row["telephone"]."<br>";
             } 
             } else {
                 echo "0 données";
