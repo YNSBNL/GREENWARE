@@ -34,7 +34,7 @@
         <img class="paysage2" src="ecologie.png" alt="photo background" onmouseenter="textappears1()" 
         onmouseleave="textleave1()"/>
         <div class="titre2"> ECOLOGIE</div>
-        <div class="paragraphe2"> Techsens a toujours mis l'écologie au centre de ses préoccupations. En effet le but de notre société est de pouvoir développer des solutions pour les particuliers et les professionnels afin de réduire leur consommation énergétique. Nous faisons le maximum au quotidien pour être plus écologiques ensembles </div>
+        <div class="paragraphe2"> Techsens a toujours mis l'écologie au centre de ses préoccupations. En effet le but de notre société est de pouvoir développer des solutions pour les particuliers et les professionnels afin de réduire leur consommation énergétique. Nous faisons le maximum au quotidien pour être les plus écologiques ensembles </div>
     </div>
 
     <div class="imgaj3">

@@ -35,7 +35,7 @@
 <p class="trait">----------------------------------------------------------</p>
 		<div class="questions">
 			<div class="pannel-faq">
-				<h2 class="h2-faq"> J’ai perdu mon identifiant/mot de passe, que dois-je faire?  </h2>
+				<h2 class="h2-faq">J’ai perdu mon identifiant/mot de passe, que dois-je faire?  </h2>
 				<img class="img-faq" src="image/plus.png" alt="animation">
 			</div>
 			<div class="toggle-pannel">
@@ -51,7 +51,7 @@
 				<img class="img-faq" src="image/plus.png" alt="animation">
 			</div>
 			<div class="toggle-pannel">
-				<p cl ass="p-faq"> Pour voir les informations des capteurs, il faut vous connecter, aller dans l’onglet « Greenware » puis choisir l’endroit dont vous voulez voir les valeurs. 
+				<p class="p-faq">Pour voir les informations des capteurs, il faut vous connecter, aller dans l’onglet « Greenware » puis choisir l’endroit dont vous voulez voir les valeurs. 
 					Vous pouvez ensuite allumer le capteur et le rafraîchir pour voir ses valeurs. </p>
 			</div>
 		</div>
