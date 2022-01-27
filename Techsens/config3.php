@@ -74,37 +74,6 @@
 		}
 	}
 
-	if ($_SERVER['REQUEST_METHOD'] == 'POST' && isSet($_POST['deletefaq'])) {
-		$conn3 = mysqli_connect('localhost', 'root', '','techsens') or die("Connection failed: " . mysqli_connect_error());
-		if (isSet($_POST['question'])) {
-			$question = $_POST['question'];
-			
- 
-			$sql3 = "DELETE FROM faq WHERE message = '$question'";
- 
-			$query3 = mysqli_query($conn3,$sql3);
-			if ($query3) {
-				echo 'Data Successfully Saved!';
-			} else {
-				echo "An error occured while save the data.";
-			}
-		}
-	}
-	if ($_SERVER['REQUEST_METHOD'] == 'POST' && isSet($_POST['deletefaq'])) {
-		$conn3 = mysqli_connect('localhost', 'root', '','techsens') or die("Connection failed: " . mysqli_connect_error());
-		if (isSet($_POST['reponse'])) {
-			$reponse = $_POST['reponse'];
-			$sql3 = "DELETE FROM faq WHERE message = '$reponse'";
- 
-			$query3 = mysqli_query($conn3,$sql3);
-			if ($query3) {
-				echo 'Data Successfully Saved!';
-			} else {
-				echo "An error occured while save the data.";
-			}
-		}
-	}
-
 
 		
 if ($_SERVER['REQUEST_METHOD'] == 'POST' && isSet($_POST['search'])) {
