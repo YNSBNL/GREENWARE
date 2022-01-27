@@ -36,7 +36,7 @@ if (!isset($_SESSION['uname'])) {
         </center>
         <span>
 
-        <center> <div class="formulaire3">
+            <div class="formulaire2">
                 <form class="intro">
                     <p class="txt1"> Vos Informations Personnelles </p>
 
@@ -63,7 +63,7 @@ if (!isset($_SESSION['uname'])) {
                 </form>
 
             </div>
-    </div></center>
+    </div>
     <p class="photo_de_profil">Photo de profil : </p>
     <img src="anonyme.png" alt="photo de profil" class="img_de_profil" />
 
@@ -106,7 +106,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isSet($_POST['search'])) {
 
             if ($result->num_rows > 0){
             while($row = $result->fetch_assoc() ){
-                echo $row["username"]." ".$row["email"]."  ".$row["nom"]." ".$row["prenom"]." ".$row["telephone"]."<br>";
+                echo $row["username"]." ".$row["password"]." ".$row["email"]."  ".$row["nom"]." ".$row["prenom"]." ".$row["telephone"]."<br>";
             }
             } else {
                 echo "0 records";
@@ -146,7 +146,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isSet($_POST['search'])) {
         </div></div>
             <div class="end">
                     <label for="end"> 
-                        <a href="cgu.html"> Mentions légales et politique de cofidentialité</a></label></div>
+                        <a href="cgu.html"> Mentions légales et ponlitique de cofidentialité</a></label></div>
     </div>
     <div id="scrollUp">
             <a href="#haut" class="top">

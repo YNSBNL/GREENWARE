@@ -1,9 +1,5 @@
 <?php
-
 include "config2.php";
-
-$_SESSION['errormdp']="";
-$_SESSION['errorcaptcha']="";
 
 if (isset($_POST['but_submit'])) {
 
@@ -11,39 +7,31 @@ if (isset($_POST['but_submit'])) {
     $password = mysqli_real_escape_string($con, $_POST['txt_pwd']);
 
     if ($uname != "" && $password != "") {
-        $sql_query = "select all * from admin where username='" . $uname . "' and password='" . $password . "'";
+
+        $sql_query = "select * from gestion where username='" . $uname . "' and password='" . $password . "'";
         $result = $con->query($sql_query);
-     
-        if (isset($_POST['g-recaptcha-response'])) {
-            $secret = "6Lf8Ru0dAAAAAEZVVCFQuG62e3xQS0AwXnxQKixo";
-            $response = $_POST['g-recaptcha-response'];
-            $remoteip = $_SERVER['REMOTE_ADDR'];
-            $url = "https://www.google.com/recaptcha/api/siteverify?secret=$secret&response=$response&remoteip=$remoteip";
-            $fire = file_get_contents($url);
-            $data = json_decode($fire);
+
 
         if ($result-> num_rows>0) {
             $_SESSION['connected'] = true;  
             $_SESSION['uname'] = $uname;
-            $_SESSION['errormdp']="";
-            if($data->success==true)
-            header('Location: adminespace.php');
+            header('Location: gestionespace.php');
         } else {
-            $_SESSION['errormdp'] = '<p style="color: darkred;"/> Nom d utilisateur ou Mot de Passe incorrect';
+            echo "Mot de Passe incorrect";
         }
     }
+}
+?>
+<?php
 
-    if($data->success==true){
-        if ($result-> num_rows>0) {
-            $_SESSION['connected'] = true;  
-            $_SESSION['uname'] = $uname;
-            $_SESSION['errorcaptcha']="";
-            header('Location: adminespace.php');}
-    }
-    else{
-        $_SESSION['errorcaptcha'] ='<p style="color: darkred;"/> Remplir le Captcha';
-    }
-    }
+if (isset($_POST['submit'])) {
+    $secret = "6Lf8Ru0dAAAAAEZVVCFQuG62e3xQS0AwXnxQKixo";
+    $response = $_POST['g-recaptcha-response'];
+    $remoteip = $_SERVER['REMOTE_ADDR'];
+    $url = "https://www.google.com/recaptcha/api/siteverify?secret=$secret&response=$response&remoteip=$remoteip";
+    $data = file_get_contents($url);
+    $row = json_decode($data, true);
+
 }
 ?>
 <!DOCTYPE html>
@@ -74,7 +62,7 @@ if (isset($_POST['but_submit'])) {
             <div class="block-formulaire">
                 <form method="post" class="formulaire" action="">
                     <fieldset class="fieldset2">
-                        <h1 class="titre-du-formulaire">Espace Administrateur</h1>
+                        <h1 class="titre-du-formulaire">Espace Gestionnaire</h1>
                         <div class="block-champ">
                             <input class="champ" type="text" id="txt_uname" name="txt_uname" placeholder="Username ">
                         </div>
@@ -83,8 +71,8 @@ if (isset($_POST['but_submit'])) {
                             
                             <br>
                             <br>
-                            <?php echo $_SESSION['errormdp']?><br>
-                            <?php echo $_SESSION['errorcaptcha']?>
+                            <br>
+                            <br>
                             <center><div class="row">
                                 <div class="g-recaptcha" data-sitekey="6Lf8Ru0dAAAAAJpzstp9a79qEE2wdosC7uGkPjVV"></div>
                             </div></center>
@@ -92,8 +80,7 @@ if (isset($_POST['but_submit'])) {
                             <div class="lien-champ">
                                 <a href="" class="lien">Mot de Passe Oublié</a><br>
                                 
-                                <a href="login.php" class="lien">Section Utilisateur</a><br>
-                                <a href="gestionnaireid.php" class="lien">Section Gestionnaire</a>
+                                <a href="login.php" class="lien">Section utilisateur</a>
                             </div>
                 </form>
             
@@ -127,7 +114,7 @@ if (isset($_POST['but_submit'])) {
         </div></div>
             <div class="end">
                     <label for="end"> 
-                        <a href="cgu.html"> Mentions légales et politique de confidentialité</a></label></div>
+                        <a href="cgu.html"> Mentions légales et ponlitique de cofidentialité</a></label></div>
     </div>
     <div id="scrollUp">
             <a href="#haut" class="top">

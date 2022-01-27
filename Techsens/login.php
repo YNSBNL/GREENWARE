@@ -123,7 +123,7 @@ if (isset($_POST['but_submit'])) {
         </div></div>
             <div class="end">
                     <label for="end"> 
-                        <a href="cgu.html"> Mentions légales et politique de cofidentialité</a></label></div>
+                        <a href="cgu.html"> Mentions légales et ponlitique de cofidentialité</a></label></div>
     </div>
     <div id="scrollUp">
             <a href="#haut" class="top">

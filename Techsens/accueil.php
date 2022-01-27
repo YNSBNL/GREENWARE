@@ -34,14 +34,14 @@
         <img class="paysage2" src="ecologie.png" alt="photo background" onmouseenter="textappears1()" 
         onmouseleave="textleave1()"/>
         <div class="titre2"> ECOLOGIE</div>
-        <div class="paragraphe2"> Techsens a toujours mis l'écologie au centre de ses préoccupation. En effet le but de notre société est de pouvoir développer des solutions pour les particuliers et les professionnels afin de réduire leur consommation énergétique. Nous faisons le maximum au quotidien pour être plus écologiques ensembles </div>
+        <div class="paragraphe2"> Techsens a toujours mis l'écologie au centre de ses préoccupations. En effet le but de notre société est de pouvoir développer des solutions pour les particuliers et les professionnels afin de réduire leur consommation énergétique. Nous faisons le maximum au quotidien pour être plus écologiques ensembles </div>
     </div>
 
     <div class="imgaj3">
         <img class="paysage3" src="technologie.png" alt="photo background" onmouseenter="textappears2()" 
         onmouseleave="textleave2()"/>
         <div class="titre3"> TECHNOLOGIE</div>
-        <div class="paragraphe3"> Techsens utilise la technologie afin de pouvoir développer ses solutions. En effet nous considérons que la technologie est la pierre angulaire de nos projets puisqu'elle nous permet de pouvoir adapter notre innovation à la vie de tout les jours. </div>
+        <div class="paragraphe3"> Techsens utilise la technologie afin de pouvoir développer ses solutions. En effet nous considérons que la technologie est la pierre angulaire de nos projets puisqu'elle nous permet de pouvoir adapter notre innovation à la vie de tous les jours. </div>
     </div>
 
 
@@ -75,7 +75,7 @@
     <div class="imaagee2">
         <img class="greeenware" src="greeenware.png" alt="photo background" />
         <div class="title2"> GREENWARE</div>
-        <div class="paragraffe2"><hr> Notre nouveau produit, Greenware, détecte le taux de particules fines dans l’air et permet aux sociétés et municipalités qui l’utilisent 
+        <div class="paragraffe2"><hr> Notre nouveau produit, Greenware, détecte le taux de particules fines dans l’air et permet aux sociétés et aux municipalités qui l’utilisent 
             d’agir en conséquence. Nous utilisons des détecteurs de particules fines que nous couplons à des balises GPS afin que nos clients puissent voir 
             en direct où sont les plus gros taux de particules et y remédier en impactant le moins de personnes possibles. <hr>
         </div>
@@ -121,7 +121,7 @@
         </div></div>
             <div class="end">
                     <label for="end"> 
-                        <a href="cgu.html"> Mentions légales et politique de cofidentialité</a></label></div>
+                        <a href="cgu.html"> Mentions légales et politique de co,fidentialité</a></label></div>
     </div>
     <div id="scrollUp">
             <a href="#haut" class="top">

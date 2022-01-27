@@ -57,7 +57,7 @@
 		</div>
 
 		<div class="texteleft">
-			<p>Vous êtes intéréssés par notre contenu, et souhaitez en savoir plus !
+			<p>Vous êtes intéressés par notre contenu, et souhaitez en savoir plus !
 				<br>L'équipe Techsens vous invite à remplir le formulaire ci-contre.
 				<br><br><br><br>
 				<img class="fleche" src="fleche.png">
@@ -98,7 +98,7 @@
         </div></div>
             <div class="end">
                     <label for="end"> 
-                        <a href="cgu.html"> Mentions légales et politique de cofidentialité</a></label></div>
+                        <a href="cgu.html"> Mentions légales et politique de confidentialité</a></label></div>
     </div>
     <div id="scrollUp">
             <a href="#haut" class="top">

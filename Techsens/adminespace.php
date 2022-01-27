@@ -161,7 +161,7 @@ if (!isset($_SESSION['uname'])) {
         </div>
         <div class="end">
             <label for="end">
-                <a href="cgu.html"> Mentions légales et politique de cofidentialité</a></label>
+                <a href="cgu.html"> Mentions légales et politique de confidentialité</a></label>
         </div>
     </div>
     <div id="scrollUp">

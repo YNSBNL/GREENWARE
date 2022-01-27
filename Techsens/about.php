@@ -20,7 +20,7 @@
 
 
 <p>
-    <div  id="titre1About">UNE ÉQUIPE EXPÉRIMENTÉ ET PASSIONNÉ </div><br>
+    <div  id="titre1About">UNE ÉQUIPE EXPÉRIMENTÉE ET PASSIONNÉE </div><br>
     <div id="titre2About">5 années d’expérience dans les technologies du web.  </div>
 
 
@@ -58,7 +58,7 @@
 
         <br> <br>
         Développeuse pendant plus de 2 ans au sens de l’équipe TechSens, 
-        audrey LALES est un membre actif et dynamique qui ses soucis en permanence
+        audrey LALES est un membre actif et dynamique qui résout les soucis en permanence
         et de manière méthodique des détails de votre projet.
         <br><br>
         Elle s’occupe de la conception technique de votre projet
@@ -87,7 +87,7 @@
             Avec ses atout jules GARCIN est un membre dynamique et doté d’une expertise technique
             en programmation et logistiques.
             <br><br>
-            Il s’occupe de la mise au point des nouveaux designs des logicielles 
+            Il s’occupe de la mise au point des nouveaux designs des logiciels 
             et de la conception des solutions innovantes sans limites.
         
             <br><br><br><br>
@@ -100,7 +100,7 @@
             <p>
         
              <span class="nom"style="color:#075244">Analyste </span>
-             <div class="coordonné">coordonnées</div>
+             <div class="coordonné">Coordonnées</div>
              <div class="telephone">Tél. 06 89 76 95 23</div>
              <a href="mailto:augustin.watine@techsens.fr"> <i style="font-size:1.5rem" class="fa">&#xf0e0;</i>
                  <div class="mail"></div>
@@ -136,7 +136,7 @@
         <p>
      
              <span class="nom"style="color:#075244">Programmeur </span>
-             <div class="coordonné">coordonnées</div>
+             <div class="coordonné">Coordonnées</div>
              <div class="telephone">Tél. 06 19 12 98 75</div>
             
              <a href="mailto:younes.benali@techsens.fr"> <i style="font-size:1.5rem" class="fa">&#xf0e0;</i>
@@ -153,8 +153,8 @@
             <br>
             <br>
             Il s’occupe du développement des activités et vous accompagne dans la
-            transformation logistique,structurale et dans l’optimisation de votre
-            projet dans tous secteurs.
+            transformation logistique, structurale et dans l’optimisation de votre
+            projet dans tout secteur.
             <br>
             <br>
         </p>
@@ -178,11 +178,11 @@
         <span class="nom"style="color:#075244">Scottie BOTULI</span>
         <br><br>
 
-        Toujours à la recherche des nouvelles idées et de nouveaux concepts  innovantes.
+        Toujours à la recherche, des nouvelles idées et de nouveaux concepts  innovants.
         Scottie Botuli est un designer qui travaille pendant plus de 2 ans au sens de groupe TechSens.
         <br><br>
         Spécialiste dans la création , la conception graphique et dotée d’un incroyable sens du style. 
-        elle utilise les dernières applications et technologies pour répondre à vos besoins.
+        Elle utilise les dernières applications et technologies pour répondre à vos besoins.
 <br><br>
   
 </p>
@@ -192,7 +192,7 @@
         <div class="imageKha"></div>
         <p>          
         <span class="nom"style="color:#075244">Développeur</span>
-        <div class="coordonné">coordonnées</div>
+        <div class="coordonné">Coordonnées</div>
         <div >Tél. 07 72 28 81 34</div>
             
         <a href="mailto:khalil.sammoud@techsens.fr"> <i style="font-size:1.5rem" class="fa">&#xf0e0;</i>
@@ -210,7 +210,7 @@
         <br><br>
         Il s’occupe du développement des applications et des logiciels pour
         le plaisir de ses utilisateurs.
-        En testant en permanence les nouvelles applications sont technologiques.
+        En testant en permanence, les nouvelles applications sont technologiques.
 
 </p>
     </div>
@@ -239,7 +239,7 @@
         </div></div>
             <div class="end">
                     <label for="end"> 
-                        <a href="cgu.html"> Mentions légales et politique de cofidentialité</a></label></div>
+                        <a href="cgu.html"> Mentions légales et politique de confidentialité</a></label></div>
                         
     <div id="scrollUp">
             <a href="#haut" class="top">
