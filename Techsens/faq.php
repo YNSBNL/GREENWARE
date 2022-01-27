@@ -51,7 +51,7 @@
 				<img class="img-faq" src="image/plus.png" alt="animation">
 			</div>
 			<div class="toggle-pannel">
-				<p cl ass="p-faq"> Pour voir les informations des capteurs il faut vous connecter, aller dans l’onglet « Greenware » puis choisir l’endroit dont vous voulez voir les valeurs. 
+				<p class="p-faq"> Pour voir les informations des capteurs il faut vous connecter, aller dans l’onglet « Greenware » puis choisir l’endroit dont vous voulez voir les valeurs. 
 					Vous pouvez ensuite allumer le capteur et le rafraîchir pour voir ses valeurs. </p>
 			</div>
 		</div>
