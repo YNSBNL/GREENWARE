@@ -21,13 +21,13 @@
 
 <p>
     <div  id="titre1About">UNE ÉQUIPE EXPÉRIMENTÉE ET PASSIONNÉE </div><br>
-    <div id="titre2About">5 années d’expérience dans les technologies du web.  </div>
+    <div id="titre2About">5 années d’expérience dans les technologies du web.</div>
 
 
     <div id="text1About">
        
     Nous sommes une équipe pluridisciplinaire qui aime mettre la technologie et l'écologie au coeur de l'innovation.
-    Nous aimons les relations humaines , la transparence et cultivons la fiabilité et la confiance réciproque avec nos acteurs. 
+    Nous aimons les relations humaines, la transparence et cultivons la fiabilité et la confiance réciproque avec nos acteurs. 
 
     </div>
     </p>
@@ -111,12 +111,12 @@
              <span class="nom"style="color:#075244">Augustin Watine </span>
             <br><br>
 
-            Créatif , polyvalent et doté d’un grand sens d’adaptations 
+            Créatif, polyvalent et doté d’un grand sens d’adaptations 
             aux nouvelles situations.
             <br><br>
             
-            Augustin WATINE est spécialiste en analyse   et développement informatique ,
-            il met en relation nos créations , nos développements des sites afin que chaque création
+            Augustin WATINE est spécialiste en analyse et développement informatique,
+            il met en relation nos créations, nos développements des sites afin que chaque création
             soit à l’image de la marque et de vos besoins.
 
             <br><br>
@@ -149,7 +149,7 @@
             <br><br>
 
             Younes Benali est un programmeur doté d’un grand professionnalisme et 
-            passionné par la réalisation du plus simple aux plus complexes de vos projets .
+            passionné par la réalisation du plus simple aux plus complexes de vos projets.
             <br>
             <br>
             Il s’occupe du développement des activités et vous accompagne dans la
@@ -181,7 +181,7 @@
         Toujours à la recherche, des nouvelles idées et de nouveaux concepts  innovants.
         Scottie Botuli est un designer qui travaille pendant plus de 2 ans au sens de groupe TechSens.
         <br><br>
-        Spécialiste dans la création , la conception graphique et dotée d’un incroyable sens du style. 
+        Spécialiste dans la création, la conception graphique et dotée d’un incroyable sens du style. 
         Elle utilise les dernières applications et technologies pour répondre à vos besoins.
 <br><br>
   

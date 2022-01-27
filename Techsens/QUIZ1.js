@@ -10,7 +10,7 @@ class Question {
 }
 let questions = [
   new Question(
-    "Techsens est un projet qui permet d'observer et de mesurer la qualité de l'air sur paris. ",
+    "Techsens est un projet qui permet d'observer et de mesurer la qualité de l'air sur Paris. ",
     ["Vrai", "Faux"],
     "Vrai"
   ),
@@ -27,20 +27,20 @@ let questions = [
   ),
 
   new Question(
-    "Quel est l'origine principal d'émission des polluants atmosphériques ?",
+    "Quelle est l'origine principale d'émission des polluants atmosphériques ?",
     [
-      "les phénomènes naturelles ",
-      "les activités humaines",
-      "le trafic routier",
-      "l'éruption volcanique",
+      "Les phénomènes naturels ",
+      "Les activités humaines",
+      "Le trafic routier",
+      "L'éruption volcanique",
     ],
-    "les activités humaines"
+    "Les activités humaines"
   ),
 
   new Question(
     "Quels sont les polluants atmosphériques les plus néfastes pour la santé ?",
     ["l'OZONE", "les particules fines", "le dioxygène", "aucune bonne réponse"],
-    "les particules fines"
+    "Les particules fines"
   ),
 
   new Question(
@@ -62,13 +62,13 @@ let questions = [
   ),
 
   new Question(
-    "Existe-il des inégalités d'exposition liées à la pollution de l'air ?",
+    "Existe-t-il des inégalités d'exposition liées à la pollution de l'air ?",
     ["Vrai", "Faux"," "," "],
     "Vrai"
   ),
 
   new Question(
-    "Où sommes nous le plus exposé aux polluants atmosphériques ?",
+    "Où sommes-nous le plus exposé aux polluants atmosphériques ?",
     ["A l'intérieur d'une voiture", "En vélo", "En montagne", "A la plage"],
     "A l'intérieur d'une voiture"
   ),

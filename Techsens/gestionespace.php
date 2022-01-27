@@ -81,6 +81,9 @@ if (!isset($_SESSION['uname'])) {
         Username: <input type='text' name='user' id='user'><br>
         
         <input type='submit' name='search'>
+        <br>
+        telephone: <input type='text' name='telephone' id='telephone'><br>
+         <input type='submit' name='chercher'>
     </form>
     </div></center>
 <?php
@@ -98,23 +101,71 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isSet($_POST['search'])) {
         if ($conn->connect_error){
             die("Connection failed: ". $conn->connect_error);
         }
-        if (isSet($_POST['user'])) {
+        if (isSet($_POST['user']) ) {
             $user9 = $_POST['user'];
+           
             $sql = "select * from users where username like '%$user9%'";
+         
 
             $result = $conn->query($sql);
+        
 
             if ($result->num_rows > 0){
             while($row = $result->fetch_assoc() ){
-                echo $row["username"]." ".$row["password"]." ".$row["email"]."  ".$row["nom"]." ".$row["prenom"]." ".$row["telephone"]."<br>";
-            }
+                echo "login :       " .$row["username"]." mot de passe :         ".$row["password"]." email :            ".$row["email"]." nom:            ".$row["nom"]." prenom :          ".$row["prenom"]." telephone :           ".$row["telephone"]."<br>";
+            } 
             } else {
-                echo "0 records";
+                echo "0 données";
             }
         }
+
+       
         $conn->close();
     }
 
+
+
+
+
+
+
+
+
+if ($_SERVER['REQUEST_METHOD'] == 'POST' && isSet($_POST['chercher'])) {
+       
+
+        $servername = "localhost";
+        $username = "root";
+        $password = "";
+        $db = "techsens";
+
+        $conn = new mysqli($servername, $username, $password, $db);
+
+        if ($conn->connect_error){
+            die("Connection failed: ". $conn->connect_error);
+        }
+
+
+         if (isSet($_POST['telephone']) ) {
+            $telephone9 = $_POST['telephone'];
+           
+            $sql1 = "select * from users where telephone like '%$telephone9%'";
+         
+
+            $result1 = $conn->query($sql1);
+        
+
+            if ($result1->num_rows > 0){
+            while($row = $result1->fetch_assoc() ){
+                echo "login :       " .$row["username"]." mot de passe :         ".$row["password"]." email :            ".$row["email"]." nom:            ".$row["nom"]." prenom :          ".$row["prenom"]." telephone :           ".$row["telephone"]."<br>";
+            } 
+            } else {
+                echo "0 données";
+            }
+        }
+
+         $conn->close();
+     }
 
 
 
@@ -146,7 +197,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isSet($_POST['search'])) {
         </div></div>
             <div class="end">
                     <label for="end"> 
-                        <a href="cgu.html"> Mentions légales et ponlitique de cofidentialité</a></label></div>
+                        <a href="cgu.html"> Mentions légales et ponlitique de confidentialité</a></label></div>
     </div>
     <div id="scrollUp">
             <a href="#haut" class="top">
