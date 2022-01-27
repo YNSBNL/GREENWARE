@@ -1134,8 +1134,13 @@ h2.Hun {
 .gestion-ticket{
     background-color: darkseagreen;
     width: 20%;
+    border-radius: .3125rem;
+    color: white;
+    margin-left: 2%;
+    margin-top: -10.125rem;
+    
 }
-.gestion-ticket h4{
+.gestion-ticket h1{
     color: white;
 }
 
