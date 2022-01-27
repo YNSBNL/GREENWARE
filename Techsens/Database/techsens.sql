@@ -3,12 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
-
--- Généré le : mer. 26 jan. 2022 à 16:46
-
-
--- Version du serveur : 10.4.21-MariaDB
--- Version de PHP : 7.3.31
+-- Généré le : jeu. 27 jan. 2022 à 21:10
+-- Version du serveur : 10.4.22-MariaDB
+-- Version de PHP : 8.0.13
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -31,19 +28,10 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `admin` (
-  `id` int(11) NOT NULL,
+  `id` int(255) NOT NULL,
   `username` varchar(100) NOT NULL,
   `password` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Déchargement des données de la table `admin`
---
-
-INSERT INTO `admin` (`id`, `username`, `password`) VALUES
-(1, 'khsa', 'admini'),
-(2, 'aula', 'azerty123'),
-(3, 'yobe', 'agadir555');
 
 -- --------------------------------------------------------
 
@@ -55,6 +43,14 @@ CREATE TABLE `aide` (
   `id` int(11) NOT NULL,
   `texte` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Déchargement des données de la table `aide`
+--
+
+INSERT INTO `aide` (`id`, `texte`) VALUES
+(0, 'svsvqv'),
+(0, 'test');
 
 -- --------------------------------------------------------
 
@@ -84,7 +80,9 @@ INSERT INTO `contacts_details` (`Society`, `LastName`, `FirstName`, `email`, `ph
 ('tesla', 'azertyuiop', 'qsdfgh', 'audrey.lales@gmail.com', 869542381, 'je nai plus accès à mon compte'),
 ('isep', 'azertyuiop', 'azertyu', 'audrey.lales@gmail.com', 865923471, 'coucou'),
 ('isep', 'hugues', 'fleur', 'fleur.hugues@gmail.com', 7986532314, 'coucou cest fleur'),
-('aaaaaaaaa', 'aaaaaaaaa', 'aaaaaaaaa', 'aaaaaaaaa', 252555, 'aaaaaaaaa');
+('isep', 'bjkbnjko', 'bnjkbnjk', 'njnn.llooj@gmail.com', 0, 'kjjn'),
+('aaaaaaaaaa', 'aaaaa', 'aaaaa', 'asa.ADad@gmail.com', 0, 'zdafzazf'),
+('qqqqqq', 'qqq', 'qq', 'audrey.lales@gmail.com', 0, 'aa');
 
 -- --------------------------------------------------------
 
@@ -93,20 +91,10 @@ INSERT INTO `contacts_details` (`Society`, `LastName`, `FirstName`, `email`, `ph
 --
 
 CREATE TABLE `faq` (
-  `id` int(11) NOT NULL,
+  `id` int(255) NOT NULL,
   `question` varchar(255) NOT NULL,
   `reponse` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Déchargement des données de la table `faq`
---
-
-INSERT INTO `faq` (`id`, `question`, `reponse`) VALUES
-(1, 'Comment m\'associer à vous pour devenir partenaire ? ', 'Contactez-nous sur la page dédiée à cela pour que l\'on puisse vous présenter nos prestations en détail.'),
-(2, 'Comment actualiser les données de mon tableau pour avoir de nouvelles données sur mon capteur ? ', 'Appuyiez simplement sur le bouton \"Rafraichir\" en haut du tableau et vous aurez de nouvelles données associées à votre capteur'),
-(1, 'Comment m\'associer à vous pour devenir partenaire ? ', 'Contactez-nous sur la page dédiée à cela pour que l\'on puisse vous présenter nos prestations en détail.'),
-(2, 'Comment actualiser les données de mon tableau pour avoir de nouvelles données sur mon capteur ? ', 'Appuyiez simplement sur le bouton \"Rafraichir\" en haut du tableau et vous aurez de nouvelles données associées à votre capteur');
 
 -- --------------------------------------------------------
 
@@ -115,39 +103,10 @@ INSERT INTO `faq` (`id`, `question`, `reponse`) VALUES
 --
 
 CREATE TABLE `gestion` (
-  `role` int(11) NOT NULL,
-  `username` varchar(255) NOT NULL,
-  `password` varchar(255) NOT NULL
+  `id` int(255) NOT NULL,
+  `username` varchar(100) NOT NULL,
+  `password` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Déchargement des données de la table `gestion`
---
-
-INSERT INTO `gestion` (`role`, `username`, `password`) VALUES
-(1, 'auwa', 'dyonisios2000'),
-(2, 'scbo', 'tvl54'),
-(3, 'juga', 'ddass58');
-
--- --------------------------------------------------------
-
---
--- Structure de la table `ticket`
---
-
-CREATE TABLE `ticket` (
-  `id` int(11) NOT NULL,
-  `nom` varchar(100) NOT NULL,
-  `email` varchar(100) NOT NULL,
-  `message` varchar(100) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Déchargement des données de la table `ticket`
---
-
-INSERT INTO `ticket` (`id`, `nom`, `email`, `message`) VALUES
-(1, 'polo', 'polo@polo.com', 'ca marche pas aidez moi svp ');
 
 -- --------------------------------------------------------
 
@@ -156,13 +115,13 @@ INSERT INTO `ticket` (`id`, `nom`, `email`, `message`) VALUES
 --
 
 CREATE TABLE `users` (
-  `id` int(10) NOT NULL,
-  `username` varchar(100) NOT NULL,
-  `password` varchar(100) NOT NULL,
-  `email` varchar(100) NOT NULL,
-  `prenom` varchar(100) NOT NULL,
-  `nom` varchar(100) NOT NULL,
-  `telephone` int(10) NOT NULL
+  `id` int(100) NOT NULL,
+  `username` varchar(19) NOT NULL,
+  `password` varchar(20) NOT NULL,
+  `email` varchar(40) NOT NULL,
+  `prenom` varchar(50) NOT NULL,
+  `nom` varchar(50) NOT NULL,
+  `telephone` int(12) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -170,23 +129,29 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `username`, `password`, `email`, `prenom`, `nom`, `telephone`) VALUES
-(7, 'ololo', 'alolol', 'nume566@gmail.com', 'olooof', 'aapo', 205256214),
-(8, 'mod6587', 'dfffvcde', 'poldfu@gmail.com', 'paul', 'dupuit', 25847169),
-(7, 'ololo', 'alolol', 'nume566@gmail.com', 'olooof', 'aapo', 205256214),
-(8, 'mod6587', 'dfffvcde', 'poldfu@gmail.com', 'paul', 'dupuit', 25847169),
-(1, 'oper54', 'passport55', 'opel.technics@opel.com', 'Martin', 'Dubois', 654696356),
-(2, 'ratp75', 'metro6', 'ratp.paris@sncf.com', 'Catherine', 'Guillard', 655498621),
-(1, 'oper54', 'passport55', 'opel.technics@opel.com', 'Martin', 'Dubois', 654696356),
-(2, 'ratp75', 'metro6', 'ratp.paris@sncf.com', 'Catherine', 'Guillard', 655498621);
+(1, 'ratp75', 'metro6', 'ratp@gmail.com', 'Catherine', 'Guillouard', 677881234),
+(2, 'g7taxi', 'mercedes75', 'g7taxi@gmail.com', 'Nicolas', 'Rousselet', 722312675);
 
 --
 -- Index pour les tables déchargées
 --
 
 --
--- Index pour la table `aide`
+-- Index pour la table `admin`
 --
-ALTER TABLE `aide`
+ALTER TABLE `admin`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Index pour la table `faq`
+--
+ALTER TABLE `faq`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Index pour la table `gestion`
+--
+ALTER TABLE `gestion`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -194,10 +159,22 @@ ALTER TABLE `aide`
 --
 
 --
--- AUTO_INCREMENT pour la table `aide`
+-- AUTO_INCREMENT pour la table `admin`
 --
-ALTER TABLE `aide`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+ALTER TABLE `admin`
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT pour la table `faq`
+--
+ALTER TABLE `faq`
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT pour la table `gestion`
+--
+ALTER TABLE `gestion`
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
