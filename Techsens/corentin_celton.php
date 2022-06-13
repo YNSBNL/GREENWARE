@@ -119,6 +119,7 @@ if (isset($_POST['but_logout'])) {
 <br><br>
 
 </form>
+<p>VOICI LES INFORMATIONS PROVENANT DIRECTEMENT DE LA PASSERELLE APP POUR VOTRE CAPTEUR DE SON </p>
 <br>
 <br>
 
