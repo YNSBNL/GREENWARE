@@ -7,7 +7,7 @@ $ch = curl_init();
 curl_setopt(
     $ch, 
     CURLOPT_URL,
-    "http://projets-tomcat.isep.fr:8080/appService?ACTION=GETLOG&TEAM=9999"
+    "http://projets-tomcat.isep.fr:8080/appService?ACTION=GETLOG&TEAM=0G6B"
 );
 curl_setopt($ch, CURLOPT_HEADER, FALSE);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
@@ -18,11 +18,12 @@ echo("$data");
 
 
 // METTRE LES DONNES SOUS FORME DE TABLEAU
-
+function tabData () {
 $data_tab = str_split($data,33);
 echo "Tabular Data:<br />";
 for($i=0, $size=count($data_tab); $i<$size; $i++){
-echo "Trame $i: $data_tab[$i]<br />";
+    echo "Trame $i: $data_tab[$i]<br />";
+}
 }
 
 
