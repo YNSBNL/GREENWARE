@@ -120,7 +120,44 @@ if (isset($_POST['but_logout'])) {
 <br><br>
 
 </form>
-<p>VOICI LES INFORMATIONS PROVENANT DIRECTEMENT DE LA PASSERELLE APP POUR VOTRE CAPTEUR DE SON </p>
+<?php
+$team = '';
+$request = '';
+$typecapt = '';
+$numero = '';
+$actionneur = '';
+$valueactionneur = '';
+
+?>
+
+
+<div>
+<form action='http://projets-tomcat.isep.fr:8080/appService/?ACTION=GETLOG&TEAM=0G6B' method="post" name="EnvoiTRAME" >
+					<div class="formulaire4">
+
+						<label for="Team">Numéro d'équipe (objet)</label><br>
+						<input class="boxe" type="text" name="team" required value='<?=$team?>' />
+						<br>
+						<label for="Request">Requete</label><br>
+						<input class="boxe" type="text" name="Request" id="Request" value='<?=$request?>' required />
+						<br>
+						<label for="TypeCapteur">Type de capteur</label><br>
+						<input class="boxe" type="text" name="Type" id="Type" value='<?=$typecapt?>' required />
+						<br>
+						<label for="NumCapteur">Numero de Capteur</label><br>
+						<input class="boxe" type="email" name="numero" id="numero" value='<?=$numero?>' required />
+						<br>
+						<label for="NumeroActio">Numéro d'actionneur</label><br>
+						<input class="boxe" type="text" name="NumActio" id="NumActio" value='<?=$actionneur?>' required />
+						<br>
+						<label for="ValActio">Valeur de l'actionneur</label><br>
+						<input class="boxe" type="text" name="ValActio" id="ValActio" value='<?=$valueactionneur?>' required />
+</form>
+</div>
+<br>
+
+<button class="buttonRafraichir" style="margin-left: 40%;">Envoyer une requête au capteur </button>
+<p class="moy" style="color:red;">Passerelle APP</p>
 <?php
 // RECUPERATION DE DONNEE
 $ch = curl_init();
@@ -133,22 +170,32 @@ curl_setopt($ch, CURLOPT_HEADER, FALSE);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
 $data = curl_exec($ch);
 curl_close($ch);
-echo "Raw Data:<br /><br/>";
-echo("$data<br/>");
+echo "La valeur brute (POST TRAITEMENT) de la trame étant conséquente, on vous montre la trame traitée ci-dessous<br /><br/>";
+
 
 
 // METTRE LES DONNES SOUS FORME DE TABLEAU
 $data_tab = str_split($data,33);
-echo "<br/> Tabular Data:<br /><br/>";
+echo "<br/> Les valeurs de tout l'historique des trames est mis sous tableau :<br /><br/>";
 for($i=0, $size=count($data_tab); $i<$size; $i++){
+
 echo "Trame $i: $data_tab[$i]<br />";
+echo "<br /> _________________________________________________ <br />";
+
+
 }
 
+echo "Prochaine trame à venir";
 
 
-//DECODER 1 TRAME
+
+?>
 
 
+
+<br>
+<p class="moy"> L'information de votre dernière trame est : </p>
+<?php
 $trame = $data_tab[1];
 // décodage avec des substring
 $t = substr($trame,0,1);
@@ -157,9 +204,42 @@ $o = substr($trame,1,4);
 // décodage avec sscanf
 list($t, $o, $r, $c, $n, $v, $a, $x, $year, $month, $day, $hour, $min, $sec) = 
 sscanf($trame,"%1s%4s%1s%1s%2s%4s%4s%2s%4s%2s%2s%2s%2s%2s");
-echo("<br />$t,$o,$r,$c,$n,$v,$a,$x,$year,$month,$day,$hour,$min,$sec<br />");
+echo( "<br /> Le type de trame est : $t");
+echo( "<br /> L'objet est le groupe : $o");
+echo( "<br /> Le type de requete est : $r");
+echo( "<br /> Le type de capteur est : $c");
+echo( "<br /> Le numéro de capteur est : $n");
+echo( "<br /> La valeur remontée est : $v");
+echo( "<br /> Le  numéro de la trame est : $a");
+echo( "<br /> Le checksum est : $x");
+echo( "<br /> L'année  : $year");
+echo( "<br /> Le mois: $month");
+echo( "<br /> Le jour : $day");
+echo( "<br /> L'heure : $hour");
+echo( "<br /> La minute : $min");
+echo( "<br /> La seconde : $sec");
+
+
 
 ?>
+
+<p> ENVOIE DE REQUETE DU PC VERS LE CAPTEUR </p>
+<?php
+
+$ca = curl_init();
+curl_setopt(
+    $ca, 
+    CURLOPT_URL,
+    "http://projets-tomcat.isep.fr:8080/appService/?ACTION=GETLOG&TEAM=0G6B"
+);
+curl_setopt($ca, CURLOPT_HEADER, FALSE);
+curl_setopt($ca, CURLOPT_RETURNTRANSFER, TRUE);
+$data = curl_exec($ca);
+curl_close($ca);
+
+
+?>
+
 <br>
 <br>
 
