@@ -156,7 +156,7 @@ $valueactionneur = '';
 </div>
 <br>
 
-<button class="buttonRafraichir" style="margin-left: 40%;">Envoyer une requête au capteur </button>
+<button class="buttonRafraichir" style="margin-left: 40%;" value="Envoi">Envoyer une requête au capteur </button>
 <p class="moy" style="color:red;">Passerelle APP</p>
 <?php
 // RECUPERATION DE DONNEE
@@ -223,7 +223,15 @@ echo( "<br /> La seconde : $sec");
 
 ?>
 
-<p> ENVOIE DE REQUETE DU PC VERS LE CAPTEUR </p>
+<p> LA VALEUR REMONTEE EN DECIBELS DEVIENT :  </p>
+<?php
+ $db = $v / 20 ;
+ echo( "<br /> La valeur remontée est : $db décibels");
+
+?>
+
+
+
 <?php
 
 $ca = curl_init();
