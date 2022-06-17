@@ -74,7 +74,7 @@ if (isset($_POST['but_logout'])) {
 
   <table border="1" cellpadding="10" cellspacing="0" style="border-collapse: collapse; margin-left: 30%; margin-top: 30px; width: 40%;"   width="100"v >
     <tr>
-        <td  height="19" width="20%">Données du Capteur</td>
+        <td  height="19" width="20%">Données du Capteur</td>    
         <td height="19" width="20%">Heure locale</td>
         <td  height="19" width="20%">Moyenne</td>
         <td  height="19" width="20%">Variance</td>
@@ -120,43 +120,51 @@ if (isset($_POST['but_logout'])) {
 <br><br>
 
 </form>
-<?php
-$team = '';
-$request = '';
-$typecapt = '';
-$numero = '';
-$actionneur = '';
-$valueactionneur = '';
 
-?>
 
 
 <div>
-<form action='http://projets-tomcat.isep.fr:8080/appService/?ACTION=GETLOG&TEAM=0G6B' method="post" name="EnvoiTRAME" >
+<?php
+
+        if(array_key_exists('button1', $_POST)) {
+            
+            button1();
+        }
+        
+        function button1() {
+            $cz = curl_init();
+            curl_setopt(
+                $cz, 
+                CURLOPT_URL,
+                "http://projets-tomcat.isep.fr:8080/appService/?ACTION=COMMAND&TEAM=0G6B&TRAME=1"
+            );
+            curl_setopt($cz, CURLOPT_HEADER, FALSE);
+            curl_setopt($cz, CURLOPT_RETURNTRANSFER, TRUE);
+            
+            curl_close($cz);
+            $data = curl_exec($cz);
+            echo($data);
+            
+                    }
+       
+    ?>
+<form  method="post">
+
 					<div class="formulaire4">
 
-						<label for="Team">Numéro d'équipe (objet)</label><br>
-						<input class="boxe" type="text" name="team" required value='<?=$team?>' />
-						<br>
-						<label for="Request">Requete</label><br>
-						<input class="boxe" type="text" name="Request" id="Request" value='<?=$request?>' required />
-						<br>
-						<label for="TypeCapteur">Type de capteur</label><br>
-						<input class="boxe" type="text" name="Type" id="Type" value='<?=$typecapt?>' required />
-						<br>
-						<label for="NumCapteur">Numero de Capteur</label><br>
-						<input class="boxe" type="email" name="numero" id="numero" value='<?=$numero?>' required />
-						<br>
-						<label for="NumeroActio">Numéro d'actionneur</label><br>
-						<input class="boxe" type="text" name="NumActio" id="NumActio" value='<?=$actionneur?>' required />
-						<br>
-						<label for="ValActio">Valeur de l'actionneur</label><br>
-						<input class="boxe" type="text" name="ValActio" id="ValActio" value='<?=$valueactionneur?>' required />
-</form>
+				
+
+                
+
+                        <button class="buttonRafraichir" style="margin-left: 40%;" name="button1" value="button1">Envoyer une requête au capteur </button>
+                </form>
+                
+
+
 </div>
 <br>
 
-<button class="buttonRafraichir" style="margin-left: 40%;" value="Envoi">Envoyer une requête au capteur </button>
+
 <p class="moy" style="color:red;">Passerelle APP</p>
 <?php
 // RECUPERATION DE DONNEE
@@ -192,7 +200,8 @@ echo "Prochaine trame à venir";
 ?>
 
 
-
+<br>
+<th class="center"><canvas id="myChart2" style="width:100%;max-width:600px"></canvas></th>
 <br>
 <p class="moy"> L'information de votre dernière trame est : </p>
 <?php
@@ -306,6 +315,34 @@ curl_close($ca);
 		    }
 		  }
 		});
+
+
+
+		var xValues = ["-4 mois", "-3 mois", "-2 mois", "aujourd'hui"];
+		var yValues = [firstNumber, secondNumber, thirdNumber, fourthNumber];
+		var barColors = ["red", "green","blue","orange","brown"];
+
+		new Chart("myChart2", {
+		  type: "bar",
+		  data: {
+		    
+		    datasets: [{
+		      backgroundColor: barColors,
+		      data: yValues
+		    }]
+		  },
+		  options: {
+		    legend: {display: false},
+		    title: {
+		      display: true,
+		      text: "Historique des valeurs de trames"
+		    }
+		  }
+		});
+
+
+
+
 
 
    var on = 0; // 1 is true, 0 is false
