@@ -256,7 +256,40 @@ curl_close($ca);
 
 
 ?>
+<?php
+ $servername="localhost";
+ $username="root";
+ $password="";
+ $database_name="techsens";
+ 
+ $conn = mysqli_connect($servername,$username,$password,$database_name);
+ 
+ //check the connection
+ if(!$conn)
+ {
+     die("Connection failed:" .mysql_connect_error());
+ 
+ }
+ else {
+    $sql_query = "INSERT INTO trame (data) 
+     $serialized_data = serialize($data);
+	VALUES ('$serialized_data')";
+ }
+ // database connection
+ 
+ // user array
+  
+ // convert to serialized string
 
+  
+ // $serialized_userdata will be
+ // a:4:{s:4:"name";s:4:"test";s:5:"email";s:14:"test@gmail.com";s:7:"country";s:5:"USA";s:6:"status";s:4:"true";}
+  
+ // insert into database
+  
+ 
+  
+ ?>
 <br>
 <br>
 
