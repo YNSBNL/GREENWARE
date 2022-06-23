@@ -232,11 +232,10 @@ echo( "<br /> La seconde : $sec");
 
 ?>
 
-<p> LA VALEUR REMONTEE EN DECIBELS DEVIENT :  </p>
+<p> Puissance Moyenne  :  </p>
 <?php
- $db = $v / 20 ;
- echo( "<br /> La valeur remontée est : $db décibels");
-
+ $db = $v /1.25 ; /*(1/$sec)*(array_sum($db1,$db2,$db3,$db4,$db5,$db6,$db7,$db8,$db8,$db9,$db10,))*/ 
+ echo( "<br /> La puissance moyenne est : $db Watts");
 ?>
 
 
